@@ -1,0 +1,3209 @@
+<!DOCTYPE html><html lang="ru"><head><script src="https://mc.yandex.ru/metrika/tag_phono.js" type="text/javascript" charset="utf-8" async=""></script>
+<!-- Top.Mail.Ru counter -->
+<script async="" src="https://mc.yandex.ru/metrika/tag.js"></script><script type="text/javascript" async="" id="tmr-code" src="https://top-fwz1.mail.ru/js/code.js"></script><script type="text/javascript">
+var _tmr = window._tmr || (window._tmr = []);
+_tmr.push({id: "3213087", type: "pageView", start: (new Date()).getTime()});
+(function (d, w, id) {
+  if (d.getElementById(id)) return;
+  var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+  ts.src = "https://top-fwz1.mail.ru/js/code.js";
+  var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+  if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+})(document, window, "tmr-code");
+</script>
+<noscript><div><img src="https://top-fwz1.mail.ru/counter?id=3213087;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div></noscript>
+<!-- /Top.Mail.Ru counter -->
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js', 'ym');
+
+    ym(48174524, 'init', {clickmap:true, referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/48174524" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
+    <title>Деловая программа Форума ПИВО-2026</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* ---------- Стили для экрана ---------- */
+        :root {
+            --bg: #f4f7fc;
+            --surface: #ffffff;
+            --primary: #0a66c2;
+            --primary-light: #e6f0ff;
+            --text: #1e2b3c;
+            --text-light: #5e6f7d;
+            --border: #d9e2ec;
+            --shadow-sm: 0 4px 12px rgba(0,20,40,0.04);
+            --shadow-hover: 0 12px 24px rgba(0,20,40,0.08);
+            --radius: 24px;
+            --radius-sm: 16px;
+            --transition: all 0.2s ease;
+            --stripe-color: #f2f6fc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.5;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1280px;
+            width: 100%;
+        }
+
+        .header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            margin-bottom: 24px;
+            background: var(--surface);
+            padding: 20px 28px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .logo i {
+            font-size: 2rem;
+        }
+
+        .btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 10px 20px; /* немного уменьшил */
+            border-radius: 40px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            border: 1px solid transparent;
+        }
+
+        .btn:hover {
+            background: #084a8a;
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--primary);
+            border: 1px solid var(--primary);
+        }
+
+        .btn-outline:hover {
+            background: var(--primary-light);
+            color: #0a66c2;
+        }
+
+        .btn-sm {
+            padding: 6px 16px;
+            font-size: 0.85rem;
+        }
+
+        .btn-block {
+            width: 100%;
+            justify-content: center;
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        /* ---------- Панель фильтров (десктоп) компактная ---------- */
+        .filters-panel {
+            background: var(--surface);
+            border-radius: var(--radius);
+            padding: 16px 20px; /* уменьшил отступы */
+            margin-bottom: 24px;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .filters-panel.collapsed {
+            padding: 8px 20px;
+        }
+
+        .filters-panel.collapsed .filter-row:not(.panel-header) {
+            display: none;
+        }
+
+        .panel-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 0;
+            cursor: pointer;
+        }
+
+        .panel-header .filter-label {
+            min-width: auto;
+            font-size: 1rem;
+        }
+
+        .collapse-btn {
+            background: none;
+            border: none;
+            color: var(--primary);
+            font-size: 1.2rem;
+            cursor: pointer;
+            padding: 0 4px;
+            transition: var(--transition);
+        }
+
+        .collapse-btn:hover {
+            color: #084a8a;
+            transform: scale(1.1);
+        }
+
+        .filter-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 16px; /* уменьшил */
+            margin-top: 12px; /* уменьшил */
+        }
+
+        .filter-row:first-of-type {
+            margin-top: 0;
+        }
+
+        .filter-label {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-weight: 600;
+            color: var(--text-light);
+            font-size: 0.9rem;
+            min-width: 120px; /* чуть уже */
+        }
+
+        .chips-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px; /* уменьшил */
+            flex: 1;
+        }
+
+        .chip {
+            padding: 6px 16px; /* уменьшил */
+            background: var(--bg);
+            border-radius: 40px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--text);
+            border: 1px solid var(--border);
+            cursor: pointer;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .chip i {
+            font-size: 0.8rem;
+            color: var(--text-light);
+        }
+
+        .chip.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .chip.active i {
+            color: white;
+        }
+
+        .chip.active:hover {
+            background: #084a8a;
+            border-color: #084a8a;
+        }
+
+        .chip:hover {
+            background: #e2ecf5;
+            border-color: #8ba0b5;
+        }
+
+        /* ---------- Баннеры ---------- */
+        .banner {
+            margin: 24px 0;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            background-color: var(--surface);
+            text-align: center;
+        }
+
+        .banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
+        /* ---------- Таблица и карточки ---------- */
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--surface);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            margin-bottom: 24px;
+            table-layout: auto;
+            word-break: break-word;
+        }
+
+        .schedule-table thead tr {
+            background: var(--primary-light);
+            border-bottom: 2px solid var(--primary);
+        }
+
+        .schedule-table th {
+            padding: 14px 20px; /* чуть меньше */
+            text-align: left;
+            font-weight: 600;
+            color: var(--primary);
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+        }
+
+        .schedule-table td {
+            padding: 14px 20px;
+            border-bottom: 1px solid var(--border);
+            vertical-align: top;
+            word-break: break-word;
+        }
+
+        .schedule-table tbody tr:not(.day-header-row):nth-child(even) {
+            background-color: var(--stripe-color);
+        }
+
+        .schedule-table tbody tr:hover {
+            background-color: #fafdff;
+        }
+
+        .schedule-table tbody tr:not(.day-header-row) td:nth-child(1) {
+            white-space: nowrap;
+            width: 1%;
+        }
+
+        .day-header-row td {
+            background: #eef4fa;
+            font-weight: 700;
+            color: var(--primary);
+            border-bottom: 2px solid var(--primary);
+            padding: 10px 20px; /* чуть меньше */
+        }
+
+        .day-header-row i {
+            margin-right: 8px;
+        }
+
+        .time-icon {
+            margin-right: 6px;
+            color: var(--primary);
+        }
+
+        /* Стиль для блока места внутри таблицы (как в мобильной версии) */
+        .schedule-table .event-location-desktop {
+            margin-top: 6px;
+            font-size: 0.9rem;
+            color: var(--text-light);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .schedule-table .event-location-desktop i {
+            color: var(--primary);
+            font-size: 0.9rem;
+        }
+
+        .mobile-cards {
+            display: none; /* скрыты на десктопе, видны только на мобильных и при печати */
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .day-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin: 16px 0 8px;
+            padding-bottom: 8px;
+            border-bottom: 3px solid var(--primary-light);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .event-card {
+            background: var(--surface);
+            border-radius: var(--radius-sm);
+            padding: 20px;
+            box-shadow: var(--shadow-sm);
+            border-left: 6px solid var(--primary);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 12px;
+            word-break: break-word;
+        }
+
+        .event-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .event-time {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .event-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text);
+            line-height: 1.4;
+        }
+
+        .event-location {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-light);
+            background: var(--bg);
+            padding: 10px 14px;
+            border-radius: 40px;
+            font-size: 0.95rem;
+            margin-top: 6px;
+            border-left: 4px solid transparent;
+        }
+
+        /* Стили для спикеров */
+        .speakers {
+            margin-top: 8px;
+            font-size: 0.9rem;
+            color: var(--text-light);
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 8px;
+        }
+        .speaker-link {
+            color: var(--primary);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .speaker-link:hover {
+            color: #084a8a;
+        }
+        .speaker-photo-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            vertical-align: middle;
+        }
+        .event-speakers {
+            margin-top: 4px;
+            font-size: 0.85rem;
+        }
+
+        .loader, .error-message, .empty-state, .info-message {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 60px 20px;
+            background: var(--surface);
+            border-radius: var(--radius);
+            color: var(--text-light);
+            font-size: 1.1rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .loader i { margin-right: 8px; }
+
+        .error-message {
+            background: #ffefef;
+            color: #b33c3c;
+        }
+
+        .info-message {
+            background: #e6f3ff;
+            color: #0a66c2;
+        }
+
+        /* Стили для метки обновления */
+        .update-timestamp {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            text-align: center;
+            margin: 8px 0 16px;
+            font-style: italic;
+        }
+
+        /* ---------- Плавающая кнопка фильтра (мобильные) ---------- */
+        .fab-filter {
+            display: none;
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: var(--primary);
+            color: white;
+            border: none;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        .fab-filter:hover {
+            background: #084a8a;
+            transform: scale(1.1);
+        }
+
+        /* ---------- Модальное окно фильтров ---------- */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            background: var(--surface);
+            border-radius: var(--radius);
+            width: 90%;
+            max-width: 500px;
+            max-height: 80%;
+            overflow-y: auto;
+            padding: 24px;
+            box-shadow: var(--shadow-hover);
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .modal-close {
+            background: none;
+            border: none;
+            font-size: 1.8rem;
+            cursor: pointer;
+            color: var(--text-light);
+            line-height: 1;
+        }
+
+        .modal-close:hover {
+            color: var(--primary);
+        }
+
+        .modal-body {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .modal-body .filter-row {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .modal-body .filter-label {
+            min-width: auto;
+        }
+
+        .modal-body .chips-container {
+            width: 100%;
+        }
+
+        .modal-footer {
+            margin-top: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        /* Мобильные стили */
+        @media (max-width: 768px) {
+            .filters-panel {
+                display: none;
+            }
+            .fab-filter {
+                display: flex;
+            }
+            .schedule-table { display: none; }
+            .mobile-cards { display: grid; }
+
+            .event-time {
+                font-size: 0.9rem;
+                font-weight: 500;
+            }
+            .event-title {
+                font-size: 1rem;
+                font-weight: 400;
+            }
+            .event-location {
+                font-size: 0.85rem;
+                padding: 8px 12px;
+                font-weight: 400;
+            }
+            .event-card {
+                padding: 16px;
+                gap: 8px;
+            }
+            .day-title {
+                font-size: 1.1rem;
+                font-weight: 500;
+            }
+            .speaker-photo-icon {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body { padding: 16px; }
+            .logo { font-size: 1.3rem; }
+            .btn { padding: 8px 16px; }
+            .header { flex-direction: column; align-items: stretch; }
+            .fab-filter {
+                width: 56px;
+                height: 56px;
+                font-size: 24px;
+                bottom: 16px;
+                right: 16px;
+            }
+            .event-time {
+                font-size: 0.85rem;
+                font-weight: 500;
+            }
+            .event-title {
+                font-size: 0.95rem;
+                font-weight: 400;
+            }
+            .day-title {
+                font-size: 1rem;
+                font-weight: 500;
+            }
+            .speaker-photo-icon {
+                width: 35px;
+                height: 35px;
+            }
+        }
+
+        /* ---------- Стили для печати / PDF ---------- */
+        @media print {
+            /* Скрываем ненужные элементы */
+            .filters-panel,
+            .btn,
+            #statusContainer,
+            .schedule-table,
+            .header-actions,
+            .fab-filter,
+            .modal-overlay {
+                display: none !important;
+            }
+
+            /* Показываем карточки */
+            .mobile-cards {
+                display: block !important;
+                margin: 0;
+                padding: 0;
+            }
+
+            .header {
+                background: none;
+                box-shadow: none;
+                padding: 5px 0;
+                margin-bottom: 5px;
+                border-bottom: 1px solid #ccc;
+            }
+
+            .logo i {
+                display: none;
+            }
+
+            .logo span {
+                font-size: 14pt;
+                font-weight: bold;
+                color: #000;
+            }
+
+            .banner {
+                display: block;
+                margin: 5px 0;
+                box-shadow: none;
+                border-radius: 0;
+            }
+
+            .banner img {
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+            }
+
+            .day-title {
+                font-size: 11pt;
+                font-weight: 600;
+                color: #0a66c2;
+                margin: 8px 0 2px 0;
+                padding: 0;
+                border-bottom: 1px solid #0a66c2;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                break-after: avoid; /* не отрывать заголовок от первого события */
+            }
+
+            .day-title i {
+                font-size: 9pt;
+            }
+
+            /* Карточки событий — по умолчанию разрешаем разрыв */
+            .event-card {
+                background: white;
+                border-radius: 0;
+                box-shadow: none;
+                border-left: none;
+                padding: 4px 0;
+                margin: 0 0 4px 0;
+                border-bottom: 1px dashed #aaa;
+                break-inside: auto; /* разрешить разрыв карточки */
+            }
+
+            /* Для PDF-режима (без разрывов) */
+            body.pdf-mode .event-card {
+                break-inside: avoid; /* не разрывать карточку */
+            }
+
+            .event-card:last-child {
+                border-bottom: none;
+            }
+
+            /* Чередование фона */
+            .event-card:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+
+            /* Управление висячими строками для текстовых блоков */
+            .event-title,
+            .speakers {
+                orphans: 2;
+                widows: 2;
+            }
+
+            /* Время — иконка и текст вместе */
+            .event-time {
+                display: flex;
+                align-items: center;
+                gap: 4px;
+                font-size: 8pt;
+                font-weight: bold;
+                color: #0a66c2;
+                margin: 0;
+                padding: 0;
+                break-inside: avoid;
+            }
+
+            .event-time i {
+                font-size: 7pt;
+            }
+
+            .event-title {
+                font-size: 9pt;
+                font-weight: normal;
+                color: #000;
+                margin: 1px 0;
+                padding: 0;
+                line-height: 1.3;
+            }
+
+            /* Место — иконка и текст вместе */
+            .event-location {
+                display: flex;
+                align-items: center;
+                gap: 4px;
+                font-size: 8pt;
+                color: #333;
+                background: none;
+                padding: 0;
+                margin: 2px 0 0 0;
+                border-left: none;
+                border-radius: 0;
+                break-inside: avoid;
+            }
+
+            .event-location i {
+                font-size: 7pt;
+            }
+
+            .speakers {
+                font-size: 7pt;
+                margin-top: 2px;
+                break-inside: auto;
+            }
+
+            .speaker-link {
+                color: #000 !important;
+                text-decoration: none !important;
+                border-bottom: none !important;
+                display: inline-flex;
+                align-items: center;
+                gap: 4px;
+                break-inside: avoid; /* фото и имя не разрывать */
+            }
+
+            .speaker-photo-icon {
+                width: 20px !important;
+                height: 20px !important;
+            }
+
+            .update-timestamp {
+                display: block;
+                font-size: 7pt;
+                color: #333;
+                text-align: center;
+                margin-top: 5px;
+                font-style: italic;
+            }
+
+            /* Нумерация страниц */
+            @page {
+                @bottom-center {
+                    content: "Страница " counter(page);
+                    font-size: 9pt;
+                    font-family: sans-serif;
+                    color: #333;
+                }
+                size: A4;
+                margin: 1.5cm 1cm 2cm 1cm; /* увеличиваем нижний отступ для номера */
+            }
+
+            body {
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+                padding: 0;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-calendar-alt"></i>
+                <span>Деловая программа <a style="text-decoration: none; color: var(--primary);" href="https://www.beersochi.ru/">Форума ПИВО-2026</a></span>
+            </div>
+            <div class="header-actions">
+                <button class="btn btn-outline" id="printBtn">
+                    <i class="fas fa-print"></i> Печать
+                </button>
+                <button class="btn btn-outline" id="pdfBtn">
+                    <i class="fas fa-file-pdf"></i> PDF
+                </button>
+                <button class="btn btn-outline" id="refreshBtn">
+                    <i class="fas fa-sync-alt"></i> Обновить
+                </button>
+            </div>
+        </header>
+
+        <!-- Верхний баннер -->
+        <div class="banner banner-top" id="bannerTop"><a href="https://www.beersochi.ru/"><img src="https://www.soud.ru/bd/PROGRAMMA/BEER-2026/banner_top.jpg" alt="Верхний баннер"></a></div>
+
+        <!-- Метка времени обновления -->
+        <div class="update-timestamp" id="updateTimestamp">Обновлено: 11.05.2026, 19:23</div>
+
+        <!-- Основная панель фильтров (десктоп) компактная -->
+        <div class="filters-panel" id="mainFiltersPanel">
+            <div class="panel-header">
+                <span class="filter-label"><i class="fas fa-filter"></i> Фильтры</span>
+                <button class="collapse-btn" id="collapseFiltersBtn" title="Свернуть/развернуть">
+                    <i class="fas fa-chevron-up" id="collapseIcon"></i>
+                </button>
+            </div>
+            <!-- Ряд 1: Фильтр по дням (без дней недели) -->
+            <div class="filter-row">
+                <span class="filter-label"><i class="fas fa-calendar-day"></i> День:</span>
+                <div class="chips-container" id="dayFilters"><span class="chip active" data-day="all"><i class="fas fa-calendar-week"></i> Все дни</span><span class="chip " data-day="18 мая"><i class="fas fa-calendar-day"></i> 18 мая</span><span class="chip " data-day="19 мая"><i class="fas fa-calendar-day"></i> 19 мая</span><span class="chip " data-day="20 мая"><i class="fas fa-calendar-day"></i> 20 мая</span><span class="chip " data-day="21 мая"><i class="fas fa-calendar-day"></i> 21 мая</span><span class="chip " data-day="22 мая"><i class="fas fa-calendar-day"></i> 22 мая</span></div>
+            </div>
+            <!-- Ряд 2: Фильтр по месту -->
+            <div class="filter-row">
+                <span class="filter-label"><i class="fas fa-map-marker-alt"></i> Место:</span>
+                <div class="chips-container" id="locationFilters"><span class="chip active" data-location="all"><i class="fas fa-globe"></i> Все места</span><span class="chip " data-location="ВЦ Гранд Отель &quot;Жемчужина&quot;"><i class="fas fa-map-marker-alt"></i> ВЦ Гранд Отель "Жемчужина"</span><span class="chip " data-location="Зал &quot;Бордовый&quot; Дегустационная комиссия"><i class="fas fa-map-marker-alt"></i> Зал "Бордовый" Дегустационная комиссия</span><span class="chip " data-location="Конференц-Зал «Морской»"><i class="fas fa-map-marker-alt"></i> Конференц-Зал «Морской»</span><span class="chip " data-location="Пивоварня Sargan Brewery"><i class="fas fa-map-marker-alt"></i> Пивоварня Sargan Brewery</span><span class="chip " data-location="Ресторан &quot;СтарГрад&quot;, ул. Приморская 19"><i class="fas fa-map-marker-alt"></i> Ресторан "СтарГрад", ул. Приморская 19</span><span class="chip " data-location="Ресторан &quot;Plutus Resto Club&quot;"><i class="fas fa-map-marker-alt"></i> Ресторан "Plutus Resto Club"</span><span class="chip " data-location="Ресторан «Любава»"><i class="fas fa-map-marker-alt"></i> Ресторан «Любава»</span><span class="chip " data-location="ул. Виноградная, 184/2 (3 этаж)"><i class="fas fa-map-marker-alt"></i> ул. Виноградная, 184/2 (3 этаж)</span><span class="chip " data-location="Фестивальная площадка"><i class="fas fa-map-marker-alt"></i> Фестивальная площадка</span><span class="chip " data-location="Центральный вход Гранд Отеля &quot;Жемчужина&quot;"><i class="fas fa-map-marker-alt"></i> Центральный вход Гранд Отеля "Жемчужина"</span></div>
+            </div>
+            <!-- Общая кнопка сброса фильтров -->
+            <div class="filter-row" style="justify-content: flex-end;">
+                <button class="btn btn-sm btn-outline" id="resetAllFiltersBtn">
+                    <i class="fas fa-undo-alt"></i> Сбросить все фильтры
+                </button>
+            </div>
+        </div>
+
+        <!-- Таблица десктопной версии (без столбца "Место") -->
+        <table class="schedule-table" id="scheduleTable">
+            <thead><tr><th>Время</th><th>Мероприятие</th></tr></thead> <!-- заголовок изменён -->
+            <tbody id="tableBody"><tr class="day-header-row"><td colspan="2"><i class="fas fa-calendar-day"></i> 18 мая, понедельник</td></tr><tr>
+                        <td><i class="far fa-clock time-icon"></i>10.00-20.00</td>
+                        <td>
+                            <b>Заезд и регистрация участников Юбилейного Форума. Оргкомитет - Выставочный Центр. Оформление стендов.</b>
+                            
+                            <div class="event-location-desktop">
+                                <i class="fas fa-map-pin"></i> ВЦ Гранд Отель "Жемчужина"
+                            </div>
+                        </td>
+                    </tr><tr>
+                        <td><i class="far fa-clock time-icon"></i>10.00-18.00</td>
+                        <td>
+                            <b>Прием образцов на Международный дегустационный конкурс пива, безалкогольных напитков, сырья и оборудования.</b>
+                            
+                            <div class="event-location-desktop">
+                                <i class="fas fa-map-pin"></i> Зал "Бордовый" Дегустационная комиссия
+                            </div>
+                        </td>
+                    </tr><tr class="day-header-row"><td colspan="2"><i class="fas fa-calendar-day"></i> 19 мая, вторник</td></tr><tr>
+                        <td><i class="far fa-clock time-icon"></i>10.00-18.00</td>
+                        <td>
+                            <b>Работа XXXV Юбилейного Международного Форума "ПИВО-2026".</b>
+                            
+                            <div class="event-location-desktop">
+                                <i class="fas fa-map-pin"></i> ВЦ Гранд Отель "Жемчужина"
+                            </div>
+                        </td>
+                    </tr><tr>
+                        <td><i class="far fa-clock time-icon"></i>11.00-18.00</td>
+                        <td>
+                            <b>Работа Международного Конгресса производителей напитков.</b>
+                            
+                            <div class="event-location-desktop">
+                                <i class="fas fa-map-pin"></i> Конференц-Зал «Морской»
+                            </div>
+                        </td>
+                    </tr><tr>
+                        <td><i class="far fa-clock time-icon"></i>10.00-18.00</td>
+                        <td>
+                            <b>Работа фестиваля "Море пива в Сочи"<br><br>Ежедневно в программе:</b><br>- выступление инструментального дуэта INSIDE, баянист и саксофонист;<br>- ежедневно с 13.50 до 14.40 выступление ансамбля "Мамисон" (от компании "Бавария") Республики Северная Осетия — Алания. В программе танцы "Сатана варит пиво" и "Поединок"; <br>- народная дегустация и весёлые конкурсы;<br>- соревнования по армрестлингу;<br>- презентации компаний-производителей и новых сортов напитков.
+                            
+                            <div class="event-location-desktop">
+                                <i class="fas fa-map-pin"></i> Фестивальная площадка
+                            </div>
+                        </td>
+                    </tr><tr>
+                        <td><i class="far fa-clock time-icon"></i>11.00-11.30</td>
+                        <td>
+                            <b>Торжественная церемония открытия XXXV Юбилейного Международного Форума "ПИВО-2026" с участием официальных лиц.</b> Официальное подписание Соглашения о взаимодействии между ООО "СОУД" – Сочинские выставки" и Союзом российских пивоваров на 2027 год.
+                            
+                            <div class="event-location-desktop">
+                                <i class="fas fa-map-pin"></i> Конференц-Зал «Морской»
+                            </div>
+                        </td>
+                    </tr><tr>
+                        <td><i class="far fa-clock time-icon"></i>11.30</td>
+                        <td>
+                            <b>Обход экспозиции официальными лицами.</b>
+                            
+                            <div class="event-location-desktop">
+                                <i class="fas fa-map-pin"></i> ВЦ Гранд Отель "Жемчужина"
+                            </div>
+                        </td>
+                    </tr><tr>
+                        <td><i class="far fa-clock time-icon"></i>11.30-13.25</td>
+                        <td>
+                            <b>Пресс-конференция Союза российских пивоваров.<br>Тема: "Рынок пива: Итоги 2025-го и реалии 2026 года".</b><br>Участники пресс-конференции познакомят представителей СМИ с основными итогами и тенденциями на рынках пива, пивоваренного солода и хмеля, упаковки для пивоваренной продукции.<br>Спикеры:<br>Рынок пива:<br><b>Спикер: Даниил Бриман</b> - председатель Совета Союза российских пивоваров, генеральный директор ООО "Суздальский пивовар".<br><b>Тема: "Основные тенденции развития рынка пива в 2025-м и 1-м квартале 2026 года".</b><br><br><b>Спикер: Дмитрий Тарасевич</b> - член Общественного совета при Росалкогольтабакконтроле, управляющий партнер группы компаний «Таркос».<br><b>Тема: "Работа предприятий пивоваренной отрасли в условиях беспрецедентных ограничений оборота пивоваренной продукции".</b><br><br><b>Спикер: Елена Тюкина</b> - директор по производству ООО «Красный пивовар». <br><b>Тема: "Крафтовое пивоварение и сидроделие: актуальные вызовы, ключевые сложности и стратегии преодоления"</b><br><br><b>Спикер: Игорь Хавский</b> - первый заместитель председателя Совета Союза российских пивоваров, соучредитель пивоварни Gletcher.<br><b>Тема: "Совершенствование терминологии пивоваренной продукции как способ поддержки производителей пива".</b><br><br>Рынок солода и хмеля:<br><b>Спикер: Владимир Бобков</b> - генеральный директор ООО «Грейнфорд-Агро».<br><b>Тема: «Российский рынок пивоваренного ячменя и солода в 2026 году».</b><br><br><b>Спикер: Дмитрий Морозов</b> - управляющий ООО «Грейнрус».<br><b>Тема: "Мировой рынок хмеля, перспективы развития рынка хмеля в РФ в 2026-2028 году".</b><br><br>Рынок пивной упаковки:<br><b>Спикер: Антон Мор</b> - генеральный директор ООО «Сибирское стекло».<br><b>Тема: "Развитие рынка пивной упаковки и его ближайшие перспективы".</b><br><br><b>Организатор: Союз российских пивоваров.</b><br>Аккредитация для СМИ:<br><a href="https://clck.su/kGunD" target="_blank">ссылка</a><br><br>Аккредитация для представителей пивоваренного сообщества и смежных отраслей:<br><a href="https://clck.su/KUbOB" target="_blank">ссылка</a><br><br>Аккредитация продлится до 18:00 17 мая 2026 года.
+                            <div class="speakers"><a href="https://www.beersochi.ru/?speaker=daniil-briman#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Даниил-Бриман.jpg" alt="">Даниил Бриман</a>, <a href="https://www.beersochi.ru/?speaker=dmitriy-tarasevich#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Дмитрий-Тарасевич.jpg" alt="">Дмитрий Тарасевич</a>, <a href="https://www.beersochi.ru/?speaker=elena-tyukina#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Елена-Тюкина.jpg" alt="">Елена Тюкина</a>, <a href="https://www.beersochi.ru/?speaker=igor-havskiy#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Игорь-Хавский.jpg" alt="">Игорь Хавский</a>, <a href="https://www.beersochi.ru/?speaker=vladimir-bobkov#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Владимир-Бобков.jpg" alt="">Владимир Бобков</a>, <a href="https://www.beersochi.ru/?speaker=dmitriy-morozov#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Морозов.jpg" alt="">Дмитрий Морозов</a>, <a href="https://www.beersochi.ru/?speaker=anton-mor#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Антон-Мор.jpg" alt="">Антон Мор</a></div>
+                            <div class="event-location-desktop">
+                                <i class="fas fa-map-pin"></i> Конференц-Зал «Морской»
+                            </div>
+                        </td>
+                    </tr><tr>
+                        <td><i class="far fa-clock time-icon"></i>13.30-14.25</td>
+                        <td>
+                            <b>Презентация Генерального Партнера Юбилейного Форума - ООО "Грейнрус".</b><br><b>Тема: "Российский хмель: реальность и перспективы. Практические советы по применению в различных сортах пива."(дегустация).</b> <br>О чем поговорим:<br>о современных российских сортах хмеля, его особенностях и характеристиках; разрушим мифы о «плохом русском хмеле» и «отсутствие стабильности по альфа-кислоте» ;<br>о перспективах развития хмелеводства в РФ;<br>о технологических фишках работы с российским хмелем и сочетании его с импортными сортами; как внедрить новое сырье без риска;<br>о конкретных рецептах пива и проведем дегустацию <br>Российский хмель – не брак и не дешевый аналог импорта, а самостоятельный ингредиент с уникальным профилем.<br><b>Спикер: Сергей Матвеев</b> – пивовар-технолог с 25-летним стажем.
+                            <div class="speakers"><a href="https://www.beersochi.ru/?speaker=sergey-matveev#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Сергей-Матвеев.jpg" alt="">Сергей Матвеев</a></div>
+                            <div class="event-location-desktop">
+                                <i class="fas fa-map-pin"></i> Конференц-Зал «Морской»
+                            </div>
+                        </td>
+                    </tr><tr>
+                        <td><i class="far fa-clock time-icon"></i>13.30</td>
+                        <td>
+                            <b>Начало работы комиссии Международного дегустационного конкурса пива, безалкогольных напитков, сырья и оборудования.</b>
+                            
+                            <div class="event-location-desktop">
+                                <i class="fas fa-map-pin"></i> Зал "Бордовый" Дегустационная комиссия
+                            </div>
+                        </td>
+                    </tr><tr>
+                        <td><i class="far fa-clock time-icon"></i>14.30-15.25</td>
+                        <td>
+                            <b>Мастер-класс. <br>Тема: "Потери экстрактивных веществ на пивоваренном заводе: правила расчета, физическая сущность и простые улучшающие действия".</b><br>Раскрывается использование  инструмента бережливого производства "Карта потерь экстракта". Показываются все возможные точки потерь экстракта на пивоваренном заводе, с указанием бенчмарка и физической сути потерь экстракта по каждой точке. Приводится набор простых технологических и организационных мероприятий, позволяющий сократить потери экстракта в рамках всего завода.<br><b>Кому будет интересно:</b>  директорам заводов, директорам по производству, главным технологам, пивоварам.<br><br><b>Спикер: Евгений Родин</b> - кандидат биологических наук, бизнес-консультант, независимый директор, опыт работы в пивоварении более 15 лет, в том числе директором пивоваренного завода 7 лет, автор более 70 научных работ и учебника "Технология бродильных производств".
+                            <div class="speakers"><a href="https://www.beersochi.ru/?speaker=evgeniy-rodin#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Евгений-Родин.jpg" alt="">Евгений Родин</a></div>
+                            <div class="event-location-desktop">
+                                <i class="fas fa-map-pin"></i> Конференц-Зал «Морской»
+                            </div>
+                        </td>
+                    </tr><tr>
+                        <td><i class="far fa-clock time-icon"></i>15.30-15.55</td>
+                        <td>
+                            <b>Презентация</b><br><b>Тема: "Осетинское пиво". Напиток, ставший национальным символом".</b><br><b>Спикер: Таймураз Гогинов</b> - торговый представитель Южной Осетии в России<br><b>Подписание Меморандума Союза Российских Пивоваров и «ВЫСОКОГОРНАЯ КЕЛЬСКАЯ ПИВОВАРНЯ», Республика Южная Осетия, пос. Ленингор.</b>
+                            <div class="speakers"><a href="https://www.beersochi.ru/?speaker=taymuraz-goginov#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Таймураз-Гогинов.jpg" alt="">Таймураз Гогинов</a></div>
+                            <div class="event-location-desktop">
+                                <i class="fas fa-map-pin"></i> Конференц-Зал «Морской»
+                            </div>
+                        </td>
+                    </tr><tr>
+                        <td><i class="far fa-clock time-icon"></i>16.00-16.55</td>
+                        <td>
+                            <b>Сессия от компании ООО "Новые пивоварни".</b><br><b>Тема: «От конкуренции к кооперации как стратегический выбор для устойчивого роста пивной отрасли».</b><br><br><b>Спикер: Руслан Шарипов</b> - генеральный директор ООО «Новые Пивоварни». В группу компаний «Новые Пивоварни» входят бренды: Горьковская пивоварня, KONIX, День свободен, 25 лет опыта в пивной индустрии: в корпорации и собственном бизнесе.<br><br><b>Спикер: Александр Белкин</b> - директор по маркетингу ООО «Новые Пивоварни». В группу компаний «Новые Пивоварни» входят бренды: Горьковская пивоварня, KONIX, День свободен, 20-летний опыт в FMCG и ритейле, эксперт в стратегическом и операционном маркетинге, развитии брендов и запуске новых продуктов, опыт работы в международном бизнесе.<br><br><b>Спикер: Марат Насибуллин</b> - заместитель директора ООО «Новые Пивоварни». В группу компаний «Новые Пивоварни» входят бренды: Горьковская пивоварня, KONIX, День свободен,  20 лет опыта в пивной индустрии.
+                            <div class="speakers"><a href="https://www.beersochi.ru/?speaker=ruslan-sharipov#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Руслан-Шарипов.jpg" alt="">Руслан Шарипов</a>, <a href="https://www.beersochi.ru/?speaker=aleksandr-belkin#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Александр-Белкин.jpg" alt="">Александр Белкин</a>, <a href="https://www.beersochi.ru/?speaker=marat-nasibullin#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Марат-Насибуллин.jpg" alt="">Марат Насибуллин</a></div>
+                            <div class="event-location-desktop">
+                                <i class="fas fa-map-pin"></i> Конференц-Зал «Морской»
+                            </div>
+                        </td>
+                    </tr><tr>
+                        <td><i class="far fa-clock time-icon"></i>17.00-18.00</td>
+                        <td>
+                            <b>Авторский Семинар. <br>Темы: "Особенности применения пищевых добавок и технологических вспомогательных средств при производстве пива и пивных напитков"<br>"Актуальные вопросы стандартизации   и разработки изменений к стандартам на пивобезалкогольную продукцию."</b><br><b>Спикер: Алла Даниловцева</b> - заместитель генерального директора по научной работе АО "Росспиртпром" г. Москва, председатель технического комитета по стандартизации ТК 175 "Перспективные направления стандартизации пивобезалкогольной продукции".
+                            <div class="speakers"><a href="https://www.beersochi.ru/?speaker=alla-danilovtseva#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Алла-Даниловцева.jpg" alt="">Алла Даниловцева</a></div>
+                            <div class="event-location-desktop">
+                                <i class="fas fa-map-pin"></i> Конференц-Зал «Морской»
+                            </div>
+                        </td>
+                    </tr><tr>
+                        <td><i class="far fa-clock time-icon"></i>18.00-18.30</td>
+                        <td>
+                            <b>Сдача экспозиции под охрану.</b>
+                            
+                            <div class="event-location-desktop">
+                                <i class="fas fa-map-pin"></i> ВЦ Гранд Отель "Жемчужина"
+                            </div>
+                        </td>
+                    </tr><tr>
+                        <td><i class="far fa-clock time-icon"></i>19.00-00.00</td>
+                        <td>
+                            <b>Торжественный вечер в честь открытия XXXV Юбилейного Международного Форума "ПИВО-2026". </b><br><b>Ресторан в самом центре города Сочи на первой линии с уникальными гастрономическими шедеврами в авторской подаче.</b><br><b>Адрес:</b> г. Сочи, ул. Несебрская, 4. <br>Сбор в 18.30 у центрального входа в Гранд Отель «Жемчужина».
+                            
+                            <div class="event-location-desktop">
+                                <i class="fas fa-map-pin"></i> Ресторан "Plutus Resto Club"
+                            </div>
+                        </td>
+                    </tr><tr class="day-header-row"><td colspan="2"><i class="fas fa-calendar-day"></i> 20 мая, среда</td></tr><tr>
+                        <td><i class="far fa-clock time-icon"></i>10.00-18.00</td>
+                        <td>
+                            <b>Работа XXXV Международного Юбилейного Форума "ПИВО-2026".</b>
+                            
+                            <div class="event-location-desktop">
+                                <i class="fas fa-map-pin"></i> ВЦ Гранд Отель "Жемчужина"
+                            </div>
+                        </td>
+                    </tr><tr>
+                        <td><i class="far fa-clock time-icon"></i>10.00-18.00</td>
+                        <td>
+                            <b>Работа Международного Конгресса производителей напитков.</b>
+                            
+                            <div class="event-location-desktop">
+                                <i class="fas fa-map-pin"></i> Конференц-Зал «Морской»
+                            </div>
+                        </td>
+                    </tr><tr>
+                        <td><i class="far fa-clock time-icon"></i>12.00-18.00</td>
+                        <td>
+                            <b>Работа комиссии Международного дегустационного конкурса пива, безалкогольных напитков, сырья и оборудования.</b>
+                            
+                            <div class="event-location-desktop">
+                                <i class="fas fa-map-pin"></i> Зал "Бордовый" Дегустационная комиссия
+                            </div>
+                        </td>
+                    </tr><tr>
+                        <td><i class="far fa-clock time-icon"></i>10.00-11.55</td>
+                        <td>
+                            <b>Сессия от Государственной системы цифровой маркировки "Честный Знак".</b> <br><b>Модератор: Андрей Воронков</b> -  Руководитель направления по развитию аналитических продуктов, Сбер2В.<br><b>Тема: "Аналитика рынка – 2026: Потребитель, тренды и стратегии успеха в категории "Пиво и слабоалкогольные напитки".</b><br><b>Спикер: Эльдар Файзуллин</b> - исполнительный директор Датамаркет, Центр развития перспективных технологий – оператор государственной системы маркировки «Честный знак».<br><b>Спикер: Меланья Саакян</b> - Руководитель направления «Ритейл» и «Аналитика ассортимента», Сбер2В.
+                            <div class="speakers"><a href="https://www.beersochi.ru/?speaker=el-dar-fayzullin#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Эльдар-Файзуллин2.jpg" alt="">Эльдар Файзуллин</a>, <a href="https://www.beersochi.ru/?speaker=melan-ya-saakyan#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Меланья-Саакян.jpg" alt="">Меланья Саакян</a>, <a href="https://www.beersochi.ru/?speaker=andrey-voronkov#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Андрей-Воронков.jpg" alt="">Андрей Воронков</a></div>
+                            <div class="event-location-desktop">
+                                <i class="fas fa-map-pin"></i> Конференц-Зал «Морской»
+                            </div>
+                        </td>
+                    </tr><tr>
+                        <td><i class="far fa-clock time-icon"></i>12.00-12.55</td>
+                        <td>
+                            <b>Мастер-класс.<br>Тема: "Структура производственной себестоимости пива: ключевые точки и инструменты снижения себестоимости".</b><br>Современный FMCG-рынок это рынок сетей. И торговые сети, занимая доминирующее положение на рынке имеют возможность диктовать достаточно жесткие условия по цене закупки пива. В этих условиях производителям для того чтобы продавать сетям пиво и получать с этого пусть небольшую, но прибыль, а не убыток, необходимо всеми силами и средствами снижать производственную себестоимость пива.<br><b>По результатам достаточно большого количества аудитов предприятий производителей пива выявлено, что наибольшие возможности, как правило, лежат в трех областях:</b><br>1.Потери сырья, вспомогательных материалов, полуфабрикатов и продуктов при производстве.<br>2.Потери при планировании (избыточный товарный запас на складе, при котором все равно происходят недопоставки продукции, из-за отсутствия на складе именно нужной номенклатуры продукции).<br>3.Избыточные затраты на оплату труда, вследствие неоптимальной организационной структуры и несовершенного уровня организации труда, что приводит к низкой производительности труда.<br>Для работы с этими потерями не надо «изобретать велосипед». Существуют вполне себе отработанные, проверенные на практике, достаточно простые в использовании, не требующие серьезных инвестиций методики и инструменты сокращения данных потерь. <br><b>Кому будет интересно:</b> генеральным директорам, SC- менеджерам, директорам предприятий, начальникам производства и людям,  желающим ими стать.<br><b>Спикер: Евгений Родин</b> - кандидат биологических наук, бизнес-консультант, независимый директор, опыт работы в пивоварении более 15 лет, в том числе директором пивоваренного завода 7 лет, автор более 70 научных работ и учебника «Технология бродильных производств».
+                            <div class="speakers"><a href="https://www.beersochi.ru/?speaker=evgeniy-rodin#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Евгений-Родин.jpg" alt="">Евгений Родин</a></div>
+                            <div class="event-location-desktop">
+                                <i class="fas fa-map-pin"></i> Конференц-Зал «Морской»
+                            </div>
+                        </td>
+                    </tr><tr>
+                        <td><i class="far fa-clock time-icon"></i>13.00-13.55</td>
+                        <td>
+                            <b>Сессия по развитию хмелеводства в России.</b><br><b>Спикер: Ян Стуна</b> - Генеральный директор ООО "МББ ГРУПП", хмелевод.<br><b>Тема: Развитие хмелеводства в России. Вторая волна.</b>
+                            <div class="speakers"><a href="https://www.beersochi.ru/?speaker=yan-stuna#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Ян-Стуна.jpg" alt="">Ян Стуна</a></div>
+                            <div class="event-location-desktop">
+                                <i class="fas fa-map-pin"></i> Конференц-Зал «Морской»
+                            </div>
+                        </td>
+                    </tr><tr>
+                        <td><i class="far fa-clock time-icon"></i>14.00-15.25</td>
+                        <td>
+                            <b>Круглый стол <br>Тема: "Актуальные вопросы производства пивоваренной продукции. Реалии и возможности нового времени".<br>Модератор-спикер: Константин Кобелев</b> - председатель дегустационной комиссии, Заместитель директора по инновационной деятельности, доктор технических наук ВНИИПБиВП – филиала ФГБНУ "Федерального научного центра пищевых систем им. В.М.Горбатова" РАН, заместитель председателя технического комитета ТК 175, д.т.н. <br><b>Тема: "Новые стандарты на пивоваренную продукцию".</b><br><b>Спикер: Алла Даниловцева</b> - заместитель генерального директора по научной работе АО "Росспиртпром" г. Москва, председатель технического комитета по стандартизации ТК 175 "Перспективные направления стандартизации пивобезалкогольной продукции". <br><b>Тема: "Оценка качества сырья и готовой продукции при производстве пива и пивных напитков. Разработка новых методик и нормативной документации".<br>Спикер: Ирина Лазарева</b>  - заведующая отделом технологии пивоварения, безалкогольных напитков и минеральных вод ВНИИПБиВП —  филиала ФГБНУ «Федеральный научный центр пищевых систем им. В.М. Горбатова» РАН, к.т.н.<br><b>Тема: "Актуальные аспекты производства напитков брожения на основе различных видов растительного сырья".</b><br><b>Спикер: Марина Синельникова</b> - научный сотрудник отдела технологии пивоварения, эксперт по органолептической оценке пивоваренной и безалкогольной продукции ВНИИ пивоваренной, безалкогольной и винодельческой промышленности. <br><br><b>Тема: "Возможности развития экспорта пивоваренной продукции"</b><br><b>Спикер: Дмитрий Булатов</b> - Президент Национального союза экспортеров продовольствия, к.э.н.<br><br><b>Тема: "Зависимость режимов фильтрации и стабилизации от параметров сырья и характеристик пива". </b>       <br><b>Спикер: Ильдар Каримов</b> – главный технолог ООО Товесорб.<br><br><b>Организатор: Всероссийский научно-исследовательский институт пивоваренной, безалкогольной и винодельческой промышленности - Филиал ФГБНУ "Федеральный научный центр пищевых систем им. В.М. Горбатова" РАН.</b>
+                            <div class="speakers"><a href="https://www.beersochi.ru/?speaker=konstantin-kobelev#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Константин-Кобелев.jpg" alt="">Константин Кобелев</a>, <a href="https://www.beersochi.ru/?speaker=alla-danilovtseva#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Алла-Даниловцева.jpg" alt="">Алла Даниловцева</a>, <a href="https://www.beersochi.ru/?speaker=irina-lazareva#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Ирина-Лазарева.jpg" alt="">Ирина Лазарева</a>, <a href="https://www.beersochi.ru/?speaker=marina-sinel-nikova#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Марина-Синельникова-2.jpg" alt="">Марина Синельникова</a>, <a href="https://www.beersochi.ru/?speaker=dmitriy-bulatov#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Дмитрий-Булатов.jpg" alt="">Дмитрий Булатов</a>, <a href="https://www.beersochi.ru/?speaker=il-dar-karimov#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Ильдар-Каримов.jpg" alt="">Ильдар Каримов</a></div>
+                            <div class="event-location-desktop">
+                                <i class="fas fa-map-pin"></i> Конференц-Зал «Морской»
+                            </div>
+                        </td>
+                    </tr><tr>
+                        <td><i class="far fa-clock time-icon"></i>15.25-16.25</td>
+                        <td>
+                            <b>Маркетинговая сессия.<br>Тема: «Стратегическая дилемма сбыта пивного бренда: Пытаться создать собственный отдел маркетинга или использовать микс подрядчиков. Сильные и слабые стороны обоих вариантов и критерии выбора.».</b><br><br><b>Спикер: Антон Дёмин</b> – Эксперт-маркетолог с 16-летним стажем. Основатель крупнейшего в России отраслевого агентства интернет-маркетинга для отелей, спорта, фитнеса и медицины Risoma.ru. Более 400 реализованных проектов по организации или перезапуску цифрового маркетинга. Агентсво Risoma.ru – постоянный партнер форумов Ассоциации операторов фитнес-индустрии, Национального Фитнес Сообщества, Ассоциации загородных отельеров, Россия.Фитнес и десятков других мероприятий, площадок и общественных организаций. Автор выступлений и лекций по маркетингу, цифровой трансформации и лидогенерации в отраслевых бизнес-курсах, в том числе в Высшей школе экономики. Более 200 выступлений на региональных и федеральных форумах и конференциях с аудиторией от 50 до 1000 человек. Автор YouTube-канала про бизнес и маркетинг «Дёмин подкаст».
+                            <div class="speakers"><a href="https://www.beersochi.ru/?speaker=anton-dyomin#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Антон-Дёмин.jpg" alt="">Антон Дёмин</a></div>
+                            <div class="event-location-desktop">
+                                <i class="fas fa-map-pin"></i> Конференц-Зал «Морской»
+                            </div>
+                        </td>
+                    </tr><tr>
+                        <td><i class="far fa-clock time-icon"></i>17.00-18.00</td>
+                        <td>
+                            <b>Маркетинговая сессия.</b><br><b>Тема: "Ведение социальных сетей в серых нишах. Контент как драйвер роста."</b><br><b>Спикер: Александр Михайлов</b> – основатель проекта "Маркетинг начинается здесь"
+                            <div class="speakers"><a href="https://www.beersochi.ru/?speaker=aleksandr-mihaylov#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Александр-Михайлов.jpg" alt="">Александр Михайлов</a></div>
+                            <div class="event-location-desktop">
+                                <i class="fas fa-map-pin"></i> Конференц-Зал «Морской»
+                            </div>
+                        </td>
+                    </tr><tr>
+                        <td><i class="far fa-clock time-icon"></i>18.00-18.30</td>
+                        <td>
+                            <b>Сдача экспозиции под охрану</b>
+                            
+                            <div class="event-location-desktop">
+                                <i class="fas fa-map-pin"></i> ВЦ Гранд Отель "Жемчужина"
+                            </div>
+                        </td>
+                    </tr><tr>
+                        <td><i class="far fa-clock time-icon"></i>18.00-24.00</td>
+                        <td>
+                            <b>Торжественный ужин Союза российских пивоваров по случаю XXXV Юбилейного Международного Форума "ПИВО-2026"  (только для членов Союза).</b>
+                            
+                            <div class="event-location-desktop">
+                                <i class="fas fa-map-pin"></i> Ресторан «Любава»
+                            </div>
+                        </td>
+                    </tr><tr>
+                        <td><i class="far fa-clock time-icon"></i>19.00-22.00</td>
+                        <td>
+                            <b> ТУРНИР ПО БОУЛИНГУ НА КУБОК «ЮБИЛЕЙНОГО ФОРУМА ПИВО-2026» .</b> <br>Участие бесплатное. Только для участников Форума. Количество мест ограничено. Обязательная регистрация: <br>Место проведения: Боулинг Клуб «ТОРО». <br>Сбор в 18.20 у центрального входа в Гранд Отель «Жемчужина».
+                            
+                            <div class="event-location-desktop">
+                                <i class="fas fa-map-pin"></i> ул. Виноградная, 184/2 (3 этаж)
+                            </div>
+                        </td>
+                    </tr><tr class="day-header-row"><td colspan="2"><i class="fas fa-calendar-day"></i> 21 мая, четверг</td></tr><tr>
+                        <td><i class="far fa-clock time-icon"></i>10.00-17.00</td>
+                        <td>
+                            <b>Работа XXXV Международного Юбилейного Форума "ПИВО-2026".</b>
+                            
+                            <div class="event-location-desktop">
+                                <i class="fas fa-map-pin"></i> ВЦ Гранд Отель "Жемчужина"
+                            </div>
+                        </td>
+                    </tr><tr>
+                        <td><i class="far fa-clock time-icon"></i>10.00-17.00</td>
+                        <td>
+                            <b>Работа Международного Конгресса производителей напитков.</b>
+                            
+                            <div class="event-location-desktop">
+                                <i class="fas fa-map-pin"></i> Конференц-Зал «Морской»
+                            </div>
+                        </td>
+                    </tr><tr>
+                        <td><i class="far fa-clock time-icon"></i>10.00-12.00</td>
+                        <td>
+                            <b>Работа комиссии Международного дегустационного конкурса пива, безалкогольных напитков, сырья и оборудования.</b>
+                            
+                            <div class="event-location-desktop">
+                                <i class="fas fa-map-pin"></i> Зал "Бордовый" Дегустационная комиссия
+                            </div>
+                        </td>
+                    </tr><tr>
+                        <td><i class="far fa-clock time-icon"></i>11.00-11.55</td>
+                        <td>
+                            <b>Сессия от компании ООО "ВАЛЕННТА ВК" г. Москва.<br>Тема : "Импортозамещение. Измерительные приборы применяемые в  пищевой промышленности".<br>Спикер: Валерий Котенков</b> - генеральный директор ООО « Валеннта ВК».   <br><br><b>Тема: "Проект «Эквивалент» совместные разработки компаний «Валеннта ВК» и «Эквирон» представляющие собой инновационные решения в области измерения. Разработка российских приборов."<br>Спикер: Сергей Борисов</b> - руководитель сервисного центра ООО «Валеннта ВК».<br><br><b>Тема: "Программная платформа «Эквимон», для управления измерительными приборами, ключевые особенности и отличия от западных аналогов."<br>Спикер: Михаил Селиверстов</b> - генеральный директор «Эквирон".
+                            <div class="speakers"><a href="https://www.beersochi.ru/?speaker=valeriy-kotenkov#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Валерий-Котенков.jpg" alt="">Валерий Котенков</a>, <a href="https://www.beersochi.ru/?speaker=sergey-borisov#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Сергей-Борисов.jpg" alt="">Сергей Борисов</a>, <a href="https://www.beersochi.ru/?speaker=mihail-seliverstov#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Михаил-Селиверстов.jpg" alt="">Михаил Селиверстов</a></div>
+                            <div class="event-location-desktop">
+                                <i class="fas fa-map-pin"></i> Конференц-Зал «Морской»
+                            </div>
+                        </td>
+                    </tr><tr>
+                        <td><i class="far fa-clock time-icon"></i>12.00-12.55</td>
+                        <td>
+                            <b>Сессия.<br>Тема: "Как устоять региональным компаниям под давлением федералов в условиях падающего рынка? Обзор лучших практик и реальные кейсы"</b><br><b>Спикер: Дмитрий Богданов</b> - Председатель Экспертного Совета Ассоциации Отельеров АМОС, основатель консалтинговой компании "Аппарель", стаж в бизнесе более 29 лет.
+                            <div class="speakers"><a href="https://www.beersochi.ru/?speaker=dmitriy-bogdanov#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/SIFT/foto/Дмитрий-Богданов1.jpg" alt="">Дмитрий Богданов</a></div>
+                            <div class="event-location-desktop">
+                                <i class="fas fa-map-pin"></i> Конференц-Зал «Морской»
+                            </div>
+                        </td>
+                    </tr><tr>
+                        <td><i class="far fa-clock time-icon"></i>12.00-13.00</td>
+                        <td>
+                            <b>Экскурсия на Пивоваренный Завод Sargan Brewery с последующей дегустацией.<br>На сегодняшний день пивоварня производит 12 сортов пива.<br>Экскурсия бесплатная. </b><br>г. Сочи, ул. Барановское шоссе 17в.<br>Сбор в 11.30 у центрального входа в Гранд Отель «Жемчужина»
+                            
+                            <div class="event-location-desktop">
+                                <i class="fas fa-map-pin"></i> Пивоварня Sargan Brewery
+                            </div>
+                        </td>
+                    </tr><tr>
+                        <td><i class="far fa-clock time-icon"></i>13.00-13.55</td>
+                        <td>
+                            <b>Мастер-класс.<br>Тема: "Управление деятельность пивоваренного завода по KPI, методология расчета, бенчмарки основных KPI".</b><br>Вопреки распространенному заблуждению KPI – это не только про премию, KPI  – это показатели объективно описывающие деятельность производственного предприятия. И если этими показателями корректно и правильно управлять, то эти цифровые объективные показатели помогают весьма значительно снизить себестоимость производимой продукции, а также повысить прозрачность и управляемость предприятия. <br>В докладе показывается методология расчета основных KPI, описывающих деятельность пивоваренного завода, приводятся бенчмарки (лучшие достигнутые в мире показатели), а также обсуждается целеполагание по KPI и способы достижения целей по KPI.<br><br><b>Кому будет интересно:</b> генеральным директорам, SC- менеджерам, директорам предприятий, начальникам производства и людям,  желающим ими стать.<br><b>Спикер-модератор: Евгений Родин</b>  - кандидат биологических наук, бизнес-консультант, независимый директор, опыт работы в пивоварении более 15 лет, в том числе директором пивоваренного завода 7 лет, автор более 70 научных работ и учебника "Технология бродильных производств".
+                            <div class="speakers"><a href="https://www.beersochi.ru/?speaker=evgeniy-rodin#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Евгений-Родин.jpg" alt="">Евгений Родин</a></div>
+                            <div class="event-location-desktop">
+                                <i class="fas fa-map-pin"></i> Конференц-Зал «Морской»
+                            </div>
+                        </td>
+                    </tr><tr>
+                        <td><i class="far fa-clock time-icon"></i>с 17.00</td>
+                        <td>
+                            <b>Демонтаж экспозиции.</b>
+                            
+                            <div class="event-location-desktop">
+                                <i class="fas fa-map-pin"></i> ВЦ Гранд Отель "Жемчужина"
+                            </div>
+                        </td>
+                    </tr><tr>
+                        <td><i class="far fa-clock time-icon"></i>17.30</td>
+                        <td>
+                            <b>Церемония награждения участников Юбилейного Форума и победителей Международного дегустационного конкурса пива, безалкогольных напитков, сырья и оборудования.</b>
+                            
+                            <div class="event-location-desktop">
+                                <i class="fas fa-map-pin"></i> Конференц-Зал «Морской»
+                            </div>
+                        </td>
+                    </tr><tr>
+                        <td><i class="far fa-clock time-icon"></i>19.00</td>
+                        <td>
+                            <b>Банкет</b> в честь победителей дегустационного конкурса и закрытия Юбилейного Форума "ПИВО-2026". <br><b>Выступление кавер-группы «Островский».</b><br><b>Праздничный  безвысотный фейерверк с наземным шоу от партнера вечернего приема ОАО "Томское пиво". <br>Дресс-код: вечерний. Место проведения: ресторан "Старград", ул. Приморская, 19.</b>
+                            
+                            <div class="event-location-desktop">
+                                <i class="fas fa-map-pin"></i> Ресторан "СтарГрад", ул. Приморская 19
+                            </div>
+                        </td>
+                    </tr><tr class="day-header-row"><td colspan="2"><i class="fas fa-calendar-day"></i> 22 мая, пятница</td></tr><tr>
+                        <td><i class="far fa-clock time-icon"></i>08.15-22.00</td>
+                        <td>
+                            <b>Командные игры "День Пивонерии" - путешествие в страну души - Тур в Абхазию.  Погружение в удивительный мир Абхазии, национальный колорит и кухня, живописные места и удивительные впечатления.</b><br><b>Дресс-код:</b> спортивный. Просьба внимательно ознакомиться с памяткой участников "Дня  Пивонерии" и правилами поведения на выездном мероприятии.<br><b>Сбор у центрального входа в Гранд Отель «Жемчужина» в 8 ч. 15 мин., отправление в 08 ч. 30 мин.</b>
+                            
+                            <div class="event-location-desktop">
+                                <i class="fas fa-map-pin"></i> Центральный вход Гранд Отеля "Жемчужина"
+                            </div>
+                        </td>
+                    </tr></tbody>
+        </table>
+        <div class="mobile-cards" id="mobileCards"><div class="day-title"><i class="fas fa-calendar-day"></i> 18 мая, понедельник</div>
+                        <div class="event-card" style="border-left-color: rgba(255, 230, 230, 0.7);">
+                            <div class="event-time"><i class="far fa-clock"></i> 10.00-20.00</div>
+                            <div class="event-title"><b>Заезд и регистрация участников Юбилейного Форума. Оргкомитет - Выставочный Центр. Оформление стендов.</b></div>
+                            
+                            <div class="event-location" style="border-left-color: rgba(255, 230, 230, 0.7);"><i class="fas fa-map-pin"></i> ВЦ Гранд Отель "Жемчужина"</div>
+                        </div>
+                        <div class="event-card" style="border-left-color: rgba(230, 255, 230, 0.7);">
+                            <div class="event-time"><i class="far fa-clock"></i> 10.00-18.00</div>
+                            <div class="event-title"><b>Прием образцов на Международный дегустационный конкурс пива, безалкогольных напитков, сырья и оборудования.</b></div>
+                            
+                            <div class="event-location" style="border-left-color: rgba(230, 255, 230, 0.7);"><i class="fas fa-map-pin"></i> Зал "Бордовый" Дегустационная комиссия</div>
+                        </div><div class="day-title"><i class="fas fa-calendar-day"></i> 19 мая, вторник</div>
+                        <div class="event-card" style="border-left-color: rgba(255, 230, 230, 0.7);">
+                            <div class="event-time"><i class="far fa-clock"></i> 10.00-18.00</div>
+                            <div class="event-title"><b>Работа XXXV Юбилейного Международного Форума "ПИВО-2026".</b></div>
+                            
+                            <div class="event-location" style="border-left-color: rgba(255, 230, 230, 0.7);"><i class="fas fa-map-pin"></i> ВЦ Гранд Отель "Жемчужина"</div>
+                        </div>
+                        <div class="event-card" style="border-left-color: rgba(230, 242, 255, 0.7);">
+                            <div class="event-time"><i class="far fa-clock"></i> 11.00-18.00</div>
+                            <div class="event-title"><b>Работа Международного Конгресса производителей напитков.</b></div>
+                            
+                            <div class="event-location" style="border-left-color: rgba(230, 242, 255, 0.7);"><i class="fas fa-map-pin"></i> Конференц-Зал «Морской»</div>
+                        </div>
+                        <div class="event-card" style="border-left-color: rgba(250, 235, 215, 0.7);">
+                            <div class="event-time"><i class="far fa-clock"></i> 10.00-18.00</div>
+                            <div class="event-title"><b>Работа фестиваля "Море пива в Сочи"<br><br>Ежедневно в программе:</b><br>- выступление инструментального дуэта INSIDE, баянист и саксофонист;<br>- ежедневно с 13.50 до 14.40 выступление ансамбля "Мамисон" (от компании "Бавария") Республики Северная Осетия — Алания. В программе танцы "Сатана варит пиво" и "Поединок"; <br>- народная дегустация и весёлые конкурсы;<br>- соревнования по армрестлингу;<br>- презентации компаний-производителей и новых сортов напитков.</div>
+                            
+                            <div class="event-location" style="border-left-color: rgba(250, 235, 215, 0.7);"><i class="fas fa-map-pin"></i> Фестивальная площадка</div>
+                        </div>
+                        <div class="event-card" style="border-left-color: rgba(230, 242, 255, 0.7);">
+                            <div class="event-time"><i class="far fa-clock"></i> 11.00-11.30</div>
+                            <div class="event-title"><b>Торжественная церемония открытия XXXV Юбилейного Международного Форума "ПИВО-2026" с участием официальных лиц.</b> Официальное подписание Соглашения о взаимодействии между ООО "СОУД" – Сочинские выставки" и Союзом российских пивоваров на 2027 год.</div>
+                            
+                            <div class="event-location" style="border-left-color: rgba(230, 242, 255, 0.7);"><i class="fas fa-map-pin"></i> Конференц-Зал «Морской»</div>
+                        </div>
+                        <div class="event-card" style="border-left-color: rgba(255, 230, 230, 0.7);">
+                            <div class="event-time"><i class="far fa-clock"></i> 11.30</div>
+                            <div class="event-title"><b>Обход экспозиции официальными лицами.</b></div>
+                            
+                            <div class="event-location" style="border-left-color: rgba(255, 230, 230, 0.7);"><i class="fas fa-map-pin"></i> ВЦ Гранд Отель "Жемчужина"</div>
+                        </div>
+                        <div class="event-card" style="border-left-color: rgba(230, 242, 255, 0.7);">
+                            <div class="event-time"><i class="far fa-clock"></i> 11.30-13.25</div>
+                            <div class="event-title"><b>Пресс-конференция Союза российских пивоваров.<br>Тема: "Рынок пива: Итоги 2025-го и реалии 2026 года".</b><br>Участники пресс-конференции познакомят представителей СМИ с основными итогами и тенденциями на рынках пива, пивоваренного солода и хмеля, упаковки для пивоваренной продукции.<br>Спикеры:<br>Рынок пива:<br><b>Спикер: Даниил Бриман</b> - председатель Совета Союза российских пивоваров, генеральный директор ООО "Суздальский пивовар".<br><b>Тема: "Основные тенденции развития рынка пива в 2025-м и 1-м квартале 2026 года".</b><br><br><b>Спикер: Дмитрий Тарасевич</b> - член Общественного совета при Росалкогольтабакконтроле, управляющий партнер группы компаний «Таркос».<br><b>Тема: "Работа предприятий пивоваренной отрасли в условиях беспрецедентных ограничений оборота пивоваренной продукции".</b><br><br><b>Спикер: Елена Тюкина</b> - директор по производству ООО «Красный пивовар». <br><b>Тема: "Крафтовое пивоварение и сидроделие: актуальные вызовы, ключевые сложности и стратегии преодоления"</b><br><br><b>Спикер: Игорь Хавский</b> - первый заместитель председателя Совета Союза российских пивоваров, соучредитель пивоварни Gletcher.<br><b>Тема: "Совершенствование терминологии пивоваренной продукции как способ поддержки производителей пива".</b><br><br>Рынок солода и хмеля:<br><b>Спикер: Владимир Бобков</b> - генеральный директор ООО «Грейнфорд-Агро».<br><b>Тема: «Российский рынок пивоваренного ячменя и солода в 2026 году».</b><br><br><b>Спикер: Дмитрий Морозов</b> - управляющий ООО «Грейнрус».<br><b>Тема: "Мировой рынок хмеля, перспективы развития рынка хмеля в РФ в 2026-2028 году".</b><br><br>Рынок пивной упаковки:<br><b>Спикер: Антон Мор</b> - генеральный директор ООО «Сибирское стекло».<br><b>Тема: "Развитие рынка пивной упаковки и его ближайшие перспективы".</b><br><br><b>Организатор: Союз российских пивоваров.</b><br>Аккредитация для СМИ:<br><a href="https://clck.su/kGunD" target="_blank">ссылка</a><br><br>Аккредитация для представителей пивоваренного сообщества и смежных отраслей:<br><a href="https://clck.su/KUbOB" target="_blank">ссылка</a><br><br>Аккредитация продлится до 18:00 17 мая 2026 года.</div>
+                            <div class="event-speakers"><div class="speakers"><a href="https://www.beersochi.ru/?speaker=daniil-briman#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Даниил-Бриман.jpg" alt="">Даниил Бриман</a>, <a href="https://www.beersochi.ru/?speaker=dmitriy-tarasevich#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Дмитрий-Тарасевич.jpg" alt="">Дмитрий Тарасевич</a>, <a href="https://www.beersochi.ru/?speaker=elena-tyukina#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Елена-Тюкина.jpg" alt="">Елена Тюкина</a>, <a href="https://www.beersochi.ru/?speaker=igor-havskiy#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Игорь-Хавский.jpg" alt="">Игорь Хавский</a>, <a href="https://www.beersochi.ru/?speaker=vladimir-bobkov#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Владимир-Бобков.jpg" alt="">Владимир Бобков</a>, <a href="https://www.beersochi.ru/?speaker=dmitriy-morozov#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Морозов.jpg" alt="">Дмитрий Морозов</a>, <a href="https://www.beersochi.ru/?speaker=anton-mor#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Антон-Мор.jpg" alt="">Антон Мор</a></div></div>
+                            <div class="event-location" style="border-left-color: rgba(230, 242, 255, 0.7);"><i class="fas fa-map-pin"></i> Конференц-Зал «Морской»</div>
+                        </div>
+                        <div class="event-card" style="border-left-color: rgba(230, 242, 255, 0.7);">
+                            <div class="event-time"><i class="far fa-clock"></i> 13.30-14.25</div>
+                            <div class="event-title"><b>Презентация Генерального Партнера Юбилейного Форума - ООО "Грейнрус".</b><br><b>Тема: "Российский хмель: реальность и перспективы. Практические советы по применению в различных сортах пива."(дегустация).</b> <br>О чем поговорим:<br>о современных российских сортах хмеля, его особенностях и характеристиках; разрушим мифы о «плохом русском хмеле» и «отсутствие стабильности по альфа-кислоте» ;<br>о перспективах развития хмелеводства в РФ;<br>о технологических фишках работы с российским хмелем и сочетании его с импортными сортами; как внедрить новое сырье без риска;<br>о конкретных рецептах пива и проведем дегустацию <br>Российский хмель – не брак и не дешевый аналог импорта, а самостоятельный ингредиент с уникальным профилем.<br><b>Спикер: Сергей Матвеев</b> – пивовар-технолог с 25-летним стажем.</div>
+                            <div class="event-speakers"><div class="speakers"><a href="https://www.beersochi.ru/?speaker=sergey-matveev#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Сергей-Матвеев.jpg" alt="">Сергей Матвеев</a></div></div>
+                            <div class="event-location" style="border-left-color: rgba(230, 242, 255, 0.7);"><i class="fas fa-map-pin"></i> Конференц-Зал «Морской»</div>
+                        </div>
+                        <div class="event-card" style="border-left-color: rgba(230, 255, 230, 0.7);">
+                            <div class="event-time"><i class="far fa-clock"></i> 13.30</div>
+                            <div class="event-title"><b>Начало работы комиссии Международного дегустационного конкурса пива, безалкогольных напитков, сырья и оборудования.</b></div>
+                            
+                            <div class="event-location" style="border-left-color: rgba(230, 255, 230, 0.7);"><i class="fas fa-map-pin"></i> Зал "Бордовый" Дегустационная комиссия</div>
+                        </div>
+                        <div class="event-card" style="border-left-color: rgba(230, 242, 255, 0.7);">
+                            <div class="event-time"><i class="far fa-clock"></i> 14.30-15.25</div>
+                            <div class="event-title"><b>Мастер-класс. <br>Тема: "Потери экстрактивных веществ на пивоваренном заводе: правила расчета, физическая сущность и простые улучшающие действия".</b><br>Раскрывается использование  инструмента бережливого производства "Карта потерь экстракта". Показываются все возможные точки потерь экстракта на пивоваренном заводе, с указанием бенчмарка и физической сути потерь экстракта по каждой точке. Приводится набор простых технологических и организационных мероприятий, позволяющий сократить потери экстракта в рамках всего завода.<br><b>Кому будет интересно:</b>  директорам заводов, директорам по производству, главным технологам, пивоварам.<br><br><b>Спикер: Евгений Родин</b> - кандидат биологических наук, бизнес-консультант, независимый директор, опыт работы в пивоварении более 15 лет, в том числе директором пивоваренного завода 7 лет, автор более 70 научных работ и учебника "Технология бродильных производств".</div>
+                            <div class="event-speakers"><div class="speakers"><a href="https://www.beersochi.ru/?speaker=evgeniy-rodin#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Евгений-Родин.jpg" alt="">Евгений Родин</a></div></div>
+                            <div class="event-location" style="border-left-color: rgba(230, 242, 255, 0.7);"><i class="fas fa-map-pin"></i> Конференц-Зал «Морской»</div>
+                        </div>
+                        <div class="event-card" style="border-left-color: rgba(230, 242, 255, 0.7);">
+                            <div class="event-time"><i class="far fa-clock"></i> 15.30-15.55</div>
+                            <div class="event-title"><b>Презентация</b><br><b>Тема: "Осетинское пиво". Напиток, ставший национальным символом".</b><br><b>Спикер: Таймураз Гогинов</b> - торговый представитель Южной Осетии в России<br><b>Подписание Меморандума Союза Российских Пивоваров и «ВЫСОКОГОРНАЯ КЕЛЬСКАЯ ПИВОВАРНЯ», Республика Южная Осетия, пос. Ленингор.</b></div>
+                            <div class="event-speakers"><div class="speakers"><a href="https://www.beersochi.ru/?speaker=taymuraz-goginov#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Таймураз-Гогинов.jpg" alt="">Таймураз Гогинов</a></div></div>
+                            <div class="event-location" style="border-left-color: rgba(230, 242, 255, 0.7);"><i class="fas fa-map-pin"></i> Конференц-Зал «Морской»</div>
+                        </div>
+                        <div class="event-card" style="border-left-color: rgba(230, 242, 255, 0.7);">
+                            <div class="event-time"><i class="far fa-clock"></i> 16.00-16.55</div>
+                            <div class="event-title"><b>Сессия от компании ООО "Новые пивоварни".</b><br><b>Тема: «От конкуренции к кооперации как стратегический выбор для устойчивого роста пивной отрасли».</b><br><br><b>Спикер: Руслан Шарипов</b> - генеральный директор ООО «Новые Пивоварни». В группу компаний «Новые Пивоварни» входят бренды: Горьковская пивоварня, KONIX, День свободен, 25 лет опыта в пивной индустрии: в корпорации и собственном бизнесе.<br><br><b>Спикер: Александр Белкин</b> - директор по маркетингу ООО «Новые Пивоварни». В группу компаний «Новые Пивоварни» входят бренды: Горьковская пивоварня, KONIX, День свободен, 20-летний опыт в FMCG и ритейле, эксперт в стратегическом и операционном маркетинге, развитии брендов и запуске новых продуктов, опыт работы в международном бизнесе.<br><br><b>Спикер: Марат Насибуллин</b> - заместитель директора ООО «Новые Пивоварни». В группу компаний «Новые Пивоварни» входят бренды: Горьковская пивоварня, KONIX, День свободен,  20 лет опыта в пивной индустрии.</div>
+                            <div class="event-speakers"><div class="speakers"><a href="https://www.beersochi.ru/?speaker=ruslan-sharipov#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Руслан-Шарипов.jpg" alt="">Руслан Шарипов</a>, <a href="https://www.beersochi.ru/?speaker=aleksandr-belkin#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Александр-Белкин.jpg" alt="">Александр Белкин</a>, <a href="https://www.beersochi.ru/?speaker=marat-nasibullin#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Марат-Насибуллин.jpg" alt="">Марат Насибуллин</a></div></div>
+                            <div class="event-location" style="border-left-color: rgba(230, 242, 255, 0.7);"><i class="fas fa-map-pin"></i> Конференц-Зал «Морской»</div>
+                        </div>
+                        <div class="event-card" style="border-left-color: rgba(230, 242, 255, 0.7);">
+                            <div class="event-time"><i class="far fa-clock"></i> 17.00-18.00</div>
+                            <div class="event-title"><b>Авторский Семинар. <br>Темы: "Особенности применения пищевых добавок и технологических вспомогательных средств при производстве пива и пивных напитков"<br>"Актуальные вопросы стандартизации   и разработки изменений к стандартам на пивобезалкогольную продукцию."</b><br><b>Спикер: Алла Даниловцева</b> - заместитель генерального директора по научной работе АО "Росспиртпром" г. Москва, председатель технического комитета по стандартизации ТК 175 "Перспективные направления стандартизации пивобезалкогольной продукции".</div>
+                            <div class="event-speakers"><div class="speakers"><a href="https://www.beersochi.ru/?speaker=alla-danilovtseva#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Алла-Даниловцева.jpg" alt="">Алла Даниловцева</a></div></div>
+                            <div class="event-location" style="border-left-color: rgba(230, 242, 255, 0.7);"><i class="fas fa-map-pin"></i> Конференц-Зал «Морской»</div>
+                        </div>
+                        <div class="event-card" style="border-left-color: rgba(255, 230, 230, 0.7);">
+                            <div class="event-time"><i class="far fa-clock"></i> 18.00-18.30</div>
+                            <div class="event-title"><b>Сдача экспозиции под охрану.</b></div>
+                            
+                            <div class="event-location" style="border-left-color: rgba(255, 230, 230, 0.7);"><i class="fas fa-map-pin"></i> ВЦ Гранд Отель "Жемчужина"</div>
+                        </div>
+                        <div class="event-card" style="border-left-color: rgba(230, 230, 250, 0.7);">
+                            <div class="event-time"><i class="far fa-clock"></i> 19.00-00.00</div>
+                            <div class="event-title"><b>Торжественный вечер в честь открытия XXXV Юбилейного Международного Форума "ПИВО-2026". </b><br><b>Ресторан в самом центре города Сочи на первой линии с уникальными гастрономическими шедеврами в авторской подаче.</b><br><b>Адрес:</b> г. Сочи, ул. Несебрская, 4. <br>Сбор в 18.30 у центрального входа в Гранд Отель «Жемчужина».</div>
+                            
+                            <div class="event-location" style="border-left-color: rgba(230, 230, 250, 0.7);"><i class="fas fa-map-pin"></i> Ресторан "Plutus Resto Club"</div>
+                        </div><div class="day-title"><i class="fas fa-calendar-day"></i> 20 мая, среда</div>
+                        <div class="event-card" style="border-left-color: rgba(255, 230, 230, 0.7);">
+                            <div class="event-time"><i class="far fa-clock"></i> 10.00-18.00</div>
+                            <div class="event-title"><b>Работа XXXV Международного Юбилейного Форума "ПИВО-2026".</b></div>
+                            
+                            <div class="event-location" style="border-left-color: rgba(255, 230, 230, 0.7);"><i class="fas fa-map-pin"></i> ВЦ Гранд Отель "Жемчужина"</div>
+                        </div>
+                        <div class="event-card" style="border-left-color: rgba(230, 242, 255, 0.7);">
+                            <div class="event-time"><i class="far fa-clock"></i> 10.00-18.00</div>
+                            <div class="event-title"><b>Работа Международного Конгресса производителей напитков.</b></div>
+                            
+                            <div class="event-location" style="border-left-color: rgba(230, 242, 255, 0.7);"><i class="fas fa-map-pin"></i> Конференц-Зал «Морской»</div>
+                        </div>
+                        <div class="event-card" style="border-left-color: rgba(230, 255, 230, 0.7);">
+                            <div class="event-time"><i class="far fa-clock"></i> 12.00-18.00</div>
+                            <div class="event-title"><b>Работа комиссии Международного дегустационного конкурса пива, безалкогольных напитков, сырья и оборудования.</b></div>
+                            
+                            <div class="event-location" style="border-left-color: rgba(230, 255, 230, 0.7);"><i class="fas fa-map-pin"></i> Зал "Бордовый" Дегустационная комиссия</div>
+                        </div>
+                        <div class="event-card" style="border-left-color: rgba(230, 242, 255, 0.7);">
+                            <div class="event-time"><i class="far fa-clock"></i> 10.00-11.55</div>
+                            <div class="event-title"><b>Сессия от Государственной системы цифровой маркировки "Честный Знак".</b> <br><b>Модератор: Андрей Воронков</b> -  Руководитель направления по развитию аналитических продуктов, Сбер2В.<br><b>Тема: "Аналитика рынка – 2026: Потребитель, тренды и стратегии успеха в категории "Пиво и слабоалкогольные напитки".</b><br><b>Спикер: Эльдар Файзуллин</b> - исполнительный директор Датамаркет, Центр развития перспективных технологий – оператор государственной системы маркировки «Честный знак».<br><b>Спикер: Меланья Саакян</b> - Руководитель направления «Ритейл» и «Аналитика ассортимента», Сбер2В.</div>
+                            <div class="event-speakers"><div class="speakers"><a href="https://www.beersochi.ru/?speaker=el-dar-fayzullin#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Эльдар-Файзуллин2.jpg" alt="">Эльдар Файзуллин</a>, <a href="https://www.beersochi.ru/?speaker=melan-ya-saakyan#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Меланья-Саакян.jpg" alt="">Меланья Саакян</a>, <a href="https://www.beersochi.ru/?speaker=andrey-voronkov#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Андрей-Воронков.jpg" alt="">Андрей Воронков</a></div></div>
+                            <div class="event-location" style="border-left-color: rgba(230, 242, 255, 0.7);"><i class="fas fa-map-pin"></i> Конференц-Зал «Морской»</div>
+                        </div>
+                        <div class="event-card" style="border-left-color: rgba(230, 242, 255, 0.7);">
+                            <div class="event-time"><i class="far fa-clock"></i> 12.00-12.55</div>
+                            <div class="event-title"><b>Мастер-класс.<br>Тема: "Структура производственной себестоимости пива: ключевые точки и инструменты снижения себестоимости".</b><br>Современный FMCG-рынок это рынок сетей. И торговые сети, занимая доминирующее положение на рынке имеют возможность диктовать достаточно жесткие условия по цене закупки пива. В этих условиях производителям для того чтобы продавать сетям пиво и получать с этого пусть небольшую, но прибыль, а не убыток, необходимо всеми силами и средствами снижать производственную себестоимость пива.<br><b>По результатам достаточно большого количества аудитов предприятий производителей пива выявлено, что наибольшие возможности, как правило, лежат в трех областях:</b><br>1.Потери сырья, вспомогательных материалов, полуфабрикатов и продуктов при производстве.<br>2.Потери при планировании (избыточный товарный запас на складе, при котором все равно происходят недопоставки продукции, из-за отсутствия на складе именно нужной номенклатуры продукции).<br>3.Избыточные затраты на оплату труда, вследствие неоптимальной организационной структуры и несовершенного уровня организации труда, что приводит к низкой производительности труда.<br>Для работы с этими потерями не надо «изобретать велосипед». Существуют вполне себе отработанные, проверенные на практике, достаточно простые в использовании, не требующие серьезных инвестиций методики и инструменты сокращения данных потерь. <br><b>Кому будет интересно:</b> генеральным директорам, SC- менеджерам, директорам предприятий, начальникам производства и людям,  желающим ими стать.<br><b>Спикер: Евгений Родин</b> - кандидат биологических наук, бизнес-консультант, независимый директор, опыт работы в пивоварении более 15 лет, в том числе директором пивоваренного завода 7 лет, автор более 70 научных работ и учебника «Технология бродильных производств».</div>
+                            <div class="event-speakers"><div class="speakers"><a href="https://www.beersochi.ru/?speaker=evgeniy-rodin#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Евгений-Родин.jpg" alt="">Евгений Родин</a></div></div>
+                            <div class="event-location" style="border-left-color: rgba(230, 242, 255, 0.7);"><i class="fas fa-map-pin"></i> Конференц-Зал «Морской»</div>
+                        </div>
+                        <div class="event-card" style="border-left-color: rgba(230, 242, 255, 0.7);">
+                            <div class="event-time"><i class="far fa-clock"></i> 13.00-13.55</div>
+                            <div class="event-title"><b>Сессия по развитию хмелеводства в России.</b><br><b>Спикер: Ян Стуна</b> - Генеральный директор ООО "МББ ГРУПП", хмелевод.<br><b>Тема: Развитие хмелеводства в России. Вторая волна.</b></div>
+                            <div class="event-speakers"><div class="speakers"><a href="https://www.beersochi.ru/?speaker=yan-stuna#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Ян-Стуна.jpg" alt="">Ян Стуна</a></div></div>
+                            <div class="event-location" style="border-left-color: rgba(230, 242, 255, 0.7);"><i class="fas fa-map-pin"></i> Конференц-Зал «Морской»</div>
+                        </div>
+                        <div class="event-card" style="border-left-color: rgba(230, 242, 255, 0.7);">
+                            <div class="event-time"><i class="far fa-clock"></i> 14.00-15.25</div>
+                            <div class="event-title"><b>Круглый стол <br>Тема: "Актуальные вопросы производства пивоваренной продукции. Реалии и возможности нового времени".<br>Модератор-спикер: Константин Кобелев</b> - председатель дегустационной комиссии, Заместитель директора по инновационной деятельности, доктор технических наук ВНИИПБиВП – филиала ФГБНУ "Федерального научного центра пищевых систем им. В.М.Горбатова" РАН, заместитель председателя технического комитета ТК 175, д.т.н. <br><b>Тема: "Новые стандарты на пивоваренную продукцию".</b><br><b>Спикер: Алла Даниловцева</b> - заместитель генерального директора по научной работе АО "Росспиртпром" г. Москва, председатель технического комитета по стандартизации ТК 175 "Перспективные направления стандартизации пивобезалкогольной продукции". <br><b>Тема: "Оценка качества сырья и готовой продукции при производстве пива и пивных напитков. Разработка новых методик и нормативной документации".<br>Спикер: Ирина Лазарева</b>  - заведующая отделом технологии пивоварения, безалкогольных напитков и минеральных вод ВНИИПБиВП —  филиала ФГБНУ «Федеральный научный центр пищевых систем им. В.М. Горбатова» РАН, к.т.н.<br><b>Тема: "Актуальные аспекты производства напитков брожения на основе различных видов растительного сырья".</b><br><b>Спикер: Марина Синельникова</b> - научный сотрудник отдела технологии пивоварения, эксперт по органолептической оценке пивоваренной и безалкогольной продукции ВНИИ пивоваренной, безалкогольной и винодельческой промышленности. <br><br><b>Тема: "Возможности развития экспорта пивоваренной продукции"</b><br><b>Спикер: Дмитрий Булатов</b> - Президент Национального союза экспортеров продовольствия, к.э.н.<br><br><b>Тема: "Зависимость режимов фильтрации и стабилизации от параметров сырья и характеристик пива". </b>       <br><b>Спикер: Ильдар Каримов</b> – главный технолог ООО Товесорб.<br><br><b>Организатор: Всероссийский научно-исследовательский институт пивоваренной, безалкогольной и винодельческой промышленности - Филиал ФГБНУ "Федеральный научный центр пищевых систем им. В.М. Горбатова" РАН.</b></div>
+                            <div class="event-speakers"><div class="speakers"><a href="https://www.beersochi.ru/?speaker=konstantin-kobelev#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Константин-Кобелев.jpg" alt="">Константин Кобелев</a>, <a href="https://www.beersochi.ru/?speaker=alla-danilovtseva#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Алла-Даниловцева.jpg" alt="">Алла Даниловцева</a>, <a href="https://www.beersochi.ru/?speaker=irina-lazareva#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Ирина-Лазарева.jpg" alt="">Ирина Лазарева</a>, <a href="https://www.beersochi.ru/?speaker=marina-sinel-nikova#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Марина-Синельникова-2.jpg" alt="">Марина Синельникова</a>, <a href="https://www.beersochi.ru/?speaker=dmitriy-bulatov#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Дмитрий-Булатов.jpg" alt="">Дмитрий Булатов</a>, <a href="https://www.beersochi.ru/?speaker=il-dar-karimov#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Ильдар-Каримов.jpg" alt="">Ильдар Каримов</a></div></div>
+                            <div class="event-location" style="border-left-color: rgba(230, 242, 255, 0.7);"><i class="fas fa-map-pin"></i> Конференц-Зал «Морской»</div>
+                        </div>
+                        <div class="event-card" style="border-left-color: rgba(230, 242, 255, 0.7);">
+                            <div class="event-time"><i class="far fa-clock"></i> 15.25-16.25</div>
+                            <div class="event-title"><b>Маркетинговая сессия.<br>Тема: «Стратегическая дилемма сбыта пивного бренда: Пытаться создать собственный отдел маркетинга или использовать микс подрядчиков. Сильные и слабые стороны обоих вариантов и критерии выбора.».</b><br><br><b>Спикер: Антон Дёмин</b> – Эксперт-маркетолог с 16-летним стажем. Основатель крупнейшего в России отраслевого агентства интернет-маркетинга для отелей, спорта, фитнеса и медицины Risoma.ru. Более 400 реализованных проектов по организации или перезапуску цифрового маркетинга. Агентсво Risoma.ru – постоянный партнер форумов Ассоциации операторов фитнес-индустрии, Национального Фитнес Сообщества, Ассоциации загородных отельеров, Россия.Фитнес и десятков других мероприятий, площадок и общественных организаций. Автор выступлений и лекций по маркетингу, цифровой трансформации и лидогенерации в отраслевых бизнес-курсах, в том числе в Высшей школе экономики. Более 200 выступлений на региональных и федеральных форумах и конференциях с аудиторией от 50 до 1000 человек. Автор YouTube-канала про бизнес и маркетинг «Дёмин подкаст».</div>
+                            <div class="event-speakers"><div class="speakers"><a href="https://www.beersochi.ru/?speaker=anton-dyomin#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Антон-Дёмин.jpg" alt="">Антон Дёмин</a></div></div>
+                            <div class="event-location" style="border-left-color: rgba(230, 242, 255, 0.7);"><i class="fas fa-map-pin"></i> Конференц-Зал «Морской»</div>
+                        </div>
+                        <div class="event-card" style="border-left-color: rgba(230, 242, 255, 0.7);">
+                            <div class="event-time"><i class="far fa-clock"></i> 17.00-18.00</div>
+                            <div class="event-title"><b>Маркетинговая сессия.</b><br><b>Тема: "Ведение социальных сетей в серых нишах. Контент как драйвер роста."</b><br><b>Спикер: Александр Михайлов</b> – основатель проекта "Маркетинг начинается здесь"</div>
+                            <div class="event-speakers"><div class="speakers"><a href="https://www.beersochi.ru/?speaker=aleksandr-mihaylov#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Александр-Михайлов.jpg" alt="">Александр Михайлов</a></div></div>
+                            <div class="event-location" style="border-left-color: rgba(230, 242, 255, 0.7);"><i class="fas fa-map-pin"></i> Конференц-Зал «Морской»</div>
+                        </div>
+                        <div class="event-card" style="border-left-color: rgba(255, 230, 230, 0.7);">
+                            <div class="event-time"><i class="far fa-clock"></i> 18.00-18.30</div>
+                            <div class="event-title"><b>Сдача экспозиции под охрану</b></div>
+                            
+                            <div class="event-location" style="border-left-color: rgba(255, 230, 230, 0.7);"><i class="fas fa-map-pin"></i> ВЦ Гранд Отель "Жемчужина"</div>
+                        </div>
+                        <div class="event-card" style="border-left-color: rgba(255, 220, 240, 0.7);">
+                            <div class="event-time"><i class="far fa-clock"></i> 18.00-24.00</div>
+                            <div class="event-title"><b>Торжественный ужин Союза российских пивоваров по случаю XXXV Юбилейного Международного Форума "ПИВО-2026"  (только для членов Союза).</b></div>
+                            
+                            <div class="event-location" style="border-left-color: rgba(255, 220, 240, 0.7);"><i class="fas fa-map-pin"></i> Ресторан «Любава»</div>
+                        </div>
+                        <div class="event-card" style="border-left-color: rgba(220, 255, 250, 0.7);">
+                            <div class="event-time"><i class="far fa-clock"></i> 19.00-22.00</div>
+                            <div class="event-title"><b> ТУРНИР ПО БОУЛИНГУ НА КУБОК «ЮБИЛЕЙНОГО ФОРУМА ПИВО-2026» .</b> <br>Участие бесплатное. Только для участников Форума. Количество мест ограничено. Обязательная регистрация: <br>Место проведения: Боулинг Клуб «ТОРО». <br>Сбор в 18.20 у центрального входа в Гранд Отель «Жемчужина».</div>
+                            
+                            <div class="event-location" style="border-left-color: rgba(220, 255, 250, 0.7);"><i class="fas fa-map-pin"></i> ул. Виноградная, 184/2 (3 этаж)</div>
+                        </div><div class="day-title"><i class="fas fa-calendar-day"></i> 21 мая, четверг</div>
+                        <div class="event-card" style="border-left-color: rgba(255, 230, 230, 0.7);">
+                            <div class="event-time"><i class="far fa-clock"></i> 10.00-17.00</div>
+                            <div class="event-title"><b>Работа XXXV Международного Юбилейного Форума "ПИВО-2026".</b></div>
+                            
+                            <div class="event-location" style="border-left-color: rgba(255, 230, 230, 0.7);"><i class="fas fa-map-pin"></i> ВЦ Гранд Отель "Жемчужина"</div>
+                        </div>
+                        <div class="event-card" style="border-left-color: rgba(230, 242, 255, 0.7);">
+                            <div class="event-time"><i class="far fa-clock"></i> 10.00-17.00</div>
+                            <div class="event-title"><b>Работа Международного Конгресса производителей напитков.</b></div>
+                            
+                            <div class="event-location" style="border-left-color: rgba(230, 242, 255, 0.7);"><i class="fas fa-map-pin"></i> Конференц-Зал «Морской»</div>
+                        </div>
+                        <div class="event-card" style="border-left-color: rgba(230, 255, 230, 0.7);">
+                            <div class="event-time"><i class="far fa-clock"></i> 10.00-12.00</div>
+                            <div class="event-title"><b>Работа комиссии Международного дегустационного конкурса пива, безалкогольных напитков, сырья и оборудования.</b></div>
+                            
+                            <div class="event-location" style="border-left-color: rgba(230, 255, 230, 0.7);"><i class="fas fa-map-pin"></i> Зал "Бордовый" Дегустационная комиссия</div>
+                        </div>
+                        <div class="event-card" style="border-left-color: rgba(230, 242, 255, 0.7);">
+                            <div class="event-time"><i class="far fa-clock"></i> 11.00-11.55</div>
+                            <div class="event-title"><b>Сессия от компании ООО "ВАЛЕННТА ВК" г. Москва.<br>Тема : "Импортозамещение. Измерительные приборы применяемые в  пищевой промышленности".<br>Спикер: Валерий Котенков</b> - генеральный директор ООО « Валеннта ВК».   <br><br><b>Тема: "Проект «Эквивалент» совместные разработки компаний «Валеннта ВК» и «Эквирон» представляющие собой инновационные решения в области измерения. Разработка российских приборов."<br>Спикер: Сергей Борисов</b> - руководитель сервисного центра ООО «Валеннта ВК».<br><br><b>Тема: "Программная платформа «Эквимон», для управления измерительными приборами, ключевые особенности и отличия от западных аналогов."<br>Спикер: Михаил Селиверстов</b> - генеральный директор «Эквирон".</div>
+                            <div class="event-speakers"><div class="speakers"><a href="https://www.beersochi.ru/?speaker=valeriy-kotenkov#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Валерий-Котенков.jpg" alt="">Валерий Котенков</a>, <a href="https://www.beersochi.ru/?speaker=sergey-borisov#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Сергей-Борисов.jpg" alt="">Сергей Борисов</a>, <a href="https://www.beersochi.ru/?speaker=mihail-seliverstov#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Михаил-Селиверстов.jpg" alt="">Михаил Селиверстов</a></div></div>
+                            <div class="event-location" style="border-left-color: rgba(230, 242, 255, 0.7);"><i class="fas fa-map-pin"></i> Конференц-Зал «Морской»</div>
+                        </div>
+                        <div class="event-card" style="border-left-color: rgba(230, 242, 255, 0.7);">
+                            <div class="event-time"><i class="far fa-clock"></i> 12.00-12.55</div>
+                            <div class="event-title"><b>Сессия.<br>Тема: "Как устоять региональным компаниям под давлением федералов в условиях падающего рынка? Обзор лучших практик и реальные кейсы"</b><br><b>Спикер: Дмитрий Богданов</b> - Председатель Экспертного Совета Ассоциации Отельеров АМОС, основатель консалтинговой компании "Аппарель", стаж в бизнесе более 29 лет.</div>
+                            <div class="event-speakers"><div class="speakers"><a href="https://www.beersochi.ru/?speaker=dmitriy-bogdanov#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/SIFT/foto/Дмитрий-Богданов1.jpg" alt="">Дмитрий Богданов</a></div></div>
+                            <div class="event-location" style="border-left-color: rgba(230, 242, 255, 0.7);"><i class="fas fa-map-pin"></i> Конференц-Зал «Морской»</div>
+                        </div>
+                        <div class="event-card" style="border-left-color: rgba(255, 255, 204, 0.7);">
+                            <div class="event-time"><i class="far fa-clock"></i> 12.00-13.00</div>
+                            <div class="event-title"><b>Экскурсия на Пивоваренный Завод Sargan Brewery с последующей дегустацией.<br>На сегодняшний день пивоварня производит 12 сортов пива.<br>Экскурсия бесплатная. </b><br>г. Сочи, ул. Барановское шоссе 17в.<br>Сбор в 11.30 у центрального входа в Гранд Отель «Жемчужина»</div>
+                            
+                            <div class="event-location" style="border-left-color: rgba(255, 255, 204, 0.7);"><i class="fas fa-map-pin"></i> Пивоварня Sargan Brewery</div>
+                        </div>
+                        <div class="event-card" style="border-left-color: rgba(230, 242, 255, 0.7);">
+                            <div class="event-time"><i class="far fa-clock"></i> 13.00-13.55</div>
+                            <div class="event-title"><b>Мастер-класс.<br>Тема: "Управление деятельность пивоваренного завода по KPI, методология расчета, бенчмарки основных KPI".</b><br>Вопреки распространенному заблуждению KPI – это не только про премию, KPI  – это показатели объективно описывающие деятельность производственного предприятия. И если этими показателями корректно и правильно управлять, то эти цифровые объективные показатели помогают весьма значительно снизить себестоимость производимой продукции, а также повысить прозрачность и управляемость предприятия. <br>В докладе показывается методология расчета основных KPI, описывающих деятельность пивоваренного завода, приводятся бенчмарки (лучшие достигнутые в мире показатели), а также обсуждается целеполагание по KPI и способы достижения целей по KPI.<br><br><b>Кому будет интересно:</b> генеральным директорам, SC- менеджерам, директорам предприятий, начальникам производства и людям,  желающим ими стать.<br><b>Спикер-модератор: Евгений Родин</b>  - кандидат биологических наук, бизнес-консультант, независимый директор, опыт работы в пивоварении более 15 лет, в том числе директором пивоваренного завода 7 лет, автор более 70 научных работ и учебника "Технология бродильных производств".</div>
+                            <div class="event-speakers"><div class="speakers"><a href="https://www.beersochi.ru/?speaker=evgeniy-rodin#spiker" target="_blank" class="speaker-link"><img class="speaker-photo-icon" src="https://www.soud.ru/bd/SPIKER/BEER/foto/Евгений-Родин.jpg" alt="">Евгений Родин</a></div></div>
+                            <div class="event-location" style="border-left-color: rgba(230, 242, 255, 0.7);"><i class="fas fa-map-pin"></i> Конференц-Зал «Морской»</div>
+                        </div>
+                        <div class="event-card" style="border-left-color: rgba(255, 230, 230, 0.7);">
+                            <div class="event-time"><i class="far fa-clock"></i> с 17.00</div>
+                            <div class="event-title"><b>Демонтаж экспозиции.</b></div>
+                            
+                            <div class="event-location" style="border-left-color: rgba(255, 230, 230, 0.7);"><i class="fas fa-map-pin"></i> ВЦ Гранд Отель "Жемчужина"</div>
+                        </div>
+                        <div class="event-card" style="border-left-color: rgba(230, 242, 255, 0.7);">
+                            <div class="event-time"><i class="far fa-clock"></i> 17.30</div>
+                            <div class="event-title"><b>Церемония награждения участников Юбилейного Форума и победителей Международного дегустационного конкурса пива, безалкогольных напитков, сырья и оборудования.</b></div>
+                            
+                            <div class="event-location" style="border-left-color: rgba(230, 242, 255, 0.7);"><i class="fas fa-map-pin"></i> Конференц-Зал «Морской»</div>
+                        </div>
+                        <div class="event-card" style="border-left-color: rgba(255, 229, 204, 0.7);">
+                            <div class="event-time"><i class="far fa-clock"></i> 19.00</div>
+                            <div class="event-title"><b>Банкет</b> в честь победителей дегустационного конкурса и закрытия Юбилейного Форума "ПИВО-2026". <br><b>Выступление кавер-группы «Островский».</b><br><b>Праздничный  безвысотный фейерверк с наземным шоу от партнера вечернего приема ОАО "Томское пиво". <br>Дресс-код: вечерний. Место проведения: ресторан "Старград", ул. Приморская, 19.</b></div>
+                            
+                            <div class="event-location" style="border-left-color: rgba(255, 229, 204, 0.7);"><i class="fas fa-map-pin"></i> Ресторан "СтарГрад", ул. Приморская 19</div>
+                        </div><div class="day-title"><i class="fas fa-calendar-day"></i> 22 мая, пятница</div>
+                        <div class="event-card" style="border-left-color: rgba(240, 248, 255, 0.7);">
+                            <div class="event-time"><i class="far fa-clock"></i> 08.15-22.00</div>
+                            <div class="event-title"><b>Командные игры "День Пивонерии" - путешествие в страну души - Тур в Абхазию.  Погружение в удивительный мир Абхазии, национальный колорит и кухня, живописные места и удивительные впечатления.</b><br><b>Дресс-код:</b> спортивный. Просьба внимательно ознакомиться с памяткой участников "Дня  Пивонерии" и правилами поведения на выездном мероприятии.<br><b>Сбор у центрального входа в Гранд Отель «Жемчужина» в 8 ч. 15 мин., отправление в 08 ч. 30 мин.</b></div>
+                            
+                            <div class="event-location" style="border-left-color: rgba(240, 248, 255, 0.7);"><i class="fas fa-map-pin"></i> Центральный вход Гранд Отеля "Жемчужина"</div>
+                        </div></div>
+
+        <!-- Нижний баннер -->
+        <div class="banner banner-bottom" id="bannerBottom"><img src="https://www.soud.ru/bd/PROGRAMMA/BEER-2026/banner_bot.jpg" alt="Нижний баннер"></div>
+
+        <div id="statusContainer"></div>
+    </div>
+
+    <!-- Плавающая кнопка фильтра (мобильные) -->
+    <button class="fab-filter" id="fabFilter"><i class="fas fa-sliders-h"></i></button>
+
+    <!-- Модальное окно фильтров -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span><i class="fas fa-filter"></i> Фильтры</span>
+                <button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <!-- Дни -->
+                <div class="filter-row">
+                    <span class="filter-label"><i class="fas fa-calendar-day"></i> День:</span>
+                    <div class="chips-container" id="modalDayFilters"><span class="chip active" data-day="all"><i class="fas fa-calendar-week"></i> Все дни</span><span class="chip " data-day="18 мая"><i class="fas fa-calendar-day"></i> 18 мая</span><span class="chip " data-day="19 мая"><i class="fas fa-calendar-day"></i> 19 мая</span><span class="chip " data-day="20 мая"><i class="fas fa-calendar-day"></i> 20 мая</span><span class="chip " data-day="21 мая"><i class="fas fa-calendar-day"></i> 21 мая</span><span class="chip " data-day="22 мая"><i class="fas fa-calendar-day"></i> 22 мая</span></div>
+                </div>
+                <!-- Места -->
+                <div class="filter-row">
+                    <span class="filter-label"><i class="fas fa-map-marker-alt"></i> Место:</span>
+                    <div class="chips-container" id="modalLocationFilters"><span class="chip active" data-location="all"><i class="fas fa-globe"></i> Все места</span><span class="chip " data-location="ВЦ Гранд Отель &quot;Жемчужина&quot;"><i class="fas fa-map-marker-alt"></i> ВЦ Гранд Отель "Жемчужина"</span><span class="chip " data-location="Зал &quot;Бордовый&quot; Дегустационная комиссия"><i class="fas fa-map-marker-alt"></i> Зал "Бордовый" Дегустационная комиссия</span><span class="chip " data-location="Конференц-Зал «Морской»"><i class="fas fa-map-marker-alt"></i> Конференц-Зал «Морской»</span><span class="chip " data-location="Пивоварня Sargan Brewery"><i class="fas fa-map-marker-alt"></i> Пивоварня Sargan Brewery</span><span class="chip " data-location="Ресторан &quot;СтарГрад&quot;, ул. Приморская 19"><i class="fas fa-map-marker-alt"></i> Ресторан "СтарГрад", ул. Приморская 19</span><span class="chip " data-location="Ресторан &quot;Plutus Resto Club&quot;"><i class="fas fa-map-marker-alt"></i> Ресторан "Plutus Resto Club"</span><span class="chip " data-location="Ресторан «Любава»"><i class="fas fa-map-marker-alt"></i> Ресторан «Любава»</span><span class="chip " data-location="ул. Виноградная, 184/2 (3 этаж)"><i class="fas fa-map-marker-alt"></i> ул. Виноградная, 184/2 (3 этаж)</span><span class="chip " data-location="Фестивальная площадка"><i class="fas fa-map-marker-alt"></i> Фестивальная площадка</span><span class="chip " data-location="Центральный вход Гранд Отеля &quot;Жемчужина&quot;"><i class="fas fa-map-marker-alt"></i> Центральный вход Гранд Отеля "Жемчужина"</span></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline btn-sm btn-block" id="modalResetBtn">
+                    <i class="fas fa-undo-alt"></i> Сбросить все фильтры
+                </button>
+                <button class="btn btn-sm btn-block" id="modalApplyBtn">
+                    <i class="fas fa-check"></i> Применить фильтры
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ------------------------------------------------------------
+        // 1. НАСТРОЙКИ - ССЫЛКИ НА CSV И БАННЕРЫ
+        // ------------------------------------------------------------
+        const CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vT0I7LJIYhe1lrQGiZeSLSSfIwMitP0wC7VbCwZPE1JkwCvuAowrmAlJnb2Mgu7Rgq55k3UV9Mpovq1/pub?gid=486939963&single=true&output=csv';
+        const SPEAKERS_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vR7bJWwC3TkrX-d2BHuxOIh8iClmVpOOAgjeDFu7tE9d6a-bQBA85gx5WxNxMeLrU4a4Gp6EXIPtMac/pub?gid=1988051888&single=true&output=csv';
+        
+        // Ссылки на баннеры (замените на реальные URL)
+        const TOP_BANNER_URL = 'https://www.soud.ru/bd/PROGRAMMA/BEER-2026/banner_top.jpg';
+        const TOP_BANNER_http = 'https://www.beersochi.ru/';
+        const BOTTOM_BANNER_URL = 'https://www.soud.ru/bd/PROGRAMMA/BEER-2026/banner_bot.jpg';
+
+        // ------------------------------------------------------------
+        // Глобальные переменные
+        // ------------------------------------------------------------
+        let allEvents = [];
+        let uniqueDays = new Set();
+        let uniqueLocations = new Set();
+        let activeDay = 'all';
+        let activeLocation = 'all';
+        let hasDayColumn = true;
+        let locationColorMap = new Map();
+        const colorPalette = [
+            'rgba(255, 230, 230, 0.7)',
+            'rgba(230, 255, 230, 0.7)',
+            'rgba(230, 242, 255, 0.7)',
+            'rgba(255, 255, 204, 0.7)',
+            'rgba(255, 229, 204, 0.7)',
+            'rgba(230, 230, 250, 0.7)',
+            'rgba(255, 220, 240, 0.7)',
+            'rgba(220, 255, 250, 0.7)',
+            'rgba(250, 235, 215, 0.7)',
+            'rgba(240, 248, 255, 0.7)'
+        ];
+
+        const monthMap = {
+            'января': 0, 'февраля': 1, 'марта': 2, 'апреля': 3, 'мая': 4, 'июня': 5,
+            'июля': 6, 'августа': 7, 'сентября': 8, 'октября': 9, 'ноября': 10, 'декабря': 11
+        };
+
+        let dayDisplayMap = {};
+        let speakerPhotoMap = {};
+
+        // Элементы DOM
+        const dayFilters = document.getElementById('dayFilters');
+        const locationFilters = document.getElementById('locationFilters');
+        const modalDayFilters = document.getElementById('modalDayFilters');
+        const modalLocationFilters = document.getElementById('modalLocationFilters');
+        const modalOverlay = document.getElementById('modalOverlay');
+        const fabFilter = document.getElementById('fabFilter');
+        const modalClose = document.getElementById('modalClose');
+        const modalResetBtn = document.getElementById('modalResetBtn');
+        const modalApplyBtn = document.getElementById('modalApplyBtn');
+        const tableBody = document.getElementById('tableBody');
+        const mobileCards = document.getElementById('mobileCards');
+        const statusEl = document.getElementById('statusContainer');
+        const refreshBtn = document.getElementById('refreshBtn');
+        const printBtn = document.getElementById('printBtn');
+        const pdfBtn = document.getElementById('pdfBtn');
+        const resetAllFiltersBtn = document.getElementById('resetAllFiltersBtn');
+        const bannerTop = document.getElementById('bannerTop');
+        const bannerBottom = document.getElementById('bannerBottom');
+        const updateTimestampEl = document.getElementById('updateTimestamp');
+        const mainFiltersPanel = document.getElementById('mainFiltersPanel');
+        const collapseBtn = document.getElementById('collapseFiltersBtn');
+        const collapseIcon = document.getElementById('collapseIcon');
+
+        // ------------------------------------------------------------
+        // 2. УСТАНОВКА БАННЕРОВ
+        // ------------------------------------------------------------
+        function setBanners() {
+            bannerTop.innerHTML = `<a href="${TOP_BANNER_http}"><img src="${TOP_BANNER_URL}" alt="Верхний баннер"></a>`;
+            bannerBottom.innerHTML = `<img src="${BOTTOM_BANNER_URL}" alt="Нижний баннер">`;
+        }
+        setBanners();
+
+        // ------------------------------------------------------------
+        // 3. ФУНКЦИЯ ФОРМАТИРОВАНИЯ ТЕКСТА
+        // ------------------------------------------------------------
+        function formatText(text) {
+            if (!text) return '';
+            let escaped = text.replace(/&/g, '&amp;')
+                              .replace(/</g, '&lt;')
+                              .replace(/>/g, '&gt;')
+                              .replace(/"/g, '&quot;')
+                              .replace(/'/g, '&#039;');
+            escaped = escaped.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>');
+            escaped = escaped.replace(/\*\*([^*]+)\*\*/g, '<b>$1</b>');
+            escaped = escaped.replace(/__([^_]+)__/g, '<u>$1</u>');
+            escaped = escaped.replace(/\*([^*]+)\*/g, '<i>$1</i>');
+            escaped = escaped.replace(/\n/g, '<br>');
+            return escaped;
+        }
+
+        // ------------------------------------------------------------
+        // 4. ДЕНЬ НЕДЕЛИ
+        // ------------------------------------------------------------
+        function enrichDayWithWeekday(dayString) {
+            if (!dayString || dayString === 'Без дня') return dayString;
+            const match = dayString.match(/^(\d{1,2})\s+([а-яё]+)$/i);
+            if (!match) return dayString;
+            const day = parseInt(match[1], 10);
+            const monthName = match[2].toLowerCase();
+            const monthIndex = monthMap[monthName];
+            if (monthIndex === undefined) return dayString;
+            const daysInMonth = new Date(2026, monthIndex + 1, 0).getDate();
+            if (day < 1 || day > daysInMonth) return dayString;
+            const date = new Date(2026, monthIndex, day);
+            if (date.getDate() !== day) return dayString;
+            const weekday = date.toLocaleString('ru-RU', { weekday: 'long' });
+            return `${dayString}, ${weekday}`;
+        }
+
+        // ------------------------------------------------------------
+        // 5. УНИВЕРСАЛЬНЫЙ ПАРСИНГ CSV (возвращает массив объектов)
+        // ------------------------------------------------------------
+        function parseCSV(csvText) {
+            const delimiter = (csvText.includes(';') ? ';' : ',');
+            const rows = [];
+            let currentRow = [];
+            let currentField = '';
+            let inQuotes = false;
+
+            for (let i = 0; i < csvText.length; i++) {
+                const char = csvText[i];
+                const nextChar = csvText[i + 1];
+
+                if (char === '"') {
+                    if (inQuotes && nextChar === '"') {
+                        currentField += '"';
+                        i++;
+                    } else {
+                        inQuotes = !inQuotes;
+                    }
+                } else if (char === delimiter && !inQuotes) {
+                    currentRow.push(currentField);
+                    currentField = '';
+                } else if ((char === '\n' || (char === '\r' && nextChar === '\n')) && !inQuotes) {
+                    if (char === '\r') i++;
+                    currentRow.push(currentField);
+                    if (currentRow.length > 0 && currentRow.some(f => f.trim() !== '')) {
+                        rows.push(currentRow);
+                    }
+                    currentRow = [];
+                    currentField = '';
+                } else if (char === '\r' && !inQuotes) {
+                    currentRow.push(currentField);
+                    if (currentRow.length > 0 && currentRow.some(f => f.trim() !== '')) {
+                        rows.push(currentRow);
+                    }
+                    currentRow = [];
+                    currentField = '';
+                } else {
+                    currentField += char;
+                }
+            }
+            if (currentField || currentRow.length > 0) {
+                currentRow.push(currentField);
+                if (currentRow.length > 0 && currentRow.some(f => f.trim() !== '')) {
+                    rows.push(currentRow);
+                }
+            }
+
+            if (rows.length < 2) return [];
+            const headers = rows[0].map(h => h.trim().replace(/^"|"$/g, ''));
+            const result = [];
+            for (let i = 1; i < rows.length; i++) {
+                const row = rows[i];
+                const obj = {};
+                headers.forEach((h, idx) => {
+                    obj[h] = (row[idx] || '').trim().replace(/^"|"$/g, '');
+                });
+                result.push(obj);
+            }
+            return result;
+        }
+
+        // ------------------------------------------------------------
+        // 6. ВСПОМОГАТЕЛЬНАЯ ФУНКЦИЯ ДЛЯ ПОЛУЧЕНИЯ ПОЛЯ ПО ВОЗМОЖНЫМ ИМЕНАМ
+        // ------------------------------------------------------------
+        function getField(obj, possibleKeys, defaultValue = '') {
+            for (const key of possibleKeys) {
+                if (obj.hasOwnProperty(key) && obj[key] !== '') return obj[key];
+                const lowerKey = key.toLowerCase();
+                for (const objKey in obj) {
+                    if (objKey.toLowerCase() === lowerKey && obj[objKey] !== '') return obj[objKey];
+                }
+            }
+            return defaultValue;
+        }
+
+        // ------------------------------------------------------------
+        // 7. ЗАГРУЗКА ДАННЫХ СПИКЕРОВ (ФОТО)
+        // ------------------------------------------------------------
+        async function loadSpeakers() {
+            try {
+                const resp = await fetch(SPEAKERS_CSV_URL);
+                const csv = await resp.text();
+                const rows = parseCSV(csv);
+                rows.forEach(row => {
+                    const firstName = getField(row, ['FirstName', 'firstname', 'first_name']);
+                    const lastName = getField(row, ['LastName', 'lastname', 'last_name']);
+                    const fullName = `${firstName} ${lastName}`.trim().toLowerCase();
+                    const photo = getField(row, ['Photo', 'photo']);
+                    if (fullName && photo) {
+                        speakerPhotoMap[fullName] = photo;
+                    }
+                });
+            } catch (e) {
+                console.warn('Не удалось загрузить фото спикеров', e);
+            }
+        }
+
+        // ------------------------------------------------------------
+        // 8. ЗАГРУЗКА ДЕЛОВОЙ ПРОГРАММЫ
+        // ------------------------------------------------------------
+        async function loadFromCSV() {
+            try {
+                const response = await fetch(CSV_URL);
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                const lastModifiedHeader = response.headers.get('Last-Modified');
+                let lastModifiedDate = null;
+                if (lastModifiedHeader) {
+                    lastModifiedDate = new Date(lastModifiedHeader);
+                    if (isNaN(lastModifiedDate.getTime())) lastModifiedDate = null;
+                }
+                const csvText = await response.text();
+                processCSV(csvText, lastModifiedDate);
+            } catch (error) {
+                console.error('Ошибка загрузки CSV:', error);
+                statusEl.innerHTML = `<div class="error-message">
+                    <i class="fas fa-exclamation-triangle"></i> Не удалось загрузить таблицу.
+                </div>`;
+                setUpdateTime(null);
+            }
+        }
+
+        // ------------------------------------------------------------
+        // 9. ОБРАБОТКА ЗАГРУЖЕННЫХ ДАННЫХ ПРОГРАММЫ
+        // ------------------------------------------------------------
+        function processCSV(csvText, serverDate) {
+            const delimiter = detectDelimiter(csvText);
+            const rows = [];
+            let currentRow = [];
+            let currentField = '';
+            let inQuotes = false;
+
+            for (let i = 0; i < csvText.length; i++) {
+                const char = csvText[i];
+                const nextChar = csvText[i + 1];
+
+                if (char === '"') {
+                    if (inQuotes && nextChar === '"') {
+                        currentField += '"';
+                        i++;
+                    } else {
+                        inQuotes = !inQuotes;
+                    }
+                } else if (char === delimiter && !inQuotes) {
+                    currentRow.push(currentField);
+                    currentField = '';
+                } else if ((char === '\n' || (char === '\r' && nextChar === '\n')) && !inQuotes) {
+                    if (char === '\r') i++;
+                    currentRow.push(currentField);
+                    if (currentRow.length > 0 && currentRow.some(f => f.trim() !== '')) {
+                        rows.push(currentRow);
+                    }
+                    currentRow = [];
+                    currentField = '';
+                } else if (char === '\r' && !inQuotes) {
+                    currentRow.push(currentField);
+                    if (currentRow.length > 0 && currentRow.some(f => f.trim() !== '')) {
+                        rows.push(currentRow);
+                    }
+                    currentRow = [];
+                    currentField = '';
+                } else {
+                    currentField += char;
+                }
+            }
+            if (currentField || currentRow.length > 0) {
+                currentRow.push(currentField);
+                if (currentRow.length > 0 && currentRow.some(f => f.trim() !== '')) {
+                    rows.push(currentRow);
+                }
+            }
+
+            if (rows.length < 2) {
+                allEvents = [];
+                setUpdateTime(serverDate);
+                return;
+            }
+
+            const headers = rows[0].map(h => h.trim().replace(/^"|"$/g, '').toLowerCase());
+
+            let dayIdx = -1, timeIdx = -1, titleIdx = -1, locationIdx = -1, speakerIdx = -1;
+            headers.forEach((h, idx) => {
+                if (h.includes('день') || h.includes('дата')) dayIdx = idx;
+                else if (h.includes('время')) timeIdx = idx;
+                else if (h.includes('название') || h.includes('мероприятие')) titleIdx = idx;
+                else if (h.includes('место') || h.includes('локация')) locationIdx = idx;
+                else if (h.includes('спикер')) speakerIdx = idx;
+            });
+
+            if (timeIdx === -1 || titleIdx === -1 || locationIdx === -1) {
+                console.warn('Не найдены обязательные столбцы');
+                allEvents = [];
+                setUpdateTime(serverDate);
+                return;
+            }
+
+            const events = [];
+            for (let i = 1; i < rows.length; i++) {
+                const row = rows[i];
+                while (row.length <= Math.max(dayIdx, timeIdx, titleIdx, locationIdx, speakerIdx)) {
+                    row.push('');
+                }
+
+                const day = (row[dayIdx] || '').trim();
+                const time = (row[timeIdx] || '').trim();
+                const title = (row[titleIdx] || '').trim() || 'Без названия';
+                const location = (row[locationIdx] || '').trim() || 'Не указано';
+                const speakers = speakerIdx !== -1 ? (row[speakerIdx] || '').trim() : '';
+
+                events.push({ day, time, title, location, speakers });
+            }
+
+            allEvents = events;
+            uniqueDays.clear();
+            uniqueLocations.clear();
+            allEvents.forEach(e => {
+                if (e.day && e.day !== '') uniqueDays.add(e.day);
+                if (e.location) uniqueLocations.add(e.location);
+            });
+
+            hasDayColumn = uniqueDays.size > 0;
+
+            dayDisplayMap = {};
+            if (hasDayColumn) {
+                uniqueDays.forEach(day => {
+                    dayDisplayMap[day] = enrichDayWithWeekday(day);
+                });
+            }
+
+            buildLocationColorMap(uniqueLocations);
+            setUpdateTime(serverDate);
+        }
+
+        function detectDelimiter(csvText) {
+            const firstLines = csvText.split('\n').slice(0, 5).join('\n');
+            const commaCount = (firstLines.match(/,/g) || []).length;
+            const semicolonCount = (firstLines.match(/;/g) || []).length;
+            return semicolonCount > commaCount ? ';' : ',';
+        }
+
+        // ------------------------------------------------------------
+        // 10. ПОСТРОЕНИЕ КАРТЫ ЦВЕТОВ ДЛЯ ЛОКАЦИЙ
+        // ------------------------------------------------------------
+        function buildLocationColorMap(locationsSet) {
+            const locationsArray = Array.from(locationsSet).sort((a,b) => a.localeCompare(b, 'ru'));
+            locationColorMap.clear();
+            locationsArray.forEach((loc, index) => {
+                locationColorMap.set(loc, colorPalette[index % colorPalette.length]);
+            });
+            if (locationColorMap.has('Конференц-зал «Золотой»')) {
+                locationColorMap.set('Конференц-зал «Золотой»', 'rgba(255, 215, 0, 0.7)');
+            }
+            if (locationColorMap.has('Конференц-зал «Бронзовый»')) {
+                locationColorMap.set('Конференц-зал «Бронзовый»', 'rgba(205, 127, 50, 0.7)');
+            }
+        }
+
+        // ------------------------------------------------------------
+        // 11. ТРАНСЛИТЕРАЦИЯ
+        // ------------------------------------------------------------
+        function transliterate(name) {
+            const ru = {
+                'а':'a','б':'b','в':'v','г':'g','д':'d','е':'e','ё':'yo',
+                'ж':'zh','з':'z','и':'i','й':'y','к':'k','л':'l','м':'m',
+                'н':'n','о':'o','п':'p','р':'r','с':'s','т':'t','у':'u',
+                'ф':'f','х':'h','ц':'ts','ч':'ch','ш':'sh','щ':'sch','ъ':'',
+                'ы':'y','ь':'','э':'e','ю':'yu','я':'ya'
+            };
+            return name.toLowerCase().split('').map(c => ru[c] || c).join('')
+                       .replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
+        }
+
+        // ------------------------------------------------------------
+        // 12. ФОРМАТИРОВАНИЕ СПИКЕРОВ С ФОТО (БЕЗ ИКОНКИ)
+        // ------------------------------------------------------------
+        function formatSpeakers(speakersStr) {
+            if (!speakersStr) return '';
+            const names = speakersStr.split(/[,;]\s*/).filter(n => n.trim() !== '');
+            if (names.length === 0) return '';
+
+            const links = names.map(name => {
+                const nameLower = name.trim().toLowerCase();
+                const photoUrl = speakerPhotoMap[nameLower];
+                const photoHtml = photoUrl ? `<img class="speaker-photo-icon" src="${photoUrl}" alt="">` : '';
+                const slug = transliterate(name);
+                const url = `https://www.beersochi.ru/?speaker=${slug}#spiker`;
+                return `<a href="${url}" target="_blank" class="speaker-link">${photoHtml}${formatText(name)}</a>`;
+            });
+
+            return `<div class="speakers">${links.join(', ')}</div>`;
+        }
+
+        // ------------------------------------------------------------
+        // 13. ОТРИСОВКА ФИЛЬТРОВ
+        // ------------------------------------------------------------
+        function renderMainFilters() {
+            renderFilterGroup(dayFilters, uniqueDays, 'day', activeDay, 'calendar-day');
+            renderFilterGroup(locationFilters, uniqueLocations, 'location', activeLocation, 'map-marker-alt');
+        }
+
+        function renderModalFilters() {
+            renderFilterGroup(modalDayFilters, uniqueDays, 'day', activeDay, 'calendar-day');
+            renderFilterGroup(modalLocationFilters, uniqueLocations, 'location', activeLocation, 'map-marker-alt');
+        }
+
+        function renderFilterGroup(container, itemsSet, type, activeValue, icon) {
+            if (!container) return;
+            const items = Array.from(itemsSet).sort((a,b) => a.localeCompare(b, 'ru'));
+            const allChip = document.createElement('span');
+            allChip.className = `chip ${activeValue === 'all' ? 'active' : ''}`;
+            allChip.dataset[type] = 'all';
+            allChip.innerHTML = `<i class="fas fa-${icon === 'calendar-day' ? 'calendar-week' : 'globe'}"></i> Все ${type === 'day' ? 'дни' : 'места'}`;
+            allChip.addEventListener('click', () => {
+                if (type === 'day') setActiveDay('all');
+                else setActiveLocation('all');
+            });
+
+            container.innerHTML = '';
+            container.appendChild(allChip);
+
+            items.forEach(item => {
+                const chip = document.createElement('span');
+                chip.className = `chip ${activeValue === item ? 'active' : ''}`;
+                chip.dataset[type] = item;
+                chip.innerHTML = `<i class="fas fa-${icon}"></i> ${item}`;
+                chip.addEventListener('click', () => {
+                    if (type === 'day') setActiveDay(item);
+                    else setActiveLocation(item);
+                });
+                container.appendChild(chip);
+            });
+        }
+
+       function setActiveDay(day) {
+            activeDay = day;
+            updateAllFilters();
+            filterAndRender();
+            if (window.innerWidth <= 768) scrollToProgram();
+        }
+
+        function setActiveLocation(location) {
+            activeLocation = location;
+            updateAllFilters();
+            filterAndRender();
+            if (window.innerWidth <= 768) scrollToProgram();
+        }
+
+        function resetAllFilters() {
+            activeDay = 'all';
+            activeLocation = 'all';
+            updateAllFilters();
+            filterAndRender();
+            if (window.innerWidth <= 768) scrollToProgram();
+        }
+
+        function updateAllFilters() {
+            renderMainFilters();
+            if (modalOverlay.style.display === 'flex') {
+                renderModalFilters();
+            }
+        }
+
+        // ------------------------------------------------------------
+        // 14. ФИЛЬТРАЦИЯ И ОТРИСОВКА
+        // ------------------------------------------------------------
+        function filterAndRender() {
+            let filtered = allEvents;
+
+            if (activeDay !== 'all') {
+                filtered = filtered.filter(e => e.day === activeDay);
+            }
+            if (activeLocation !== 'all') {
+                filtered = filtered.filter(e => e.location === activeLocation);
+            }
+
+            const grouped = groupByDay(filtered);
+            renderTable(grouped);
+            renderMobileCards(grouped);
+            checkEmpty(filtered);
+        }
+
+        function groupByDay(events) {
+            const hasDays = events.some(e => e.day && e.day !== '');
+            if (!hasDays) return [{ day: null, events }];
+            const groups = {};
+            events.forEach(e => {
+                const day = e.day || 'Без дня';
+                if (!groups[day]) groups[day] = [];
+                groups[day].push(e);
+            });
+            return Object.keys(groups).map(day => ({ day, events: groups[day] }));
+        }
+
+        // Обновлённая функция renderTable: убран столбец "Место", место выводится под названием
+        function renderTable(grouped) {
+            if (!grouped.length || grouped.every(g => !g.events.length)) {
+                tableBody.innerHTML = `<tr><td colspan="2" style="text-align:center; padding:40px;">Нет событий</td></tr>`;
+                return;
+            }
+            let html = '';
+            grouped.forEach(g => {
+                if (g.day) {
+                    const displayDay = dayDisplayMap[g.day] || g.day;
+                    html += `<tr class="day-header-row"><td colspan="2"><i class="fas fa-calendar-day"></i> ${formatText(displayDay)}</td></tr>`;
+                }
+                g.events.forEach(ev => {
+                    html += `<tr>
+                        <td><i class="far fa-clock time-icon"></i>${formatText(ev.time)}</td>
+                        <td>
+                            ${formatText(ev.title)}
+                            ${formatSpeakers(ev.speakers)}
+                            <div class="event-location-desktop">
+                                <i class="fas fa-map-pin"></i> ${formatText(ev.location)}
+                            </div>
+                        </td>
+                    </tr>`;
+                });
+            });
+            tableBody.innerHTML = html;
+        }
+
+        function renderMobileCards(grouped) {
+            if (!grouped.length || grouped.every(g => !g.events.length)) {
+                mobileCards.innerHTML = `<div class="empty-state"><i class="fas fa-calendar-times"></i> Нет событий</div>`;
+                return;
+            }
+            let html = '';
+            grouped.forEach(g => {
+                if (g.day) {
+                    const displayDay = dayDisplayMap[g.day] || g.day;
+                    html += `<div class="day-title"><i class="fas fa-calendar-day"></i> ${formatText(displayDay)}</div>`;
+                }
+                g.events.forEach(ev => {
+                    const locationColor = locationColorMap.get(ev.location) || 'var(--primary)';
+                    html += `
+                        <div class="event-card" style="border-left-color: ${locationColor};">
+                            <div class="event-time"><i class="far fa-clock"></i> ${formatText(ev.time)}</div>
+                            <div class="event-title">${formatText(ev.title)}</div>
+                            ${ev.speakers ? `<div class="event-speakers">${formatSpeakers(ev.speakers)}</div>` : ''}
+                            <div class="event-location" style="border-left-color: ${locationColor};"><i class="fas fa-map-pin"></i> ${formatText(ev.location)}</div>
+                        </div>`;
+                });
+            });
+            mobileCards.innerHTML = html;
+        }
+
+        function checkEmpty(filtered) {
+            if (filtered.length === 0 && allEvents.length > 0) {
+                statusEl.innerHTML = `<div class="empty-state"><i class="fas fa-calendar-times"></i> Нет событий по выбранным фильтрам</div>`;
+            } else if (allEvents.length === 0) {
+                statusEl.innerHTML = `<div class="info-message"><i class="fas fa-info-circle"></i> Нет данных.</div>`;
+            } else {
+                statusEl.innerHTML = '';
+            }
+        }
+
+        function setUpdateTime(dateFromServer) {
+            let date;
+            if (dateFromServer && !isNaN(dateFromServer.getTime())) {
+                date = dateFromServer;
+            } else {
+                date = new Date();
+            }
+            const formatted = date.toLocaleString('ru-RU', {
+                day: '2-digit',
+                month: '2-digit',
+                year: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit'
+            });
+            updateTimestampEl.textContent = `Обновлено: ${formatted}`;
+        }
+
+        // ------------------------------------------------------------
+        // 15. УПРАВЛЕНИЕ МОДАЛЬНЫМ ОКНОМ ФИЛЬТРОВ
+        // ------------------------------------------------------------
+        function openModal() {
+            renderModalFilters();
+            modalOverlay.style.display = 'flex';
+        }
+
+        function closeModal() {
+            modalOverlay.style.display = 'none';
+        }
+
+        fabFilter.addEventListener('click', openModal);
+        modalClose.addEventListener('click', closeModal);
+        modalOverlay.addEventListener('click', (e) => {
+            if (e.target === modalOverlay) closeModal();
+        });
+        modalResetBtn.addEventListener('click', () => {
+            resetAllFilters();
+        });
+        modalApplyBtn.addEventListener('click', closeModal);
+
+        // ------------------------------------------------------------
+        // 16. СВОРАЧИВАНИЕ ПАНЕЛИ ФИЛЬТРОВ
+        // ------------------------------------------------------------
+        let isCollapsed = false;
+        collapseBtn.addEventListener('click', () => {
+            isCollapsed = !isCollapsed;
+            if (isCollapsed) {
+                mainFiltersPanel.classList.add('collapsed');
+                collapseIcon.classList.remove('fa-chevron-up');
+                collapseIcon.classList.add('fa-chevron-down');
+            } else {
+                mainFiltersPanel.classList.remove('collapsed');
+                collapseIcon.classList.remove('fa-chevron-down');
+                collapseIcon.classList.add('fa-chevron-up');
+            }
+        });
+
+        // ------------------------------------------------------------
+        // НОВАЯ ФУНКЦИЯ: ПЛАВНАЯ ПРОКРУТКА К НАЧАЛУ ПРОГРАММЫ (ТОЛЬКО ДЛЯ МОБИЛЬНЫХ)
+        // ------------------------------------------------------------
+        function scrollToProgram() {
+            // Определяем, мобильное устройство или нет (по ширине экрана)
+            const isMobile = window.innerWidth <= 768;
+            // Выбираем видимый блок (таблица или карточки)
+            const target = isMobile 
+                ? document.querySelector('.mobile-cards') 
+                : document.querySelector('.schedule-table');
+            
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            } else {
+                // Запасной вариант – прокрутка в начало страницы
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+        // ------------------------------------------------------------
+        // 17. ИНИЦИАЛИЗАЦИЯ
+        // ------------------------------------------------------------
+        async function init() {
+            statusEl.innerHTML = `<div class="loader"><i class="fas fa-spinner fa-pulse"></i> Загрузка программы...</div>`;
+            await Promise.all([loadFromCSV(), loadSpeakers()]);
+            renderMainFilters();
+            renderModalFilters();
+            activeDay = 'all';
+            activeLocation = 'all';
+            filterAndRender();
+            statusEl.innerHTML = '';
+        }
+
+        resetAllFiltersBtn.addEventListener('click', resetAllFilters);
+        refreshBtn.addEventListener('click', () => {
+            init();
+        });
+        
+        // Обычная печать (с разрывами)
+        printBtn.addEventListener('click', () => {
+            window.print();
+        });
+
+        // PDF - временно добавляем класс pdf-mode
+        pdfBtn.addEventListener('click', () => {
+            document.body.classList.add('pdf-mode');
+            // Небольшая задержка, чтобы класс применился перед печатью
+            setTimeout(() => {
+                window.print();
+                // После печати (или через некоторое время) удаляем класс
+                // Используем afterprint, но он не всегда срабатывает, добавим таймер
+                window.addEventListener('afterprint', () => {
+                    document.body.classList.remove('pdf-mode');
+                }, { once: true });
+                // На случай, если afterprint не сработает, удалим через 30 секунд
+                setTimeout(() => {
+                    document.body.classList.remove('pdf-mode');
+                }, 30000);
+            }, 100);
+        });
+
+        init();
+        setInterval(() => {
+            init();
+        }, 3600000);
+    </script><script type="text/javascript" async="" src="https://privacy-cs.mail.ru/static/sync-loader.js"></script>
+
+<script type="text/javascript" async="" src="https://top-fwz1.mail.ru/js/dyn-goal-config.js?ids=3213087"></script><script type="text/javascript" charset="" id="">
+!function(e){if("object"==typeof exports&&"undefined"!=typeof module)module.exports=e();else if("function"==typeof define&&define.amd)define([],e);else{var f;"undefined"!=typeof window?f=window:"undefined"!=typeof global?f=global:"undefined"!=typeof self&&(f=self),f.sbjs=e()}}(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(_dereq_,module,exports){
+"use strict";
+
+var init = _dereq_('./init');
+
+var sbjs = {
+  init: function(prefs) {
+    this.get = init(prefs);
+    if (prefs && prefs.callback && typeof prefs.callback === 'function') {
+      prefs.callback(this.get);
+    }
+  }
+};
+
+module.exports = sbjs;
+},{"./init":6}],2:[function(_dereq_,module,exports){
+"use strict";
+
+var terms = _dereq_('./terms'),
+    utils = _dereq_('./helpers/utils');
+
+var data = {
+
+  containers: {
+    current:          'sbjs_current',
+    current_extra:    'sbjs_current_add',
+    first:            'sbjs_first',
+    first_extra:      'sbjs_first_add',
+    session:          'sbjs_session',
+    udata:            'sbjs_udata',
+    promocode:        'sbjs_promo'
+  },
+
+  service: {
+    migrations:       'sbjs_migrations'
+  },
+
+  delimiter:          '|||',
+
+  aliases: {
+
+    main: {
+      type:           'typ',
+      source:         'src',
+      medium:         'mdm',
+      campaign:       'cmp',
+      content:        'cnt',
+      term:           'trm'
+    },
+
+    extra: {
+      fire_date:      'fd',
+      entrance_point: 'ep',
+      referer:        'rf'
+    },
+
+    session: {
+      pages_seen:     'pgs',
+      current_page:   'cpg'
+    },
+
+    udata: {
+      visits:         'vst',
+      ip:             'uip',
+      agent:          'uag'
+    },
+
+    promo:            'code'
+
+  },
+
+  pack: {
+
+    main: function(sbjs) {
+      return (
+        data.aliases.main.type      + '=' + sbjs.type     + data.delimiter +
+        data.aliases.main.source    + '=' + sbjs.source   + data.delimiter +
+        data.aliases.main.medium    + '=' + sbjs.medium   + data.delimiter +
+        data.aliases.main.campaign  + '=' + sbjs.campaign + data.delimiter +
+        data.aliases.main.content   + '=' + sbjs.content  + data.delimiter +
+        data.aliases.main.term      + '=' + sbjs.term
+      );
+    },
+
+    extra: function(timezone_offset) {
+      return (
+        data.aliases.extra.fire_date      + '=' + utils.setDate(new Date, timezone_offset) + data.delimiter +
+        data.aliases.extra.entrance_point + '=' + document.location.href                   + data.delimiter +
+        data.aliases.extra.referer        + '=' + (document.referrer || terms.none)
+      );
+    },
+
+    user: function(visits, user_ip) {
+      return (
+        data.aliases.udata.visits + '=' + visits  + data.delimiter +
+        data.aliases.udata.ip     + '=' + user_ip + data.delimiter +
+        data.aliases.udata.agent  + '=' + navigator.userAgent
+      );
+    },
+
+    session: function(pages) {
+      return (
+      data.aliases.session.pages_seen   + '=' + pages + data.delimiter +
+      data.aliases.session.current_page + '=' + document.location.href
+      );
+    },
+
+    promo: function(promo) {
+      return (
+        data.aliases.promo + '=' + utils.setLeadingZeroToInt(utils.randomInt(promo.min, promo.max), promo.max.toString().length)
+      );
+    }
+
+  }
+};
+
+module.exports = data;
+},{"./helpers/utils":5,"./terms":9}],3:[function(_dereq_,module,exports){
+"use strict";
+
+var delimiter = _dereq_('../data').delimiter;
+
+module.exports = {
+
+  encodeData: function(s) {
+    return encodeURIComponent(s).replace(/\!/g, '%21')
+                                .replace(/\~/g, '%7E')
+                                .replace(/\*/g, '%2A')
+                                .replace(/\'/g, '%27')
+                                .replace(/\(/g, '%28')
+                                .replace(/\)/g, '%29');
+  },
+
+  decodeData: function(s) {
+    try {
+      return decodeURIComponent(s).replace(/\%21/g, '!')
+                                  .replace(/\%7E/g, '~')
+                                  .replace(/\%2A/g, '*')
+                                  .replace(/\%27/g, "'")
+                                  .replace(/\%28/g, '(')
+                                  .replace(/\%29/g, ')');
+    } catch(err1) {
+      // try unescape for backward compatibility
+      try { return unescape(s); } catch(err2) { return ''; }
+    }
+  },
+
+  set: function(name, value, minutes, domain, excl_subdomains) {
+    var expires, basehost;
+
+    if (minutes) {
+      var date = new Date();
+      date.setTime(date.getTime() + (minutes * 60 * 1000));
+      expires = '; expires=' + date.toGMTString();
+    } else {
+      expires = '';
+    }
+    if (domain && !excl_subdomains) {
+      basehost = ';domain=.' + domain;
+    } else {
+      basehost = '';
+    }
+    document.cookie = this.encodeData(name) + '=' + this.encodeData(value) + expires + basehost + '; path=/';
+  },
+
+  get: function(name) {
+    var nameEQ = this.encodeData(name) + '=',
+        ca = document.cookie.split(';');
+
+    for (var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) === ' ') { c = c.substring(1, c.length); }
+      if (c.indexOf(nameEQ) === 0) {
+        return this.decodeData(c.substring(nameEQ.length, c.length));
+      }
+    }
+    return null;
+  },
+
+  destroy: function(name, domain, excl_subdomains) {
+    this.set(name, '', -1, domain, excl_subdomains);
+  },
+
+  parse: function(yummy) {
+
+    var cookies = [],
+        data    = {};
+
+    if (typeof yummy === 'string') {
+      cookies.push(yummy);
+    } else {
+      for (var prop in yummy) {
+        if (yummy.hasOwnProperty(prop)) {
+          cookies.push(yummy[prop]);
+        }
+      }
+    }
+
+    for (var i1 = 0; i1 < cookies.length; i1++) {
+      var cookie_array;
+      data[this.unsbjs(cookies[i1])] = {};
+      if (this.get(cookies[i1])) {
+        cookie_array = this.get(cookies[i1]).split(delimiter);
+      } else {
+        cookie_array = [];
+      }
+      for (var i2 = 0; i2 < cookie_array.length; i2++) {
+        var tmp_array = cookie_array[i2].split('='),
+            result_array = tmp_array.splice(0, 1);
+        result_array.push(tmp_array.join('='));
+        data[this.unsbjs(cookies[i1])][result_array[0]] = this.decodeData(result_array[1]);
+      }
+    }
+
+    return data;
+
+  },
+
+  unsbjs: function (string) {
+    return string.replace('sbjs_', '');
+  }
+
+};
+
+},{"../data":2}],4:[function(_dereq_,module,exports){
+"use strict";
+
+module.exports = {
+
+  parse: function(str) {
+    var o = this.parseOptions,
+        m = o.parser[o.strictMode ? 'strict' : 'loose'].exec(str),
+        uri = {},
+        i = 14;
+
+    while (i--) { uri[o.key[i]] = m[i] || ''; }
+
+    uri[o.q.name] = {};
+    uri[o.key[12]].replace(o.q.parser, function ($0, $1, $2) {
+      if ($1) { uri[o.q.name][$1] = $2; }
+    });
+
+    return uri;
+  },
+
+  parseOptions: {
+    strictMode: false,
+    key: ['source','protocol','authority','userInfo','user','password','host','port','relative','path','directory','file','query','anchor'],
+    q: {
+      name:   'queryKey',
+      parser: /(?:^|&)([^&=]*)=?([^&]*)/g
+    },
+    parser: {
+      strict: /^(?:([^:\/?#]+):)?(?:\/\/((?:(([^:@]*)(?::([^:@]*))?)?@)?([^:\/?#]*)(?::(\d*))?))?((((?:[^?#\/]*\/)*)([^?#]*))(?:\?([^#]*))?(?:#(.*))?)/,
+      loose:  /^(?:(?![^:@]+:[^:@\/]*@)([^:\/?#.]+):)?(?:\/\/)?((?:(([^:@]*)(?::([^:@]*))?)?@)?([^:\/?#]*)(?::(\d*))?)(((\/(?:[^?#](?![^?#\/]*\.[^?#\/.]+(?:[?#]|$)))*\/?)?([^?#\/]*))(?:\?([^#]*))?(?:#(.*))?)/
+    }
+  },
+
+  getParam: function(custom_params) {
+    var query_string = {},
+        query = custom_params ? custom_params : window.location.search.substring(1),
+        vars = query.split('&');
+
+    for (var i = 0; i < vars.length; i++) {
+      var pair = vars[i].split('=');
+      if (typeof query_string[pair[0]] === 'undefined') {
+        query_string[pair[0]] = pair[1];
+      } else if (typeof query_string[pair[0]] === 'string') {
+        var arr = [ query_string[pair[0]], pair[1] ];
+        query_string[pair[0]] = arr;
+      } else {
+        query_string[pair[0]].push(pair[1]);
+      }
+    }
+    return query_string;
+  },
+
+  getHost: function(request) {
+    return this.parse(request).host.replace('www.', '');
+  }
+
+};
+},{}],5:[function(_dereq_,module,exports){
+"use strict";
+
+module.exports = {
+
+  escapeRegexp: function(string) {
+    return string.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
+  },
+
+  setDate: function(date, offset) {
+    var utc_offset    = date.getTimezoneOffset() / 60,
+        now_hours     = date.getHours(),
+        custom_offset = offset || offset === 0 ? offset : -utc_offset;
+
+    date.setHours(now_hours + utc_offset + custom_offset);
+
+    var year    = date.getFullYear(),
+        month   = this.setLeadingZeroToInt(date.getMonth() + 1,   2),
+        day     = this.setLeadingZeroToInt(date.getDate(),        2),
+        hour    = this.setLeadingZeroToInt(date.getHours(),       2),
+        minute  = this.setLeadingZeroToInt(date.getMinutes(),     2),
+        second  = this.setLeadingZeroToInt(date.getSeconds(),     2);
+
+    return (year + '-' + month + '-' + day + ' ' + hour + ':' + minute + ':' + second);
+  },
+
+  setLeadingZeroToInt: function(num, size) {
+    var s = num + '';
+    while (s.length < size) { s = '0' + s; }
+    return s;
+  },
+
+  randomInt: function(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
+};
+
+},{}],6:[function(_dereq_,module,exports){
+"use strict";
+
+var data        = _dereq_('./data'),
+    terms       = _dereq_('./terms'),
+    cookies     = _dereq_('./helpers/cookies'),
+    uri         = _dereq_('./helpers/uri'),
+    utils       = _dereq_('./helpers/utils'),
+    params      = _dereq_('./params'),
+    migrations  = _dereq_('./migrations');
+
+module.exports = function(prefs) {
+
+  var p         = params.fetch(prefs);
+  var get_param = uri.getParam();
+  var domain    = p.domain.host,
+      isolate   = p.domain.isolate,
+      lifetime  = p.lifetime;
+
+  migrations.go(lifetime, domain, isolate);
+
+  var __sbjs_type,
+      __sbjs_source,
+      __sbjs_medium,
+      __sbjs_campaign,
+      __sbjs_content,
+      __sbjs_term;
+
+  function mainData() {
+    var sbjs_data;
+    if (
+        typeof get_param.utm_source        !== 'undefined' ||
+        typeof get_param.utm_medium        !== 'undefined' ||
+        typeof get_param.utm_campaign      !== 'undefined' ||
+        typeof get_param.utm_content       !== 'undefined' ||
+        typeof get_param.utm_term          !== 'undefined' ||
+        typeof get_param.gclid             !== 'undefined' ||
+        typeof get_param.yclid             !== 'undefined' ||
+        typeof get_param[p.campaign_param] !== 'undefined' ||
+        typeof get_param[p.term_param]     !== 'undefined' ||
+        typeof get_param[p.content_param]  !== 'undefined'
+    ) {
+      setFirstAndCurrentExtraData();
+      sbjs_data = getData(terms.traffic.utm);
+    } else if (checkReferer(terms.traffic.organic)) {
+      setFirstAndCurrentExtraData();
+      sbjs_data = getData(terms.traffic.organic);
+    } else if (!cookies.get(data.containers.session) && checkReferer(terms.traffic.referral)) {
+      setFirstAndCurrentExtraData();
+      sbjs_data = getData(terms.traffic.referral);
+    } else if (!cookies.get(data.containers.first) && !cookies.get(data.containers.current)) {
+      setFirstAndCurrentExtraData();
+      sbjs_data = getData(terms.traffic.typein);
+    } else {
+      return cookies.get(data.containers.current);
+    }
+
+    return sbjs_data;
+  }
+
+  function getData(type) {
+
+    switch (type) {
+
+      case terms.traffic.utm:
+
+        __sbjs_type = terms.traffic.utm;
+
+        if (typeof get_param.utm_source !== 'undefined') {
+          __sbjs_source = get_param.utm_source;
+        } else if (typeof get_param.gclid !== 'undefined') {
+          __sbjs_source = 'google';
+        } else if (typeof get_param.yclid !== 'undefined') {
+          __sbjs_source = 'yandex';  
+        } else {
+          __sbjs_source = terms.none;
+        }
+
+        if (typeof get_param.utm_medium !== 'undefined') {
+          __sbjs_medium = get_param.utm_medium;
+        } else if (typeof get_param.gclid !== 'undefined') {
+          __sbjs_medium = 'cpc';
+        } else if (typeof get_param.yclid !== 'undefined') {
+          __sbjs_medium = 'cpc';  
+        } else {
+          __sbjs_medium = terms.none;
+        }
+
+        if (typeof get_param.utm_campaign !== 'undefined') {
+          __sbjs_campaign = get_param.utm_campaign;
+        } else if (typeof get_param[p.campaign_param] !== 'undefined') {
+          __sbjs_campaign = get_param[p.campaign_param];
+        } else if (typeof get_param.gclid !== 'undefined') {
+          __sbjs_campaign = 'google_cpc';
+        } else if (typeof get_param.yclid !== 'undefined') {
+          __sbjs_campaign = 'yandex_cpc';  
+        } else {
+          __sbjs_campaign = terms.none;
+        }
+
+        if (typeof get_param.utm_content !== 'undefined') {
+          __sbjs_content = get_param.utm_content;
+        } else if (typeof get_param[p.content_param] !== 'undefined') {
+          __sbjs_content = get_param[p.content_param];
+        } else {
+          __sbjs_content = terms.none;
+        }
+
+        if (typeof get_param.utm_term !== 'undefined') {
+          __sbjs_term = get_param.utm_term;
+        } else if (typeof get_param[p.term_param] !== 'undefined') {
+          __sbjs_term = get_param[p.term_param];
+        } else {
+          __sbjs_term = getUtmTerm() || terms.none;
+        }
+
+        break;
+
+      case terms.traffic.organic:
+        __sbjs_type     = terms.traffic.organic;
+        __sbjs_source   = __sbjs_source || uri.getHost(document.referrer);
+        __sbjs_medium   = terms.referer.organic;
+        __sbjs_campaign = terms.none;
+        __sbjs_content  = terms.none;
+        __sbjs_term     = terms.none;
+        break;
+
+      case terms.traffic.referral:
+        __sbjs_type     = terms.traffic.referral;
+        __sbjs_source   = __sbjs_source || uri.getHost(document.referrer);
+        __sbjs_medium   = __sbjs_medium || terms.referer.referral;
+        __sbjs_campaign = terms.none;
+        __sbjs_content  = uri.parse(document.referrer).path;
+        __sbjs_term     = terms.none;
+        break;
+
+      case terms.traffic.typein:
+        __sbjs_type     = terms.traffic.typein;
+        __sbjs_source   = p.typein_attributes.source;
+        __sbjs_medium   = p.typein_attributes.medium;
+        __sbjs_campaign = terms.none;
+        __sbjs_content  = terms.none;
+        __sbjs_term     = terms.none;
+        break;
+
+      default:
+        __sbjs_type     = terms.oops;
+        __sbjs_source   = terms.oops;
+        __sbjs_medium   = terms.oops;
+        __sbjs_campaign = terms.oops;
+        __sbjs_content  = terms.oops;
+        __sbjs_term     = terms.oops;
+    }
+    var sbjs_data = {
+      type:             __sbjs_type,
+      source:           __sbjs_source,
+      medium:           __sbjs_medium,
+      campaign:         __sbjs_campaign,
+      content:          __sbjs_content,
+      term:             __sbjs_term
+    };
+
+    return data.pack.main(sbjs_data);
+
+  }
+
+  function getUtmTerm() {
+    var referer = document.referrer;
+    if (get_param.utm_term) {
+      return get_param.utm_term;
+    } else if (referer && uri.parse(referer).host && uri.parse(referer).host.match(/^(?:.*\.)?yandex\..{2,9}$/i)) {
+      try {
+        return uri.getParam(uri.parse(document.referrer).query).text;
+      } catch (err) {
+        return false;
+      }
+    } else {
+      return false;
+    }
+  }
+
+  function checkReferer(type) {
+    var referer = document.referrer;
+    switch(type) {
+      case terms.traffic.organic:
+        return (!!referer && checkRefererHost(referer) && isOrganic(referer));
+      case terms.traffic.referral:
+        return (!!referer && checkRefererHost(referer) && isReferral(referer));
+      default:
+        return false;
+    }
+  }
+
+  function checkRefererHost(referer) {
+    if (p.domain) {
+      if (!isolate) {
+        var host_regex = new RegExp('^(?:.*\\.)?' + utils.escapeRegexp(domain) + '$', 'i');
+        return !(uri.getHost(referer).match(host_regex));
+      } else {
+        return (uri.getHost(referer) !== uri.getHost(domain));
+      }
+    } else {
+      return (uri.getHost(referer) !== uri.getHost(document.location.href));
+    }
+  }
+
+  function isOrganic(referer) {
+
+    var y_host  = 'yandex',
+        y_param = 'text',
+        g_host  = 'google';
+
+    var y_host_regex  = new RegExp('^(?:.*\\.)?'  + utils.escapeRegexp(y_host)  + '\\..{2,9}$'),
+        y_param_regex = new RegExp('.*'           + utils.escapeRegexp(y_param) + '=.*'),
+        g_host_regex  = new RegExp('^(?:www\\.)?' + utils.escapeRegexp(g_host)  + '\\..{2,9}$');
+
+    if (
+        !!uri.parse(referer).query &&
+        !!uri.parse(referer).host.match(y_host_regex) &&
+        !!uri.parse(referer).query.match(y_param_regex)
+      ) {
+      __sbjs_source = y_host;
+      return true;
+    } else if (!!uri.parse(referer).host.match(g_host_regex)) {
+      __sbjs_source = g_host;
+      return true;
+    } else if (!!uri.parse(referer).query) {
+      for (var i = 0; i < p.organics.length; i++) {
+        if (
+            uri.parse(referer).host.match(new RegExp('^(?:.*\\.)?' + utils.escapeRegexp(p.organics[i].host)  + '$', 'i')) &&
+            uri.parse(referer).query.match(new RegExp('.*'         + utils.escapeRegexp(p.organics[i].param) + '=.*', 'i'))
+          ) {
+          __sbjs_source = p.organics[i].display || p.organics[i].host;
+          return true;
+        }
+        if (i + 1 === p.organics.length) {
+          return false;
+        }
+      }
+    } else {
+      return false;
+    }
+  }
+
+  function isReferral(referer) {
+    if (p.referrals.length > 0) {
+      for (var i = 0; i < p.referrals.length; i++) {
+        if (uri.parse(referer).host.match(new RegExp('^(?:.*\\.)?' + utils.escapeRegexp(p.referrals[i].host) + '$', 'i'))) {
+          __sbjs_source = p.referrals[i].display  || p.referrals[i].host;
+          __sbjs_medium = p.referrals[i].medium   || terms.referer.referral;
+          return true;
+        }
+        if (i + 1 === p.referrals.length) {
+          __sbjs_source = uri.getHost(referer);
+          return true;
+        }
+      }
+    } else {
+      __sbjs_source = uri.getHost(referer);
+      return true;
+    }
+  }
+
+  function setFirstAndCurrentExtraData() {
+    cookies.set(data.containers.current_extra, data.pack.extra(p.timezone_offset), lifetime, domain, isolate);
+    if (!cookies.get(data.containers.first_extra)) {
+      cookies.set(data.containers.first_extra, data.pack.extra(p.timezone_offset), lifetime, domain, isolate);
+    }
+  }
+
+  (function setData() {
+
+    // Main data
+    cookies.set(data.containers.current, mainData(), lifetime, domain, isolate);
+    if (!cookies.get(data.containers.first)) {
+      cookies.set(data.containers.first, cookies.get(data.containers.current), lifetime, domain, isolate);
+    }
+
+    // User data
+    var visits, udata;
+    if (!cookies.get(data.containers.udata)) {
+      visits  = 1;
+      udata   = data.pack.user(visits, p.user_ip);
+    } else {
+      visits  = parseInt(cookies.parse(data.containers.udata)[cookies.unsbjs(data.containers.udata)][data.aliases.udata.visits]) || 1;
+      visits  = cookies.get(data.containers.session) ? visits : visits + 1;
+      udata   = data.pack.user(visits, p.user_ip);
+    }
+    cookies.set(data.containers.udata, udata, lifetime, domain, isolate);
+
+    // Session
+    var pages_count;
+    if (!cookies.get(data.containers.session)) {
+      pages_count = 1;
+    } else {
+      pages_count = parseInt(cookies.parse(data.containers.session)[cookies.unsbjs(data.containers.session)][data.aliases.session.pages_seen]) || 1;
+      pages_count += 1;
+    }
+    cookies.set(data.containers.session, data.pack.session(pages_count), p.session_length, domain, isolate);
+
+    // Promocode
+    if (p.promocode && !cookies.get(data.containers.promocode)) {
+      cookies.set(data.containers.promocode, data.pack.promo(p.promocode), lifetime, domain, isolate);
+    }
+
+  })();
+
+  return cookies.parse(data.containers);
+
+};
+},{"./data":2,"./helpers/cookies":3,"./helpers/uri":4,"./helpers/utils":5,"./migrations":7,"./params":8,"./terms":9}],7:[function(_dereq_,module,exports){
+"use strict";
+
+var data    = _dereq_('./data'),
+    cookies = _dereq_('./helpers/cookies');
+
+module.exports = {
+
+  go: function(lifetime, domain, isolate) {
+
+    var migrate = this.migrations,
+        _with   = { l: lifetime, d: domain, i: isolate };
+
+    var i;
+
+    if (!cookies.get(data.containers.first) && !cookies.get(data.service.migrations)) {
+
+      var mids = [];
+      for (i = 0; i < migrate.length; i++) { mids.push(migrate[i].id); }
+
+      var advance = '';
+      for (i = 0; i < mids.length; i++) {
+        advance += mids[i] + '=1';
+        if (i < mids.length - 1) { advance += data.delimiter; }
+      }
+      cookies.set(data.service.migrations, advance, _with.l, _with.d, _with.i);
+
+    } else if (!cookies.get(data.service.migrations)) {
+
+      // We have only one migration for now, so just
+      for (i = 0; i < migrate.length; i++) {
+        migrate[i].go(migrate[i].id, _with);
+      }
+
+    }
+
+  },
+
+  migrations: [
+
+    {
+      id: '1418474375998',
+      version: '1.0.0-beta',
+      go: function(mid, _with) {
+
+        var success = mid + '=1',
+            fail    = mid + '=0';
+
+        var safeReplace = function($0, $1, $2) {
+          return ($1 || $2 ? $0 : data.delimiter);
+        };
+
+        try {
+
+          // Switch delimiter and renew cookies
+          var _in = [];
+          for (var prop in data.containers) {
+            if (data.containers.hasOwnProperty(prop)) {
+              _in.push(data.containers[prop]);
+            }
+          }
+
+          for (var i = 0; i < _in.length; i++) {
+            if (cookies.get(_in[i])) {
+              var buffer = cookies.get(_in[i]).replace(/(\|)?\|(\|)?/g, safeReplace);
+              cookies.destroy(_in[i], _with.d, _with.i);
+              cookies.destroy(_in[i], _with.d, !_with.i);
+              cookies.set(_in[i], buffer, _with.l, _with.d, _with.i);
+            }
+          }
+
+          // Update `session`
+          if (cookies.get(data.containers.session)) {
+            cookies.set(data.containers.session, data.pack.session(0), _with.l, _with.d, _with.i);
+          }
+
+          // Yay!
+          cookies.set(data.service.migrations, success, _with.l, _with.d, _with.i);
+
+        } catch (err) {
+          // Oops
+          cookies.set(data.service.migrations, fail, _with.l, _with.d, _with.i);
+        }
+      }
+    }
+
+  ]
+
+};
+},{"./data":2,"./helpers/cookies":3}],8:[function(_dereq_,module,exports){
+"use strict";
+
+var terms = _dereq_('./terms'),
+    uri   = _dereq_('./helpers/uri');
+
+module.exports = {
+
+  fetch: function(prefs) {
+
+    var user   = prefs || {},
+        params = {};
+
+    // Set `lifetime of the cookie` in months
+    params.lifetime = this.validate.checkFloat(user.lifetime) || 6;
+    params.lifetime = parseInt(params.lifetime * 30 * 24 * 60);
+
+    // Set `session length` in minutes
+    params.session_length = this.validate.checkInt(user.session_length) || 30;
+
+    // Set `timezone offset` in hours
+    params.timezone_offset = this.validate.checkInt(user.timezone_offset);
+
+    // Set `campaign param` for AdWords links
+    params.campaign_param = user.campaign_param || false;
+
+    // Set `term param` and `content param` for AdWords links
+    params.term_param = user.term_param || false;
+    params.content_param = user.content_param || false;
+
+    // Set `user ip`
+    params.user_ip = user.user_ip || terms.none;
+
+    // Set `promocode`
+    if (user.promocode) {
+      params.promocode = {};
+      params.promocode.min = parseInt(user.promocode.min) || 100000;
+      params.promocode.max = parseInt(user.promocode.max) || 999999;
+    } else {
+      params.promocode = false;
+    }
+
+    // Set `typein attributes`
+    if (user.typein_attributes && user.typein_attributes.source && user.typein_attributes.medium) {
+      params.typein_attributes = {};
+      params.typein_attributes.source = user.typein_attributes.source;
+      params.typein_attributes.medium = user.typein_attributes.medium;
+    } else {
+      params.typein_attributes = { source: '(direct)', medium: '(none)' };
+    }
+
+    // Set `domain`
+    if (user.domain && this.validate.isString(user.domain)) {
+      params.domain = { host: user.domain, isolate: false };
+    } else if (user.domain && user.domain.host) {
+      params.domain = user.domain;
+    } else {
+      params.domain = { host: uri.getHost(document.location.hostname), isolate: false };
+    }
+
+    // Set `referral sources`
+    params.referrals = [];
+
+    if (user.referrals && user.referrals.length > 0) {
+      for (var ir = 0; ir < user.referrals.length; ir++) {
+        if (user.referrals[ir].host) {
+          params.referrals.push(user.referrals[ir]);
+        }
+      }
+    }
+
+    // Set `organic sources`
+    params.organics = [];
+
+    if (user.organics && user.organics.length > 0) {
+      for (var io = 0; io < user.organics.length; io++) {
+        if (user.organics[io].host && user.organics[io].param) {
+          params.organics.push(user.organics[io]);
+        }
+      }
+    }
+
+    params.organics.push({ host: 'bing.com',      param: 'q',     display: 'bing'            });
+    params.organics.push({ host: 'yahoo.com',     param: 'p',     display: 'yahoo'           });
+    params.organics.push({ host: 'about.com',     param: 'q',     display: 'about'           });
+    params.organics.push({ host: 'aol.com',       param: 'q',     display: 'aol'             });
+    params.organics.push({ host: 'ask.com',       param: 'q',     display: 'ask'             });
+    params.organics.push({ host: 'globososo.com', param: 'q',     display: 'globo'           });
+    params.organics.push({ host: 'go.mail.ru',    param: 'q',     display: 'go.mail.ru'      });
+    params.organics.push({ host: 'rambler.ru',    param: 'query', display: 'rambler'         });
+    params.organics.push({ host: 'tut.by',        param: 'query', display: 'tut.by'          });
+
+    params.referrals.push({ host: 't.co',                         display: 'twitter.com'     });
+    params.referrals.push({ host: 'plus.url.google.com',          display: 'plus.google.com' });
+
+
+    return params;
+
+  },
+
+  validate: {
+
+    checkFloat: function(v) {
+      return v && this.isNumeric(parseFloat(v)) ? parseFloat(v) : false;
+    },
+
+    checkInt: function(v) {
+      return v && this.isNumeric(parseInt(v)) ? parseInt(v) : false;
+    },
+
+    isNumeric: function(v){
+      return !isNaN(v);
+    },
+
+    isString: function(v) {
+      return Object.prototype.toString.call(v) === '[object String]';
+    }
+
+  }
+
+};
+},{"./helpers/uri":4,"./terms":9}],9:[function(_dereq_,module,exports){
+"use strict";
+
+module.exports = {
+
+  traffic: {
+    utm:        'utm',
+    organic:    'organic',
+    referral:   'referral',
+    typein:     'typein'
+  },
+
+  referer: {
+    referral:   'referral',
+    organic:    'organic',
+    social:     'social'
+  },
+
+  none:         '(none)',
+  oops:         '(Houston, we have a problem)'
+
+};
+
+},{}]},{},[1])(1)
+});
+sbjs.init();
+</script><script type="text/javascript" charset="" id="">
+(function() {
+  'use strict';
+
+  // --- НАСТРОЙКА ---
+  // Объект для хранения UTM-меток.
+  // Мы заполним его данными из SourceBuster.
+  var utmFields = {};
+
+  // Проверяем, существует ли объект sbjs, чтобы избежать ошибок
+  if (typeof sbjs !== 'undefined' && sbjs.get && sbjs.get.current) {
+    utmFields = {
+      'utm_source':   sbjs.get.current.src,
+      'utm_medium':   sbjs.get.current.mdm,
+      'utm_campaign': sbjs.get.current.cmp,
+      'utm_content':  sbjs.get.current.cnt,
+      'utm_term':     sbjs.get.current.trm
+    };
+  }
+  // --- КОНЕЦ НАСТРОЙКИ ---
+
+  /**
+   * Добавляет одно скрытое поле в форму.
+   * @param {HTMLFormElement} form - Форма, в которую нужно добавить поле.
+   * @param {string} fieldName - Имя поля (атрибут name).
+   * @param {string} fieldValue - Значение поля.
+   */
+  function addSingleHiddenField(form, fieldName, fieldValue) {
+    // Проверяем, что значение существует и поле с таким именем еще не добавлено
+    if (form && fieldValue && fieldValue !== 'undefined' && !form.querySelector('[name="' + fieldName + '"]')) {
+      var hiddenInput = document.createElement('input');
+      hiddenInput.type = 'hidden';
+      hiddenInput.name = fieldName;
+      hiddenInput.value = fieldValue;
+      form.appendChild(hiddenInput);
+    }
+  }
+
+  /**
+   * Получает Client ID Яндекс.Метрики из cookie '_ym_uid'.
+   * @returns {string|null} Client ID или null, если cookie не найдена.
+   */
+  function getYandexClientId() {
+    try {
+      var ymCookie = document.cookie.match(new RegExp('_ym_uid=([^;]+)'));
+      if (ymCookie && ymCookie[1]) {
+        return ymCookie[1];
+      }
+    } catch (e) {
+      console.error("Ошибка при чтении cookie _ym_uid.", e);
+      return null;
+    }
+    return null;
+  }
+
+  /**
+   * Обрабатывает одну форму: добавляет UTM-метки и Client ID Яндекс.Метрики.
+   * @param {HTMLFormElement} form - Форма для обработки.
+   */
+  function processSingleForm(form) {
+    // 1. Добавляем поля из объекта utmFields
+    for (var fieldName in utmFields) {
+      if (Object.prototype.hasOwnProperty.call(utmFields, fieldName)) {
+        addSingleHiddenField(form, fieldName, utmFields[fieldName]);
+      }
+    }
+    
+    // 2. Получаем и добавляем Client ID Яндекс.Метрики
+    var yandexClientId = getYandexClientId();
+    if (yandexClientId) {
+      addSingleHiddenField(form, 'ym_client_id', yandexClientId);
+    }
+  }
+
+  // --- Основная логика ---
+
+  // Обрабатываем все формы, которые уже есть на странице при загрузке
+  var allForms = document.querySelectorAll('form');
+  for (var i = 0; i < allForms.length; i++) {
+    processSingleForm(allForms[i]);
+  }
+
+  // Используем MutationObserver для отслеживания форм, добавленных динамически
+  var observer = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+      if (mutation.addedNodes.length > 0) {
+        mutation.addedNodes.forEach(function(node) {
+          // Проверяем, является ли добавленный узел формой
+          if (node.nodeType === 1 && node.tagName === 'FORM') {
+            processSingleForm(node);
+          }
+          // Проверяем, содержит ли добавленный узел формы (как в Tilda Zero Block)
+          else if (node.nodeType === 1 && node.querySelector) {
+            var formsInside = node.querySelectorAll('form');
+            formsInside.forEach(function(form) {
+              processSingleForm(form);
+            });
+          }
+        });
+      }
+    });
+  });
+
+  // Начинаем наблюдение за изменениями во всем документе
+  observer.observe(document.body, {
+    childList: true, // отслеживать добавление/удаление дочерних элементов
+    subtree: true    // отслеживать изменения во всех потомках
+  });
+
+})();
+</script></body></html>

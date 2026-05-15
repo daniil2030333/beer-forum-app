@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="686" height="260" viewBox="0 0 686 260" role="img" aria-labelledby="title desc">
+  <title id="title">Экспо ПИВО-2026</title>
+  <desc id="desc">Баннер каталога экспонентов форума ПИВО-2026</desc>
+  <rect width="686" height="260" rx="28" fill="#FFF4E6"/>
+  <rect x="1" y="1" width="684" height="258" rx="27" fill="none" stroke="#F7941D" stroke-opacity=".38" stroke-width="2"/>
+  <circle cx="90" cy="206" r="96" fill="#F7941D" fill-opacity=".2"/>
+  <circle cx="600" cy="54" r="86" fill="#7A3F1D" fill-opacity=".12"/>
+  <text x="40" y="72" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="6" fill="#7A3F1D">EXPO GUIDE</text>
+  <text x="40" y="138" font-family="Arial, sans-serif" font-size="48" font-weight="800" fill="#4A2412">Каталог экспонентов</text>
+  <text x="42" y="180" font-family="Arial, sans-serif" font-size="23" font-weight="600" fill="#7A3F1D">Компании, стенды и партнеры Форума</text>
+  <rect x="42" y="208" width="142" height="30" rx="15" fill="#F7941D"/>
+  <text x="65" y="229" font-family="Arial, sans-serif" font-size="15" font-weight="800" fill="#4A2412">Открыть</text>
+</svg>

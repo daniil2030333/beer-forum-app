@@ -1,0 +1,1419 @@
+{
+  "totalCompanies": 145,
+  "foundLogos": 81,
+  "missingLogos": 64,
+  "downloaded": 0,
+  "skippedExisting": 81,
+  "failedDownloads": [],
+  "totalCandidates": 41,
+  "totalLocalCandidates": 113,
+  "candidates": [
+    {
+      "url": "https://www.soud.ru/baers_uch/logo_nelden_new.png",
+      "fileName": "logo_nelden_new.png",
+      "normalizedName": "logo nelden new"
+    },
+    {
+      "url": "https://www.soud.ru/baers_uch/logo_RFDM_logo_rus.svg",
+      "fileName": "logo_RFDM_logo_rus.svg",
+      "normalizedName": "logo rfdm logo rus"
+    },
+    {
+      "url": "https://www.soud.ru/baers_uch/logo_zipservice2025-200x100.png",
+      "fileName": "logo_zipservice2025-200x100.png",
+      "normalizedName": "logo zipservice2025 200x100"
+    },
+    {
+      "url": "https://www.soud.ru/baers_uch/logo_with_payoff.png",
+      "fileName": "logo_with_payoff.png",
+      "normalizedName": "logo with payoff"
+    },
+    {
+      "url": "https://www.soud.ru/baers_uch/logo_rus_solod_company.png",
+      "fileName": "logo_rus_solod_company.png",
+      "normalizedName": "logo rus solod company"
+    },
+    {
+      "url": "https://www.soud.ru/baers_uch/logo_ekvint-200x100.png",
+      "fileName": "logo_ekvint-200x100.png",
+      "normalizedName": "logo ekvint 200x100"
+    },
+    {
+      "url": "https://www.soud.ru/baers_uch/logo_grainfordagro-200x100.png",
+      "fileName": "logo_grainfordagro-200x100.png",
+      "normalizedName": "logo grainfordagro 200x100"
+    },
+    {
+      "url": "https://www.soud.ru/baers_uch/logo_sf_technologies.png",
+      "fileName": "logo_sf_technologies.png",
+      "normalizedName": "logo sf technologies"
+    },
+    {
+      "url": "https://www.soud.ru/baers_uch/5c6d7d232262aa4159458c205093dd72.png",
+      "fileName": "5c6d7d232262aa4159458c205093dd72.png",
+      "normalizedName": "5c6d7d232262aa4159458c205093dd72"
+    },
+    {
+      "url": "https://www.soud.ru/baers_uch/logo_vysokogornayakelskaya-200x100.png",
+      "fileName": "logo_vysokogornayakelskaya-200x100.png",
+      "normalizedName": "logo vysokogornayakelskaya 200x100"
+    },
+    {
+      "url": "https://www.soud.ru/baers_uch/logo-nwc_carbon-200x100.png",
+      "fileName": "logo-nwc_carbon-200x100.png",
+      "normalizedName": "logo nwc carbon 200x100"
+    },
+    {
+      "url": "https://www.soud.ru/baers_uch/logo_tul-solod-200x100.png",
+      "fileName": "logo_tul-solod-200x100.png",
+      "normalizedName": "logo tul solod 200x100"
+    },
+    {
+      "url": "https://www.soud.ru/baers_uch/logo_doka.png",
+      "fileName": "logo_doka.png",
+      "normalizedName": "logo doka"
+    },
+    {
+      "url": "https://www.soud.ru/baers_uch/logo_rausch.png",
+      "fileName": "logo_rausch.png",
+      "normalizedName": "logo rausch"
+    },
+    {
+      "url": "https://www.soud.ru/baers_uch/logo_prosolod.png",
+      "fileName": "logo_prosolod.png",
+      "normalizedName": "logo prosolod"
+    },
+    {
+      "url": "https://www.soud.ru/baers_uch/logo_okil-sato-rus-200x100.png",
+      "fileName": "logo_okil-sato-rus-200x100.png",
+      "normalizedName": "logo okil sato rus 200x100"
+    },
+    {
+      "url": "https://www.soud.ru/baers_uch/logo_priboy.png",
+      "fileName": "logo_priboy.png",
+      "normalizedName": "logo priboy"
+    },
+    {
+      "url": "https://www.soud.ru/baers_uch/logo_profibeer-200x100.png",
+      "fileName": "logo_profibeer-200x100.png",
+      "normalizedName": "logo profibeer 200x100"
+    },
+    {
+      "url": "https://www.soud.ru/baers_uch/logo_inox_200x100.png",
+      "fileName": "logo_inox_200x100.png",
+      "normalizedName": "logo inox 200x100"
+    },
+    {
+      "url": "https://www.soud.ru/baers_uch/logo_sitez_duo_cleaning.png",
+      "fileName": "logo_sitez_duo_cleaning.png",
+      "normalizedName": "logo sitez duo cleaning"
+    },
+    {
+      "url": "https://www.soud.ru/baers_uch/logo_probrewservice-200x100.png",
+      "fileName": "logo_probrewservice-200x100.png",
+      "normalizedName": "logo probrewservice 200x100"
+    },
+    {
+      "url": "https://www.soud.ru/baers_uch/logo_nordakva-200x100.png",
+      "fileName": "logo_nordakva-200x100.png",
+      "normalizedName": "logo nordakva 200x100"
+    },
+    {
+      "url": "https://www.soud.ru/baers_uch/logo_eltemiks2.png",
+      "fileName": "logo_eltemiks2.png",
+      "normalizedName": "logo eltemiks2"
+    },
+    {
+      "url": "https://www.soud.ru/baers_uch/logo_united_beverages_gtoup.png",
+      "fileName": "logo_united_beverages_gtoup.png",
+      "normalizedName": "logo united beverages gtoup"
+    },
+    {
+      "url": "https://www.soud.ru/baers_uch/logo_nebug_200x100.png",
+      "fileName": "logo_nebug_200x100.png",
+      "normalizedName": "logo nebug 200x100"
+    },
+    {
+      "url": "https://www.soud.ru/baers_uch/logo_daryal-200x100.png",
+      "fileName": "logo_daryal-200x100.png",
+      "normalizedName": "logo daryal 200x100"
+    },
+    {
+      "url": "https://www.soud.ru/baers_uch/logo_tehnoprom--200x100.png",
+      "fileName": "logo_tehnoprom--200x100.png",
+      "normalizedName": "logo tehnoprom 200x100"
+    },
+    {
+      "url": "https://www.soud.ru/baers_uch/logo_kak_vy_eto_privezli-200x100.png",
+      "fileName": "logo_kak_vy_eto_privezli-200x100.png",
+      "normalizedName": "logo kak vy eto privezli 200x100"
+    },
+    {
+      "url": "https://www.soud.ru/baers_uch/logo_kizelman.png",
+      "fileName": "logo_kizelman.png",
+      "normalizedName": "logo kizelman"
+    },
+    {
+      "url": "https://www.soud.ru/baers_uch/logo_toptech-200x100.png",
+      "fileName": "logo_toptech-200x100.png",
+      "normalizedName": "logo toptech 200x100"
+    },
+    {
+      "url": "https://www.soud.ru/baers_uch/logo_beecompany--200x100.png",
+      "fileName": "logo_beecompany--200x100.png",
+      "normalizedName": "logo beecompany 200x100"
+    },
+    {
+      "url": "https://www.soud.ru/baers_uch/logo_flow_dynamics-___200x100.png",
+      "fileName": "logo_flow_dynamics-___200x100.png",
+      "normalizedName": "logo flow dynamics 200x100"
+    },
+    {
+      "url": "https://www.soud.ru/baers_uch/logo_posteklo-200x100.png",
+      "fileName": "logo_posteklo-200x100.png",
+      "normalizedName": "logo posteklo 200x100"
+    },
+    {
+      "url": "https://www.soud.ru/baers_uch/logo_hopmalt_200x100.png",
+      "fileName": "logo_hopmalt_200x100.png",
+      "normalizedName": "logo hopmalt 200x100"
+    },
+    {
+      "url": "https://www.soud.ru/baers_uch/logo_pinta-craft-.svg",
+      "fileName": "logo_pinta-craft-.svg",
+      "normalizedName": "logo pinta craft"
+    },
+    {
+      "url": "https://www.soud.ru/baers_uch/logo_baltika.png",
+      "fileName": "logo_baltika.png",
+      "normalizedName": "logo baltika"
+    },
+    {
+      "url": "https://www.soud.ru/baers_uch/logo_ekan_200x100.png",
+      "fileName": "logo_ekan_200x100.png",
+      "normalizedName": "logo ekan 200x100"
+    },
+    {
+      "url": "https://www.soud.ru/baers_uch/logo_novit_200x100.png",
+      "fileName": "logo_novit_200x100.png",
+      "normalizedName": "logo novit 200x100"
+    },
+    {
+      "url": "https://www.soud.ru/baers_uch/logo_sovital-200x100.svg",
+      "fileName": "logo_sovital-200x100.svg",
+      "normalizedName": "logo sovital 200x100"
+    },
+    {
+      "url": "https://www.soud.ru/baers_uch/logo_schonbusch_200x100.png",
+      "fileName": "logo_schonbusch_200x100.png",
+      "normalizedName": "logo schonbusch 200x100"
+    },
+    {
+      "url": "https://www.soud.ru/baers_uch/logo_mill-fauz-200x100.png",
+      "fileName": "logo_mill-fauz-200x100.png",
+      "normalizedName": "logo mill fauz 200x100"
+    }
+  ],
+  "localCandidates": [
+    {
+      "url": "/company-logos/agtrans.png",
+      "fileName": "agtrans.png",
+      "normalizedName": "agtrans"
+    },
+    {
+      "url": "/company-logos/alyans-td.png",
+      "fileName": "alyans-td.png",
+      "normalizedName": "alyans td"
+    },
+    {
+      "url": "/company-logos/angelyest.png",
+      "fileName": "angelyest.png",
+      "normalizedName": "angelyest"
+    },
+    {
+      "url": "/company-logos/argonavt.png",
+      "fileName": "argonavt.png",
+      "normalizedName": "argonavt"
+    },
+    {
+      "url": "/company-logos/avangard-agro.png",
+      "fileName": "avangard-agro.png",
+      "normalizedName": "avangard agro"
+    },
+    {
+      "url": "/company-logos/baltika-pivovarennaya-kompaniya.png",
+      "fileName": "baltika-pivovarennaya-kompaniya.png",
+      "normalizedName": "baltika pivovarennaya kompaniya"
+    },
+    {
+      "url": "/company-logos/bavariya-pivovarenny-dom-gruppa-kompany.png",
+      "fileName": "bavariya-pivovarenny-dom-gruppa-kompany.png",
+      "normalizedName": "bavariya pivovarenny dom gruppa kompany"
+    },
+    {
+      "url": "/company-logos/belsolod.png",
+      "fileName": "belsolod.png",
+      "normalizedName": "belsolod"
+    },
+    {
+      "url": "/company-logos/bir-resurs.png",
+      "fileName": "bir-resurs.png",
+      "normalizedName": "bir resurs"
+    },
+    {
+      "url": "/company-logos/boel-technologies.png",
+      "fileName": "boel-technologies.png",
+      "normalizedName": "boel technologies"
+    },
+    {
+      "url": "/company-logos/brew-canning-system.png",
+      "fileName": "brew-canning-system.png",
+      "normalizedName": "brew canning system"
+    },
+    {
+      "url": "/company-logos/buster-rus.png",
+      "fileName": "buster-rus.png",
+      "normalizedName": "buster rus"
+    },
+    {
+      "url": "/company-logos/cibies.png",
+      "fileName": "cibies.png",
+      "normalizedName": "cibies"
+    },
+    {
+      "url": "/company-logos/daryal-vpbz.png",
+      "fileName": "daryal-vpbz.png",
+      "normalizedName": "daryal vpbz"
+    },
+    {
+      "url": "/company-logos/deco-minerals.png",
+      "fileName": "deco-minerals.png",
+      "normalizedName": "deco minerals"
+    },
+    {
+      "url": "/company-logos/dfiltr.png",
+      "fileName": "dfiltr.png",
+      "normalizedName": "dfiltr"
+    },
+    {
+      "url": "/company-logos/doka-servis.png",
+      "fileName": "doka-servis.png",
+      "normalizedName": "doka servis"
+    },
+    {
+      "url": "/company-logos/don-polimer.png",
+      "fileName": "don-polimer.png",
+      "normalizedName": "don polimer"
+    },
+    {
+      "url": "/company-logos/ekan.png",
+      "fileName": "ekan.png",
+      "normalizedName": "ekan"
+    },
+    {
+      "url": "/company-logos/ekvint-gruppa-kompany.png",
+      "fileName": "ekvint-gruppa-kompany.png",
+      "normalizedName": "ekvint gruppa kompany"
+    },
+    {
+      "url": "/company-logos/eltemix-lab.png",
+      "fileName": "eltemix-lab.png",
+      "normalizedName": "eltemix lab"
+    },
+    {
+      "url": "/company-logos/emec.png",
+      "fileName": "emec.png",
+      "normalizedName": "emec"
+    },
+    {
+      "url": "/company-logos/envisi-karbon-rus.png",
+      "fileName": "envisi-karbon-rus.png",
+      "normalizedName": "envisi karbon rus"
+    },
+    {
+      "url": "/company-logos/fermentis.jpg",
+      "fileName": "fermentis.jpg",
+      "normalizedName": "fermentis"
+    },
+    {
+      "url": "/company-logos/filtrmedia.png",
+      "fileName": "filtrmedia.png",
+      "normalizedName": "filtrmedia"
+    },
+    {
+      "url": "/company-logos/firma-prom-inzhiniring.png",
+      "fileName": "firma-prom-inzhiniring.png",
+      "normalizedName": "firma prom inzhiniring"
+    },
+    {
+      "url": "/company-logos/flow-dynamics.png",
+      "fileName": "flow-dynamics.png",
+      "normalizedName": "flow dynamics"
+    },
+    {
+      "url": "/company-logos/geoenginiring-jug.png",
+      "fileName": "geoenginiring-jug.png",
+      "normalizedName": "geoenginiring jug"
+    },
+    {
+      "url": "/company-logos/greynford-agro.png",
+      "fileName": "greynford-agro.png",
+      "normalizedName": "greynford agro"
+    },
+    {
+      "url": "/company-logos/greynrus.png",
+      "fileName": "greynrus.png",
+      "normalizedName": "greynrus"
+    },
+    {
+      "url": "/company-logos/gringod.png",
+      "fileName": "gringod.png",
+      "normalizedName": "gringod"
+    },
+    {
+      "url": "/company-logos/hadyzhensky-pivovarenny-zavod.png",
+      "fileName": "hadyzhensky-pivovarenny-zavod.png",
+      "normalizedName": "hadyzhensky pivovarenny zavod"
+    },
+    {
+      "url": "/company-logos/hopmalt.png",
+      "fileName": "hopmalt.png",
+      "normalizedName": "hopmalt"
+    },
+    {
+      "url": "/company-logos/hopshtayner.png",
+      "fileName": "hopshtayner.png",
+      "normalizedName": "hopshtayner"
+    },
+    {
+      "url": "/company-logos/hoyft-evraziya.png",
+      "fileName": "hoyft-evraziya.png",
+      "normalizedName": "hoyft evraziya"
+    },
+    {
+      "url": "/company-logos/industriya-napitkov-zhurnal.png",
+      "fileName": "industriya-napitkov-zhurnal.png",
+      "normalizedName": "industriya napitkov zhurnal"
+    },
+    {
+      "url": "/company-logos/inox-orenburg.png",
+      "fileName": "inox-orenburg.png",
+      "normalizedName": "inox orenburg"
+    },
+    {
+      "url": "/company-logos/iriston.png",
+      "fileName": "iriston.png",
+      "normalizedName": "iriston"
+    },
+    {
+      "url": "/company-logos/kak-vy-eto-privezli.png",
+      "fileName": "kak-vy-eto-privezli.png",
+      "normalizedName": "kak vy eto privezli"
+    },
+    {
+      "url": "/company-logos/khs-rus-khs-gmbh.png",
+      "fileName": "khs-rus-khs-gmbh.png",
+      "normalizedName": "khs rus khs gmbh"
+    },
+    {
+      "url": "/company-logos/kimika.png",
+      "fileName": "kimika.png",
+      "normalizedName": "kimika"
+    },
+    {
+      "url": "/company-logos/kizelmann-rus.png",
+      "fileName": "kizelmann-rus.png",
+      "normalizedName": "kizelmann rus"
+    },
+    {
+      "url": "/company-logos/kropotkinsky-zavod-missp.png",
+      "fileName": "kropotkinsky-zavod-missp.png",
+      "normalizedName": "kropotkinsky zavod missp"
+    },
+    {
+      "url": "/company-logos/krynica.png",
+      "fileName": "krynica.png",
+      "normalizedName": "krynica"
+    },
+    {
+      "url": "/company-logos/millfauz.png",
+      "fileName": "millfauz.png",
+      "normalizedName": "millfauz"
+    },
+    {
+      "url": "/company-logos/mpk-pivovarenny-zavod-maykopsky.png",
+      "fileName": "mpk-pivovarenny-zavod-maykopsky.png",
+      "normalizedName": "mpk pivovarenny zavod maykopsky"
+    },
+    {
+      "url": "/company-logos/nebug.png",
+      "fileName": "nebug.png",
+      "normalizedName": "nebug"
+    },
+    {
+      "url": "/company-logos/nelden-indastri-s-r-l.png",
+      "fileName": "nelden-indastri-s-r-l.png",
+      "normalizedName": "nelden indastri s r l"
+    },
+    {
+      "url": "/company-logos/nomas-vhodit-v-uralspetstrans.png",
+      "fileName": "nomas-vhodit-v-uralspetstrans.png",
+      "normalizedName": "nomas vhodit v uralspetstrans"
+    },
+    {
+      "url": "/company-logos/nordakvatreyd.png",
+      "fileName": "nordakvatreyd.png",
+      "normalizedName": "nordakvatreyd"
+    },
+    {
+      "url": "/company-logos/novit.png",
+      "fileName": "novit.png",
+      "normalizedName": "novit"
+    },
+    {
+      "url": "/company-logos/novointeh.png",
+      "fileName": "novointeh.png",
+      "normalizedName": "novointeh"
+    },
+    {
+      "url": "/company-logos/obedinennaya-pivovarennaya-kompaniya.png",
+      "fileName": "obedinennaya-pivovarennaya-kompaniya.png",
+      "normalizedName": "obedinennaya pivovarennaya kompaniya"
+    },
+    {
+      "url": "/company-logos/okil-sato.png",
+      "fileName": "okil-sato.png",
+      "normalizedName": "okil sato"
+    },
+    {
+      "url": "/company-logos/operator-tsrpt.png",
+      "fileName": "operator-tsrpt.png",
+      "normalizedName": "operator tsrpt"
+    },
+    {
+      "url": "/company-logos/orelpischemash-proizvodstvenno-kommerchesky-tsentr.png",
+      "fileName": "orelpischemash-proizvodstvenno-kommerchesky-tsentr.png",
+      "normalizedName": "orelpischemash proizvodstvenno kommerchesky tsentr"
+    },
+    {
+      "url": "/company-logos/p-i-n-t-a-kraft.svg",
+      "fileName": "p-i-n-t-a-kraft.svg",
+      "normalizedName": "p i n t a kraft"
+    },
+    {
+      "url": "/company-logos/p-i-n-t-a.svg",
+      "fileName": "p-i-n-t-a.svg",
+      "normalizedName": "p i n t a"
+    },
+    {
+      "url": "/company-logos/pali-s-r-o.png",
+      "fileName": "pali-s-r-o.png",
+      "normalizedName": "pali s r o"
+    },
+    {
+      "url": "/company-logos/parmatek.png",
+      "fileName": "parmatek.png",
+      "normalizedName": "parmatek"
+    },
+    {
+      "url": "/company-logos/pischepromprodukt.png",
+      "fileName": "pischepromprodukt.png",
+      "normalizedName": "pischepromprodukt"
+    },
+    {
+      "url": "/company-logos/pischevaya-promyshlennost-izdatelstvo.png",
+      "fileName": "pischevaya-promyshlennost-izdatelstvo.png",
+      "normalizedName": "pischevaya promyshlennost izdatelstvo"
+    },
+    {
+      "url": "/company-logos/pivnaya-kompaniya.png",
+      "fileName": "pivnaya-kompaniya.png",
+      "normalizedName": "pivnaya kompaniya"
+    },
+    {
+      "url": "/company-logos/polifiltr-firma.png",
+      "fileName": "polifiltr-firma.png",
+      "normalizedName": "polifiltr firma"
+    },
+    {
+      "url": "/company-logos/priboy.png",
+      "fileName": "priboy.png",
+      "normalizedName": "priboy"
+    },
+    {
+      "url": "/company-logos/probryuservis.png",
+      "fileName": "probryuservis.png",
+      "normalizedName": "probryuservis"
+    },
+    {
+      "url": "/company-logos/processnij-inzhiniring.png",
+      "fileName": "processnij-inzhiniring.png",
+      "normalizedName": "processnij inzhiniring"
+    },
+    {
+      "url": "/company-logos/professionalnaya-metrologiya.png",
+      "fileName": "professionalnaya-metrologiya.png",
+      "normalizedName": "professionalnaya metrologiya"
+    },
+    {
+      "url": "/company-logos/profibeer-portal-pivnogo-rynka.png",
+      "fileName": "profibeer-portal-pivnogo-rynka.png",
+      "normalizedName": "profibeer portal pivnogo rynka"
+    },
+    {
+      "url": "/company-logos/profibeer.png",
+      "fileName": "profibeer.png",
+      "normalizedName": "profibeer"
+    },
+    {
+      "url": "/company-logos/prosolod.png",
+      "fileName": "prosolod.png",
+      "normalizedName": "prosolod"
+    },
+    {
+      "url": "/company-logos/prosteklo.png",
+      "fileName": "prosteklo.png",
+      "normalizedName": "prosteklo"
+    },
+    {
+      "url": "/company-logos/rausch.png",
+      "fileName": "rausch.png",
+      "normalizedName": "rausch"
+    },
+    {
+      "url": "/company-logos/realbrew-zhurnal.png",
+      "fileName": "realbrew-zhurnal.png",
+      "normalizedName": "realbrew zhurnal"
+    },
+    {
+      "url": "/company-logos/rostzip.png",
+      "fileName": "rostzip.png",
+      "normalizedName": "rostzip"
+    },
+    {
+      "url": "/company-logos/rushmelsolod.jpg",
+      "fileName": "rushmelsolod.jpg",
+      "normalizedName": "rushmelsolod"
+    },
+    {
+      "url": "/company-logos/rushmelsolod.png",
+      "fileName": "rushmelsolod.png",
+      "normalizedName": "rushmelsolod"
+    },
+    {
+      "url": "/company-logos/russkaya-solodovennaya-gruppa.png",
+      "fileName": "russkaya-solodovennaya-gruppa.png",
+      "normalizedName": "russkaya solodovennaya gruppa"
+    },
+    {
+      "url": "/company-logos/sargan-brewery.png",
+      "fileName": "sargan-brewery.png",
+      "normalizedName": "sargan brewery"
+    },
+    {
+      "url": "/company-logos/savitsky-i-synovya.png",
+      "fileName": "savitsky-i-synovya.png",
+      "normalizedName": "savitsky i synovya"
+    },
+    {
+      "url": "/company-logos/scheglovsky-pivovar.png",
+      "fileName": "scheglovsky-pivovar.png",
+      "normalizedName": "scheglovsky pivovar"
+    },
+    {
+      "url": "/company-logos/selvit.png",
+      "fileName": "selvit.png",
+      "normalizedName": "selvit"
+    },
+    {
+      "url": "/company-logos/sf-technologies.png",
+      "fileName": "sf-technologies.png",
+      "normalizedName": "sf technologies"
+    },
+    {
+      "url": "/company-logos/sfera-izdatelsky-dom.png",
+      "fileName": "sfera-izdatelsky-dom.png",
+      "normalizedName": "sfera izdatelsky dom"
+    },
+    {
+      "url": "/company-logos/shenbush.png",
+      "fileName": "shenbush.png",
+      "normalizedName": "shenbush"
+    },
+    {
+      "url": "/company-logos/sigma-treyd-torgovy-dom.png",
+      "fileName": "sigma-treyd-torgovy-dom.png",
+      "normalizedName": "sigma treyd torgovy dom"
+    },
+    {
+      "url": "/company-logos/smi-russia.png",
+      "fileName": "smi-russia.png",
+      "normalizedName": "smi russia"
+    },
+    {
+      "url": "/company-logos/solisoft.svg",
+      "fileName": "solisoft.svg",
+      "normalizedName": "solisoft"
+    },
+    {
+      "url": "/company-logos/solodovenny-zavod-suffle-sankt-peterburg.jpg",
+      "fileName": "solodovenny-zavod-suffle-sankt-peterburg.jpg",
+      "normalizedName": "solodovenny zavod suffle sankt peterburg"
+    },
+    {
+      "url": "/company-logos/sovital-zavod-holodilnogo-oborudovaniya.svg",
+      "fileName": "sovital-zavod-holodilnogo-oborudovaniya.svg",
+      "normalizedName": "sovital zavod holodilnogo oborudovaniya"
+    },
+    {
+      "url": "/company-logos/soyuz-rossiyskih-pivovarov.png",
+      "fileName": "soyuz-rossiyskih-pivovarov.png",
+      "normalizedName": "soyuz rossiyskih pivovarov"
+    },
+    {
+      "url": "/company-logos/stal-master.png",
+      "fileName": "stal-master.png",
+      "normalizedName": "stal master"
+    },
+    {
+      "url": "/company-logos/staraya-krepost-pivovarennaya-kompaniya.png",
+      "fileName": "staraya-krepost-pivovarennaya-kompaniya.png",
+      "normalizedName": "staraya krepost pivovarennaya kompaniya"
+    },
+    {
+      "url": "/company-logos/strategiya-xxi.png",
+      "fileName": "strategiya-xxi.png",
+      "normalizedName": "strategiya xxi"
+    },
+    {
+      "url": "/company-logos/syktyvkarsky-pivovarenny-zavod.png",
+      "fileName": "syktyvkarsky-pivovarenny-zavod.png",
+      "normalizedName": "syktyvkarsky pivovarenny zavod"
+    },
+    {
+      "url": "/company-logos/syktyvkarsky-pivovarenny-zavod.svg",
+      "fileName": "syktyvkarsky-pivovarenny-zavod.svg",
+      "normalizedName": "syktyvkarsky pivovarenny zavod"
+    },
+    {
+      "url": "/company-logos/tehnofiltr-npp.png",
+      "fileName": "tehnofiltr-npp.png",
+      "normalizedName": "tehnofiltr npp"
+    },
+    {
+      "url": "/company-logos/tehnoprom.png",
+      "fileName": "tehnoprom.png",
+      "normalizedName": "tehnoprom"
+    },
+    {
+      "url": "/company-logos/tihoretsky-pivovarenny-zavod.png",
+      "fileName": "tihoretsky-pivovarenny-zavod.png",
+      "normalizedName": "tihoretsky pivovarenny zavod"
+    },
+    {
+      "url": "/company-logos/tokk-zavod-upakovochnyh-izdely.png",
+      "fileName": "tokk-zavod-upakovochnyh-izdely.png",
+      "normalizedName": "tokk zavod upakovochnyh izdely"
+    },
+    {
+      "url": "/company-logos/tomskoe-pivo.png",
+      "fileName": "tomskoe-pivo.png",
+      "normalizedName": "tomskoe pivo"
+    },
+    {
+      "url": "/company-logos/top-tehnika.png",
+      "fileName": "top-tehnika.png",
+      "normalizedName": "top tehnika"
+    },
+    {
+      "url": "/company-logos/tovesorb.png",
+      "fileName": "tovesorb.png",
+      "normalizedName": "tovesorb"
+    },
+    {
+      "url": "/company-logos/transkemikl-express.png",
+      "fileName": "transkemikl-express.png",
+      "normalizedName": "transkemikl express"
+    },
+    {
+      "url": "/company-logos/tulsky-solod.png",
+      "fileName": "tulsky-solod.png",
+      "normalizedName": "tulsky solod"
+    },
+    {
+      "url": "/company-logos/valennta-vk.png",
+      "fileName": "valennta-vk.png",
+      "normalizedName": "valennta vk"
+    },
+    {
+      "url": "/company-logos/vester.png",
+      "fileName": "vester.png",
+      "normalizedName": "vester"
+    },
+    {
+      "url": "/company-logos/vodokomfort.png",
+      "fileName": "vodokomfort.png",
+      "normalizedName": "vodokomfort"
+    },
+    {
+      "url": "/company-logos/vysokogornaya-kelskaya-pivovarnya.png",
+      "fileName": "vysokogornaya-kelskaya-pivovarnya.png",
+      "normalizedName": "vysokogornaya kelskaya pivovarnya"
+    },
+    {
+      "url": "/company-logos/yigitoglu.png",
+      "fileName": "yigitoglu.png",
+      "normalizedName": "yigitoglu"
+    },
+    {
+      "url": "/company-logos/zavkom-inzhiniring.png",
+      "fileName": "zavkom-inzhiniring.png",
+      "normalizedName": "zavkom inzhiniring"
+    },
+    {
+      "url": "/company-logos/zip-servis.png",
+      "fileName": "zip-servis.png",
+      "normalizedName": "zip servis"
+    },
+    {
+      "url": "/company-logos/zirax.png",
+      "fileName": "zirax.png",
+      "normalizedName": "zirax"
+    }
+  ],
+  "matches": [
+    {
+      "company": "PROFIBEER",
+      "logo": "/company-logos/profibeer.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_profibeer-200x100.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "PROSOLOD",
+      "logo": "/company-logos/prosolod.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_prosolod.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "RealBrew Журнал",
+      "logo": "/company-logos/realbrew-zhurnal.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_realbrew2.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«АВАНГАРД-АГРО» АО",
+      "logo": "/company-logos/avangard-agro.png",
+      "logoSource": "manual:avangard-agro.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«АвтоГазТранс» ООО",
+      "logo": "/company-logos/agtrans.png",
+      "logoSource": "manual:agtrans.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«АЛЬЯНС» ТД»",
+      "logo": "/company-logos/alyans-td.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_td_alliance22.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«АНГЕЛ ИСТ РУС» ООО",
+      "logo": "/company-logos/angelyest.png",
+      "logoSource": "manual:angelyest.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«АРГОНАВТ ГРУПП» ООО",
+      "logo": "/company-logos/argonavt.png",
+      "logoSource": "manual:argonavt.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«БАВАРИЯ» Пивоваренный дом Группа компаний» ООО",
+      "logo": "/company-logos/bavariya-pivovarenny-dom-gruppa-kompany.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_bavariya-200x100.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«БАЛТИКА» Пивоваренная компания» ООО",
+      "logo": "/company-logos/baltika-pivovarennaya-kompaniya.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_baltika.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "БЕЛСОЛОД ОАО",
+      "logo": "/company-logos/belsolod.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_belsolod.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "БИР РЕСУРС",
+      "logo": "/company-logos/bir-resurs.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_beerresurs.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "БРЮВ КЭНИНГ СИСТЕМ",
+      "logo": "/company-logos/brew-canning-system.png",
+      "logoSource": "manual:logo_brewman-.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«БУСТЕР РУС» ООО",
+      "logo": "/company-logos/buster-rus.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_buster3.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«ВАЛЕННТА ВК» ООО",
+      "logo": "/company-logos/valennta-vk.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_valenta.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«ВЕСТЕР» ООО",
+      "logo": "/company-logos/vester.png",
+      "logoSource": null,
+      "score": 100,
+      "method": "local-exact"
+    },
+    {
+      "company": "«ВОДОКОМФОРТ» фирма ООО",
+      "logo": "/company-logos/vodokomfort.png",
+      "logoSource": null,
+      "score": 92,
+      "method": "local-exact-ish"
+    },
+    {
+      "company": "«ВЫСОКОГОРНАЯ КЕЛЬСКАЯ ПИВОВАРНЯ» ООО",
+      "logo": "/company-logos/vysokogornaya-kelskaya-pivovarnya.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_vysokogornayakelskaya-200x100.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«ГРЕЙНРУС» ООО",
+      "logo": "/company-logos/greynrus.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_grainerus-new-.jpg",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«ГРЕЙНФОРД-АГРО» ООО",
+      "logo": "/company-logos/greynford-agro.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_grainfordagro-200x100.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "ГРИНГОД",
+      "logo": "/company-logos/gringod.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_greengod-.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«ДАРЬЯЛ» ВПБЗ ООО",
+      "logo": "/company-logos/daryal-vpbz.png",
+      "logoSource": "manual:dariyal-.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«ДОН-ПОЛИМЕР» ООО",
+      "logo": "/company-logos/don-polimer.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo-don-polymer-.jpg",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«ДФильтр» ООО",
+      "logo": "/company-logos/dfiltr.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_dfilter.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«ЗАВКОМ-ИНЖИНИРИНГ» ООО",
+      "logo": "/company-logos/zavkom-inzhiniring.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_zavcomingeneering.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«ЗИП Сервис»",
+      "logo": "/company-logos/zip-servis.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_zipservice2025-200x100.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«ЗИРАКС» ООО",
+      "logo": "/company-logos/zirax.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_zirax.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«ИНДУСТРИЯ НАПИТКОВ» журнал",
+      "logo": "/company-logos/industriya-napitkov-zhurnal.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_industry_napitki.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "ИНОКС ОРЕНБУРГ",
+      "logo": "/company-logos/inox-orenburg.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_inox_200x100.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«ЙИГИТОГЛУ РУС» ООО",
+      "logo": "/company-logos/yigitoglu.png",
+      "logoSource": null,
+      "score": 92,
+      "method": "local-exact-ish"
+    },
+    {
+      "company": "Как Вы Это Привезли",
+      "logo": "/company-logos/kak-vy-eto-privezli.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_kak_vy_eto_privezli-200x100.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«КИЗЕЛЬМАНН РУС» ООО",
+      "logo": "/company-logos/kizelmann-rus.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_kizelman.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "Кропоткинский завод МиССП",
+      "logo": "/company-logos/kropotkinsky-zavod-missp.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_missp.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«КХС РУС» ООО (KHS GmbH)",
+      "logo": "/company-logos/khs-rus-khs-gmbh.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_khs.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«МИЛЛФАУЗ» ООО",
+      "logo": "/company-logos/millfauz.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_mill-fauz-200x100.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«МПК» Пивоваренный завод Майкопский ООО",
+      "logo": "/company-logos/mpk-pivovarenny-zavod-maykopsky.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_maykop_pivivarnya-200x100.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "НЕЛДЕН ИНДАСТРИ С.Р.Л.",
+      "logo": "/company-logos/nelden-indastri-s-r-l.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_nelden_new.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«НОВОИНТЕХ» ЗАО",
+      "logo": "/company-logos/novointeh.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_novointeh.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«НОМАС» ООО (входит в ООО «УралСпецТранс»)",
+      "logo": "/company-logos/nomas-vhodit-v-uralspetstrans.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_nomas.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«НордАкваТрейд» ООО",
+      "logo": "/company-logos/nordakvatreyd.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_nordakva-200x100.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "ОКИЛ-САТО",
+      "logo": "/company-logos/okil-sato.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_okil-sato-rus-200x100.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«Оператор-ЦРПТ» ООО",
+      "logo": "/company-logos/operator-tsrpt.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_crpt.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«ОРЕЛПИЩЕМАШ» Производственно-коммерческий центр ООО",
+      "logo": "/company-logos/orelpischemash-proizvodstvenno-kommerchesky-tsentr.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_orelpischemash.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "ПАРМАТЕК ООО",
+      "logo": "/company-logos/parmatek.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_parmatek.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«П.И.Н.Т.А. КРАФТ» ООО",
+      "logo": "/company-logos/p-i-n-t-a-kraft.svg",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_pinta-craft-.svg",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«ПИЩЕВАЯ ПРОМЫШЛЕННОСТЬ» Издательство» ООО",
+      "logo": "/company-logos/pischevaya-promyshlennost-izdatelstvo.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_pishevaya_promishlennost.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«ПИЩЕПРОМПРОДУКТ» ООО",
+      "logo": "/company-logos/pischepromprodukt.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_pischepromprodukt.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«ПОЛИФИЛЬТР Фирма» ООО",
+      "logo": "/company-logos/polifiltr-firma.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_polifiltr.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«ПРИБОЙ» ООО",
+      "logo": "/company-logos/priboy.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_priboy.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "ПРОБРЮСЕРВИС",
+      "logo": "/company-logos/probryuservis.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_probrewservice-200x100.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "ПРОСТЕКЛО",
+      "logo": "/company-logos/prosteklo.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_posteklo-200x100.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«ПРОФЕССИОНАЛЬНАЯ МЕТРОЛОГИЯ» ООО",
+      "logo": "/company-logos/professionalnaya-metrologiya.png",
+      "logoSource": null,
+      "score": 100,
+      "method": "local-exact"
+    },
+    {
+      "company": "РОСТОВСКИЙ ЗАВОД ИНДУКЦИОННЫХ ПАРОГЕНЕРАТОРОВ",
+      "logo": "/company-logos/rostzip.png",
+      "logoSource": "manual:rostzip.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«РУСХМЕЛЬСОЛОД» ООО",
+      "logo": "/company-logos/rushmelsolod.jpg",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_rus-hmel-solod.jpg",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«СЕЛВИТ» ООО",
+      "logo": "/company-logos/selvit.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_selvit-200x100.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«СИГМА-ТРЕЙД» ТОРГОВЫЙ ДОМ ООО",
+      "logo": "/company-logos/sigma-treyd-torgovy-dom.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_sigma_200x100.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«СМИ РУССИА» ООО",
+      "logo": "/company-logos/smi-russia.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_smigroup.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "СОВИТАЛ Завод холодильного оборудования",
+      "logo": "/company-logos/sovital-zavod-holodilnogo-oborudovaniya.svg",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_sovital-200x100.svg",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "СОЛИСОФТ ГК",
+      "logo": "/company-logos/solisoft.svg",
+      "logoSource": "https://static.tildacdn.com/tild3931-3232-4161-b634-373966356437/Solisoft.svg",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«СОЛОДОВЕННЫЙ ЗАВОД СУФФЛЕ САНКТ-ПЕТЕРБУРГ» АО",
+      "logo": "/company-logos/solodovenny-zavod-suffle-sankt-peterburg.jpg",
+      "logoSource": "https://www.soud.ru/baers_uch/logo-soufflet.jpg",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "СОЮЗ РОССИЙСКИХ ПИВОВАРОВ",
+      "logo": "/company-logos/soyuz-rossiyskih-pivovarov.png",
+      "logoSource": "manual:souz-rossijskih-pivovarov.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«СТРАТЕГИЯ–XXI» ООО",
+      "logo": "/company-logos/strategiya-xxi.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_strategy21.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«СФЕРА» Издательский дом",
+      "logo": "/company-logos/sfera-izdatelsky-dom.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_sfera.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«СЫКТЫВКАРСКИЙ» Пивоваренный завод» АО",
+      "logo": "/company-logos/syktyvkarsky-pivovarenny-zavod.svg",
+      "logoSource": "manual:siktivkarpivo.svg",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«ТЕХНОФИЛЬТР» НПП ООО",
+      "logo": "/company-logos/tehnofiltr-npp.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_technofilter.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«ТИХОРЕЦКИЙ ПИВОВАРЕННЫЙ ЗАВОД» ООО",
+      "logo": "/company-logos/tihoretsky-pivovarenny-zavod.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_tihoreckiy.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«ТОВЕСОРБ» ООО",
+      "logo": "/company-logos/tovesorb.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_toversorbn.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«ТОКК Завод упаковочных изделий» ООО",
+      "logo": "/company-logos/tokk-zavod-upakovochnyh-izdely.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_tokk.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«ТОМСКОЕ ПИВО» ОАО",
+      "logo": "/company-logos/tomskoe-pivo.png",
+      "logoSource": "manual:tomskoe-pivo1.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«ТОП-ТЕХНИКА» ООО",
+      "logo": "/company-logos/top-tehnika.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_toptech-200x100.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«ТРАНСКЕМИКЛ-экспресс» АО",
+      "logo": "/company-logos/transkemikl-express.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_transchmical-200x100.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«ТУЛЬСКИЙ СОЛОД» ООО",
+      "logo": "/company-logos/tulsky-solod.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_tul-solod-200x100.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«ФИЛЬТРМЕДИА» ЗАО",
+      "logo": "/company-logos/filtrmedia.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_filtermedia.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«ХАДЫЖЕНСКИЙ Пивоваренный завод» ООО",
+      "logo": "/company-logos/hadyzhensky-pivovarenny-zavod.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_hadyzhensk2.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«ХОЙФТ ЕВРАЗИЯ» ООО",
+      "logo": "/company-logos/hoyft-evraziya.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_hoyft.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "ХОПШТАЙНЕР",
+      "logo": "/company-logos/hopshtayner.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_hopsteiner.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«СТАРАЯ КРЕПОСТЬ» ПИВОВАРЕННАЯ КОМПАНИЯ» ООО",
+      "logo": "/company-logos/staraya-krepost-pivovarennaya-kompaniya.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_starayakrepost.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "«ШЕНБУШ» ООО",
+      "logo": "/company-logos/shenbush.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_schonbusch_200x100.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "ЭКВИНТ Группа компаний",
+      "logo": "/company-logos/ekvint-gruppa-kompany.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_equint.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "ЭЛТЕМИКС ЛАБ ООО",
+      "logo": "/company-logos/eltemix-lab.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo_eltemiks2.png",
+      "score": 100,
+      "method": "existing"
+    },
+    {
+      "company": "ЭнВиСи КАРБОН РУС",
+      "logo": "/company-logos/envisi-karbon-rus.png",
+      "logoSource": "https://www.soud.ru/baers_uch/logo-nwc_carbon-200x100.png",
+      "score": 100,
+      "method": "existing"
+    }
+  ],
+  "missing": [
+    "A-sense Sp.Z.o.o.",
+    "«BEERFACTORY» Пивоварня-ресторан",
+    "BEER WEEKLY Газета",
+    "CHINAMI",
+    "CRISPY NEWS",
+    "HEIMBRAUER Пивоварня",
+    "IT Future - Айти будущего",
+    "JKM",
+    "KRASPIVO.RU – Красноярский пивной портал",
+    "OMNIA TECHNOLOGIES S.p.A",
+    "«А и Т Акопяны» ООО",
+    "«АМАРАНТ» ООО",
+    "«АСТЕРА» ООО",
+    "«АФАНАСИЙ» Частная пивоварня» ООО",
+    "БИЗНЕС ПИЩЕВЫХ ИНГРЕДИЕНТОВ",
+    "БирШтадт Частная пивоварня",
+    "БОРЗ Ножи Мира",
+    "«БОЧКАРИ» Компания",
+    "«БРАТЬЯ ХОПФЕН» ООО",
+    "«ГЕО-ИНЖИНИРИНГ ЮГ» ООО",
+    "«ДЕКО МИНЕРАЛС СНГ» ООО",
+    "«ДЕРБЕНТСКАЯ ПИВОВАРЕННАЯ КОМПАНИЯ» ООО",
+    "ЕРЕВАНСКОЕ ПИВО ЗАО",
+    "«ЗЕЛЕНОГОРСКИЕ НАПИТКИ» ООО",
+    "«ИВАНОВСКАЯ ПИВОВАРНЯ» ООО",
+    "«ИЖСИНТЕЗ-ХИМПРОМ ПК» ООО",
+    "«ЙОГГУ» ООО",
+    "КАМЧАТСКИЙ УЛОВ",
+    "КАНЦЛЕРЪ ПЗ ООО",
+    "КИЗЕЛЬГУР",
+    "КОЛОМЕНСКАЯ ПИВОВАРНЯ",
+    "КрафтБэнд Пивоварня",
+    "«КРИНИЦА» ОАО",
+    "«Кто есть Кто. ПИЩЕПРОМ + АПК России» Журнал",
+    "«ЛАВКА-ПАСЕЧНИКА» ООО",
+    "«МББ ГРУПП» ООО",
+    "«МИНУСИНСКИЙ ПИВОВАРЕННЫЙ ЗАВОД» ООО",
+    "НОВЫЕ ПИВОВАРНИ",
+    "Отдых. на Кубани.ру",
+    "ПАРУС ООО",
+    "«ПИВЗАВОД – МАРКСОВСКИЙ» ООО",
+    "«ПИВОВАРНЯ» ООО",
+    "«ПИВОВАРНЯ КОЖЕВНИКОВО» ООО",
+    "«ПИВОВАРНЯ С» ООО",
+    "ПИВО ЖИВО",
+    "«ПРОМКОНТИНЕНТ» ООО",
+    "«ПРОЦЕССНЫЙ ИНЖИНИРИНГ» ООО",
+    "РЕСТОРАНОВЕД",
+    "«РОКС» ООО",
+    "РОССИЙСКИЙ ПРОДОВОЛЬСТВЕННЫЙ РЫНОК журнал",
+    "«СИБИРСКАЯ ЛЕГЕНДА» Пивоваренный завод",
+    "«СИБИЭС» ООО",
+    "«СЛАВУТИЧ» ООО",
+    "«СТАВРОПОЛЬСКИЙ ПИВОВАРЕННЫЙ ЗАВОД» ОАО",
+    "«ТОРГОВО-ПРОМЫШЛЕННАЯ КОМПАНИЯ-КРАСНОДАР» ООО",
+    "ФЕРМЕРСКИЕ ДЕЛИКАТЕСЫ",
+    "«ФИЛЬТРТЕХНИКА» ООО",
+    "«ФОРЕЙН БРЕНДС» ООО",
+    "«ФРИГОГЛАСС ЕВРАЗИЯ» ООО",
+    "«ХМЕЛЬСЕРВИС» ООО",
+    "«Центр координации поддержки экспортно ориентированных субъектов малого \n  и среднего предпринимательства Белгородской области» АНО",
+    "ДРАГИН В.Н. ИП",
+    "«ЭкоКуб» ООО",
+    "ЮЖНЫЙ ОСЁТР"
+  ]
+}

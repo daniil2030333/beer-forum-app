@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+:root {
+  --app-background: #FAF6EF;
+  --brand-brown: #7A3F1D;
+  --brand-dark-brown: #4A2412;
+  --brand-amber: #F7941D;
+  --brand-amber-soft: #FFF4E6;
+  --brand-surface: #FFFDF8;
+  --bottom-nav-safe-padding: calc(4.75rem + env(safe-area-inset-bottom));
+}
+
+html {
+  background: var(--app-background);
+}
+
+body {
+  min-height: 100dvh;
+  background: var(--app-background);
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+.mobile-app-shell > main {
+  padding-bottom: var(--bottom-nav-safe-padding);
+}
+
+button,
+a,
+input {
+  touch-action: manipulation;
+}
+
+button,
+a {
+  -webkit-user-select: none;
+  user-select: none;
+}

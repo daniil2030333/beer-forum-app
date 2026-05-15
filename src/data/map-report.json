@@ -1,0 +1,1344 @@
+{
+  "source": "public/beerforum-map.svg",
+  "totalStandsOnMap": 91,
+  "matchedCompanies": [
+    {
+      "companyId": "1",
+      "company": "A-sense Sp.Z.o.o.",
+      "stand": "34",
+      "coordinates": {
+        "stand": "34",
+        "x": 2094.47,
+        "y": 609.33,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "4",
+      "company": "CHINAMI",
+      "stand": "146",
+      "coordinates": {
+        "stand": "146",
+        "x": 747.38,
+        "y": 285.06,
+        "width": 58.76,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "7",
+      "company": "IT Future - Айти будущего",
+      "stand": "112",
+      "coordinates": {
+        "stand": "112",
+        "x": 122.64,
+        "y": 1821.98,
+        "width": 55.8,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "8",
+      "company": "JKM",
+      "stand": "96",
+      "coordinates": {
+        "stand": "96",
+        "x": 849.14,
+        "y": 1308.95,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "10",
+      "company": "OMNIA TECHNOLOGIES S.p.A",
+      "stand": "16",
+      "coordinates": {
+        "stand": "16",
+        "x": 1776.07,
+        "y": 1848.18,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "11",
+      "company": "PROFIBEER",
+      "stand": "22",
+      "coordinates": {
+        "stand": "22",
+        "x": 1960.71,
+        "y": 1343.88,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "12",
+      "company": "PROSOLOD",
+      "stand": "78",
+      "coordinates": {
+        "stand": "78",
+        "x": 1151.94,
+        "y": 1771.95,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "13",
+      "company": "RealBrew Журнал",
+      "stand": "90",
+      "coordinates": {
+        "stand": "90",
+        "x": 1094.98,
+        "y": 1463.73,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "14",
+      "company": "«АВАНГАРД-АГРО» АО",
+      "stand": "63",
+      "coordinates": {
+        "stand": "63",
+        "x": 1550.3,
+        "y": 913.75,
+        "width": 37.8,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "15",
+      "company": "«АвтоГазТранс» ООО",
+      "stand": "13",
+      "coordinates": {
+        "stand": "13",
+        "x": 2095.49,
+        "y": 2006.24,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "17",
+      "company": "«АЛЬЯНС» ТД»",
+      "stand": "73",
+      "coordinates": {
+        "stand": "73",
+        "x": 1417.6,
+        "y": 1724.87,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "19",
+      "company": "«АНГЕЛ ИСТ РУС» ООО",
+      "stand": "80",
+      "coordinates": {
+        "stand": "80",
+        "x": 1152.14,
+        "y": 2175.31,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "108",
+      "company": "«СИГМА-ТРЕЙД» ТОРГОВЫЙ ДОМ ООО",
+      "stand": "80",
+      "coordinates": {
+        "stand": "80",
+        "x": 1152.14,
+        "y": 2175.31,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "20",
+      "company": "«АРГОНАВТ ГРУПП» ООО",
+      "stand": "35",
+      "coordinates": {
+        "stand": "35",
+        "x": 1912.73,
+        "y": 578.72,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "36",
+      "company": "«ВОДОКОМФОРТ» фирма ООО",
+      "stand": "35",
+      "coordinates": {
+        "stand": "35",
+        "x": 1912.73,
+        "y": 578.72,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "23",
+      "company": "«БАВАРИЯ» Пивоваренный дом Группа компаний» ООО",
+      "stand": "145",
+      "coordinates": {
+        "stand": "145",
+        "x": 683.01,
+        "y": 429.86,
+        "width": 58.76,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "24",
+      "company": "«БАЛТИКА» Пивоваренная компания» ООО",
+      "stand": "36",
+      "coordinates": {
+        "stand": "36",
+        "x": 1784.5,
+        "y": 498.49,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "25",
+      "company": "БЕЛСОЛОД ОАО",
+      "stand": "105",
+      "coordinates": {
+        "stand": "105",
+        "x": 571.93,
+        "y": 2049.45,
+        "width": 55.8,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "27",
+      "company": "БИР РЕСУРС",
+      "stand": "33",
+      "coordinates": {
+        "stand": "33",
+        "x": 1784.59,
+        "y": 734.84,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "29",
+      "company": "БОРЗ Ножи Мира",
+      "stand": "141",
+      "coordinates": {
+        "stand": "141",
+        "x": 123.87,
+        "y": 225.83,
+        "width": 55.8,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "32",
+      "company": "БРЮВ КЭНИНГ СИСТЕМ",
+      "stand": "116",
+      "coordinates": {
+        "stand": "116",
+        "x": 187.36,
+        "y": 1735.72,
+        "width": 55.8,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "33",
+      "company": "«БУСТЕР РУС» ООО",
+      "stand": "12",
+      "coordinates": {
+        "stand": "12",
+        "x": 2006.28,
+        "y": 2149.75,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "34",
+      "company": "«ВАЛЕННТА ВК» ООО",
+      "stand": "110",
+      "coordinates": {
+        "stand": "110",
+        "x": 122.64,
+        "y": 1949.85,
+        "width": 55.8,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "35",
+      "company": "«ВЕСТЕР» ООО",
+      "stand": "75",
+      "coordinates": {
+        "stand": "75",
+        "x": 1418.65,
+        "y": 2124.22,
+        "width": 35.8,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "37",
+      "company": "«ВЫСОКОГОРНАЯ КЕЛЬСКАЯ ПИВОВАРНЯ» ООО",
+      "stand": "66",
+      "coordinates": {
+        "stand": "66",
+        "x": 1554.81,
+        "y": 1444.79,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "38",
+      "company": "«ГЕО-ИНЖИНИРИНГ ЮГ» ООО",
+      "stand": "14",
+      "coordinates": {
+        "stand": "14",
+        "x": 1921.86,
+        "y": 1907.18,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "39",
+      "company": "«ГРЕЙНРУС» ООО",
+      "stand": "71",
+      "coordinates": {
+        "stand": "71",
+        "x": 1485.71,
+        "y": 1872.54,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "40",
+      "company": "«ГРЕЙНФОРД-АГРО» ООО",
+      "stand": "64",
+      "coordinates": {
+        "stand": "64",
+        "x": 1551.64,
+        "y": 1091.97,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "41",
+      "company": "ГРИНГОД",
+      "stand": "15",
+      "coordinates": {
+        "stand": "15",
+        "x": 1804.79,
+        "y": 1955.61,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "43",
+      "company": "«ДЕКО МИНЕРАЛС СНГ» ООО",
+      "stand": "32",
+      "coordinates": {
+        "stand": "32",
+        "x": 1914.42,
+        "y": 734.84,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "45",
+      "company": "«ДОН-ПОЛИМЕР» ООО",
+      "stand": "26",
+      "coordinates": {
+        "stand": "26",
+        "x": 2095.33,
+        "y": 1091.97,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "46",
+      "company": "«ДФильтр» ООО",
+      "stand": "17",
+      "coordinates": {
+        "stand": "17",
+        "x": 1775.93,
+        "y": 1725.25,
+        "width": 37.54,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "48",
+      "company": "«ЗАВКОМ-ИНЖИНИРИНГ» ООО",
+      "stand": "60",
+      "coordinates": {
+        "stand": "60",
+        "x": 1550.22,
+        "y": 280.96,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "50",
+      "company": "«ЗИП Сервис»",
+      "stand": "21",
+      "coordinates": {
+        "stand": "21",
+        "x": 1846.84,
+        "y": 1480.49,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "51",
+      "company": "«ЗИРАКС» ООО",
+      "stand": "2",
+      "coordinates": {
+        "stand": "2",
+        "x": 1332.06,
+        "y": 2981.89,
+        "width": 16.73,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "54",
+      "company": "«ИНДУСТРИЯ НАПИТКОВ» журнал",
+      "stand": "10",
+      "coordinates": {
+        "stand": "10",
+        "x": 1609.93,
+        "y": 2282.1,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "55",
+      "company": "ИНОКС ОРЕНБУРГ",
+      "stand": "38",
+      "coordinates": {
+        "stand": "38",
+        "x": 2095.27,
+        "y": 336.77,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "56",
+      "company": "«ЙИГИТОГЛУ РУС» ООО",
+      "stand": "130",
+      "coordinates": {
+        "stand": "130",
+        "x": 434,
+        "y": 327.1,
+        "width": 48.14,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "57",
+      "company": "«ЙОГГУ» ООО",
+      "stand": "143",
+      "coordinates": {
+        "stand": "143",
+        "x": 123.39,
+        "y": 360.77,
+        "width": 55.8,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "58",
+      "company": "Как Вы Это Привезли",
+      "stand": "153",
+      "coordinates": {
+        "stand": "153",
+        "x": 487.45,
+        "y": 105.1,
+        "width": 55.8,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "59",
+      "company": "КАМЧАТСКИЙ УЛОВ",
+      "stand": "155",
+      "coordinates": {
+        "stand": "155",
+        "x": 283.39,
+        "y": 105.1,
+        "width": 55.8,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "60",
+      "company": "КАНЦЛЕРЪ ПЗ ООО",
+      "stand": "3",
+      "coordinates": {
+        "stand": "3",
+        "x": 1331.8,
+        "y": 2847.55,
+        "width": 16.73,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "61",
+      "company": "КИЗЕЛЬГУР",
+      "stand": "101",
+      "coordinates": {
+        "stand": "101",
+        "x": 574.08,
+        "y": 1735.72,
+        "width": 55.8,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "62",
+      "company": "«КИЗЕЛЬМАНН РУС» ООО",
+      "stand": "20",
+      "coordinates": {
+        "stand": "20",
+        "x": 2095.04,
+        "y": 1568.45,
+        "width": 37.54,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "141",
+      "company": "ЭКВИНТ Группа компаний",
+      "stand": "20",
+      "coordinates": {
+        "stand": "20",
+        "x": 2095.04,
+        "y": 1568.45,
+        "width": 37.54,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "64",
+      "company": "КрафтБэнд Пивоварня",
+      "stand": "148",
+      "coordinates": {
+        "stand": "148",
+        "x": 976.6,
+        "y": 429.86,
+        "width": 52.26,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "65",
+      "company": "«КРИНИЦА» ОАО",
+      "stand": "151",
+      "coordinates": {
+        "stand": "151",
+        "x": 690.19,
+        "y": 105.1,
+        "width": 55.8,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "66",
+      "company": "Кропоткинский завод МиССП",
+      "stand": "65",
+      "coordinates": {
+        "stand": "65",
+        "x": 1550.22,
+        "y": 1250.88,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "68",
+      "company": "«КХС РУС» ООО (KHS GmbH)",
+      "stand": "88",
+      "coordinates": {
+        "stand": "88",
+        "x": 859.64,
+        "y": 1724.87,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "69",
+      "company": "«ЛАВКА-ПАСЕЧНИКА» ООО",
+      "stand": "1",
+      "coordinates": {
+        "stand": "1",
+        "x": 1332.76,
+        "y": 3121.89,
+        "width": 16.73,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "71",
+      "company": "«МИЛЛФАУЗ» ООО",
+      "stand": "149",
+      "coordinates": {
+        "stand": "149",
+        "x": 975,
+        "y": 235.06,
+        "width": 52.26,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "74",
+      "company": "НЕЛДЕН ИНДАСТРИ С.Р.Л.",
+      "stand": "82",
+      "coordinates": {
+        "stand": "82",
+        "x": 697.02,
+        "y": 2175.31,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "75",
+      "company": "«НОВОИНТЕХ» ЗАО",
+      "stand": "118",
+      "coordinates": {
+        "stand": "118",
+        "x": 369.03,
+        "y": 1735.72,
+        "width": 55.8,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "77",
+      "company": "«НОМАС» ООО (входит в ООО «УралСпецТранс»)",
+      "stand": "62",
+      "coordinates": {
+        "stand": "62",
+        "x": 1550.42,
+        "y": 734.84,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "78",
+      "company": "«НордАкваТрейд» ООО",
+      "stand": "70",
+      "coordinates": {
+        "stand": "70",
+        "x": 1551,
+        "y": 1724.87,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "79",
+      "company": "ОКИЛ-САТО",
+      "stand": "91",
+      "coordinates": {
+        "stand": "91",
+        "x": 1238.61,
+        "y": 1465.07,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "81",
+      "company": "«ОРЕЛПИЩЕМАШ» Производственно-коммерческий центр ООО",
+      "stand": "27",
+      "coordinates": {
+        "stand": "27",
+        "x": 1940.04,
+        "y": 1092.52,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "83",
+      "company": "ПАРМАТЕК ООО",
+      "stand": "25",
+      "coordinates": {
+        "stand": "25",
+        "x": 2095.08,
+        "y": 1250.88,
+        "width": 37.54,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "90",
+      "company": "«П.И.Н.Т.А. КРАФТ» ООО",
+      "stand": "19",
+      "coordinates": {
+        "stand": "19",
+        "x": 2094.08,
+        "y": 1771.95,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "91",
+      "company": "«ПИЩЕВАЯ ПРОМЫШЛЕННОСТЬ» Издательство» ООО",
+      "stand": "131",
+      "coordinates": {
+        "stand": "131",
+        "x": 1001.32,
+        "y": 679.5,
+        "width": 48.14,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "92",
+      "company": "«ПИЩЕПРОМПРОДУКТ» ООО",
+      "stand": "89",
+      "coordinates": {
+        "stand": "89",
+        "x": 953.84,
+        "y": 1771.59,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "93",
+      "company": "«ПОЛИФИЛЬТР Фирма» ООО",
+      "stand": "28",
+      "coordinates": {
+        "stand": "28",
+        "x": 1805.69,
+        "y": 1093.9,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "122",
+      "company": "«ТОКК Завод упаковочных изделий» ООО",
+      "stand": "28",
+      "coordinates": {
+        "stand": "28",
+        "x": 1805.69,
+        "y": 1093.9,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "94",
+      "company": "«ПРИБОЙ» ООО",
+      "stand": "95",
+      "coordinates": {
+        "stand": "95",
+        "x": 1079.52,
+        "y": 1264.4,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "95",
+      "company": "ПРОБРЮСЕРВИС",
+      "stand": "18",
+      "coordinates": {
+        "stand": "18",
+        "x": 1921.79,
+        "y": 1726.85,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "97",
+      "company": "ПРОСТЕКЛО",
+      "stand": "86",
+      "coordinates": {
+        "stand": "86",
+        "x": 860.55,
+        "y": 1824.18,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "98",
+      "company": "«ПРОФЕССИОНАЛЬНАЯ МЕТРОЛОГИЯ» ООО",
+      "stand": "6",
+      "coordinates": {
+        "stand": "6",
+        "x": 1596.04,
+        "y": 2955.26,
+        "width": 16.66,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "99",
+      "company": "«ПРОЦЕССНЫЙ ИНЖИНИРИНГ» ООО",
+      "stand": "81",
+      "coordinates": {
+        "stand": "81",
+        "x": 906.69,
+        "y": 2175.31,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "102",
+      "company": "РОССИЙСКИЙ ПРОДОВОЛЬСТВЕННЫЙ РЫНОК журнал",
+      "stand": "100",
+      "coordinates": {
+        "stand": "100",
+        "x": 406.6,
+        "y": 1587.67,
+        "width": 50.19,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "103",
+      "company": "РОСТОВСКИЙ ЗАВОД ИНДУКЦИОННЫХ ПАРОГЕНЕРАТОРОВ",
+      "stand": "30",
+      "coordinates": {
+        "stand": "30",
+        "x": 1939.68,
+        "y": 969.69,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "104",
+      "company": "«РУСХМЕЛЬСОЛОД» ООО",
+      "stand": "97",
+      "coordinates": {
+        "stand": "97",
+        "x": 849.14,
+        "y": 1465.04,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "105",
+      "company": "«СЕЛВИТ» ООО",
+      "stand": "67",
+      "coordinates": {
+        "stand": "67",
+        "x": 1554.03,
+        "y": 1577.59,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "107",
+      "company": "«СИБИЭС» ООО",
+      "stand": "37",
+      "coordinates": {
+        "stand": "37",
+        "x": 1912.82,
+        "y": 421.23,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "109",
+      "company": "«СЛАВУТИЧ» ООО",
+      "stand": "24",
+      "coordinates": {
+        "stand": "24",
+        "x": 2097.02,
+        "y": 1343.88,
+        "width": 37.54,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "110",
+      "company": "«СМИ РУССИА» ООО",
+      "stand": "68",
+      "coordinates": {
+        "stand": "68",
+        "x": 1427.9,
+        "y": 1525.19,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "111",
+      "company": "СОВИТАЛ Завод холодильного оборудования",
+      "stand": "7",
+      "coordinates": {
+        "stand": "7",
+        "x": 1596.4,
+        "y": 2783.33,
+        "width": 15.44,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "113",
+      "company": "«СОЛОДОВЕННЫЙ ЗАВОД СУФФЛЕ САНКТ-ПЕТЕРБУРГ» АО",
+      "stand": "106",
+      "coordinates": {
+        "stand": "106",
+        "x": 430.54,
+        "y": 2175.31,
+        "width": 55.8,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "116",
+      "company": "«СТРАТЕГИЯ–XXI» ООО",
+      "stand": "85",
+      "coordinates": {
+        "stand": "85",
+        "x": 906.69,
+        "y": 1955.61,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "119",
+      "company": "«ТЕХНОФИЛЬТР» НПП ООО",
+      "stand": "40",
+      "coordinates": {
+        "stand": "40",
+        "x": 1826.32,
+        "y": 212,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "120",
+      "company": "«ТИХОРЕЦКИЙ ПИВОВАРЕННЫЙ ЗАВОД» ООО",
+      "stand": "11",
+      "coordinates": {
+        "stand": "11",
+        "x": 1776.07,
+        "y": 2146.15,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "121",
+      "company": "«ТОВЕСОРБ» ООО",
+      "stand": "39",
+      "coordinates": {
+        "stand": "39",
+        "x": 2005.87,
+        "y": 213.45,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "126",
+      "company": "«ТРАНСКЕМИКЛ-экспресс» АО",
+      "stand": "31",
+      "coordinates": {
+        "stand": "31",
+        "x": 2097.16,
+        "y": 814.59,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "127",
+      "company": "«ТУЛЬСКИЙ СОЛОД» ООО",
+      "stand": "29",
+      "coordinates": {
+        "stand": "29",
+        "x": 1805.69,
+        "y": 969.69,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "128",
+      "company": "ФЕРМЕРСКИЕ ДЕЛИКАТЕСЫ",
+      "stand": "134",
+      "coordinates": {
+        "stand": "134",
+        "x": 672.34,
+        "y": 722.09,
+        "width": 53.02,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "129",
+      "company": "«ФИЛЬТРМЕДИА» ЗАО",
+      "stand": "23",
+      "coordinates": {
+        "stand": "23",
+        "x": 1846.84,
+        "y": 1343.88,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "130",
+      "company": "«ФИЛЬТРТЕХНИКА» ООО",
+      "stand": "23",
+      "coordinates": {
+        "stand": "23",
+        "x": 1846.84,
+        "y": 1343.88,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "132",
+      "company": "«ФРИГОГЛАСС ЕВРАЗИЯ» ООО",
+      "stand": "84",
+      "coordinates": {
+        "stand": "84",
+        "x": 696.89,
+        "y": 1771.95,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "134",
+      "company": "«ХМЕЛЬСЕРВИС» ООО",
+      "stand": "77",
+      "coordinates": {
+        "stand": "77",
+        "x": 1200.57,
+        "y": 1955.24,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "135",
+      "company": "«ХОЙФТ ЕВРАЗИЯ» ООО",
+      "stand": "79",
+      "coordinates": {
+        "stand": "79",
+        "x": 1103.35,
+        "y": 1955.61,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "136",
+      "company": "ХОПШТАЙНЕР",
+      "stand": "61",
+      "coordinates": {
+        "stand": "61",
+        "x": 1548.65,
+        "y": 465.35,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "137",
+      "company": "«Центр координации поддержки экспортно ориентированных субъектов малого \n  и среднего предпринимательства Белгородской области» АНО",
+      "stand": "98",
+      "coordinates": {
+        "stand": "98",
+        "x": 685.08,
+        "y": 1383,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "138",
+      "company": "ДРАГИН В.Н. ИП",
+      "stand": "98",
+      "coordinates": {
+        "stand": "98",
+        "x": 685.08,
+        "y": 1383,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "139",
+      "company": "«СТАРАЯ КРЕПОСТЬ» ПИВОВАРЕННАЯ КОМПАНИЯ» ООО",
+      "stand": "98",
+      "coordinates": {
+        "stand": "98",
+        "x": 685.08,
+        "y": 1383,
+        "width": 37.2,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "140",
+      "company": "«ШЕНБУШ» ООО",
+      "stand": "133",
+      "coordinates": {
+        "stand": "133",
+        "x": 792.54,
+        "y": 722.09,
+        "width": 53.02,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "143",
+      "company": "ЭЛТЕМИКС ЛАБ ООО",
+      "stand": "8",
+      "coordinates": {
+        "stand": "8",
+        "x": 1619.01,
+        "y": 2457.22,
+        "width": 18.6,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "144",
+      "company": "ЭнВиСи КАРБОН РУС",
+      "stand": "4",
+      "coordinates": {
+        "stand": "4",
+        "x": 1332.24,
+        "y": 2712.06,
+        "width": 16.73,
+        "height": 30
+      },
+      "clickable": true
+    },
+    {
+      "companyId": "145",
+      "company": "ЮЖНЫЙ ОСЁТР",
+      "stand": "147",
+      "coordinates": {
+        "stand": "147",
+        "x": 339.44,
+        "y": 326.58,
+        "width": 52.26,
+        "height": 30
+      },
+      "clickable": true
+    }
+  ],
+  "matchedCompanyCount": 97,
+  "unmatchedCompanies": [],
+  "unmatchedCompanyCount": 0,
+  "standsWithoutCompanies": [
+    "103"
+  ],
+  "standsWithoutCompanyCount": 1,
+  "checkedStands": [
+    {
+      "stand": "61",
+      "existsOnMap": true,
+      "matchedCompanies": [
+        {
+          "id": "136",
+          "name": "ХОПШТАЙНЕР"
+        }
+      ]
+    },
+    {
+      "stand": "86",
+      "existsOnMap": true,
+      "matchedCompanies": [
+        {
+          "id": "97",
+          "name": "ПРОСТЕКЛО"
+        }
+      ]
+    },
+    {
+      "stand": "146",
+      "existsOnMap": true,
+      "matchedCompanies": [
+        {
+          "id": "4",
+          "name": "CHINAMI"
+        }
+      ]
+    },
+    {
+      "stand": "147",
+      "existsOnMap": true,
+      "matchedCompanies": [
+        {
+          "id": "145",
+          "name": "ЮЖНЫЙ ОСЁТР"
+        }
+      ]
+    },
+    {
+      "stand": "98",
+      "existsOnMap": true,
+      "matchedCompanies": [
+        {
+          "id": "137",
+          "name": "«Центр координации поддержки экспортно ориентированных субъектов малого \n  и среднего предпринимательства Белгородской области» АНО"
+        },
+        {
+          "id": "138",
+          "name": "ДРАГИН В.Н. ИП"
+        },
+        {
+          "id": "139",
+          "name": "«СТАРАЯ КРЕПОСТЬ» ПИВОВАРЕННАЯ КОМПАНИЯ» ООО"
+        }
+      ]
+    },
+    {
+      "stand": "131",
+      "existsOnMap": true,
+      "matchedCompanies": [
+        {
+          "id": "91",
+          "name": "«ПИЩЕВАЯ ПРОМЫШЛЕННОСТЬ» Издательство» ООО"
+        }
+      ]
+    }
+  ]
+}

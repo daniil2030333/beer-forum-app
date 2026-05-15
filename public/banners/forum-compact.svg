@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="686" height="180" viewBox="0 0 686 180" role="img" aria-labelledby="title desc">
+  <title id="title">ПИВО-2026</title>
+  <desc id="desc">Компактный баннер Международного форума ПИВО-2026</desc>
+  <rect width="686" height="180" rx="26" fill="#7A3F1D"/>
+  <circle cx="574" cy="88" r="112" fill="#F7941D" fill-opacity=".28"/>
+  <circle cx="620" cy="30" r="48" fill="#FFF4E6" fill-opacity=".24"/>
+  <text x="36" y="58" font-family="Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="5" fill="#FFF4E6">МЕЖДУНАРОДНЫЙ ФОРУМ</text>
+  <text x="36" y="115" font-family="Arial, sans-serif" font-size="48" font-weight="800" fill="#FFFDF8">ПИВО-2026</text>
+  <text x="38" y="148" font-family="Arial, sans-serif" font-size="20" font-weight="600" fill="#FFF4E6">19–21 мая · Сочи · Жемчужина</text>
+</svg>

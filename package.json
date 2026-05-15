@@ -1,0 +1,47 @@
+{
+  "name": "beer-forum-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --webpack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "test:soud": "tsx src/scripts/test-soud.ts",
+    "debug:soud": "tsx src/scripts/debug-soud.ts",
+    "debug:soud:browser": "tsx src/scripts/debug-soud-browser.ts",
+    "find:api": "tsx src/scripts/find-api.ts",
+    "save:soud": "tsx src/scripts/save-rendered-html.ts",
+    "load:companies": "tsx src/scripts/load-companies.ts",
+    "load:company-logos": "tsx src/scripts/load-company-logos.ts",
+    "load:program": "tsx src/scripts/load-program.ts",
+    "build:program": "tsx src/scripts/build-program.ts",
+    "build:map": "tsx src/scripts/build-map.ts",
+    "load:speakers": "tsx src/scripts/load-speakers.ts",
+    "download:speaker-photos": "tsx src/scripts/download-speaker-photos.ts",
+    "build:speakers": "tsx src/scripts/build-speakers.ts"
+  },
+  "dependencies": {
+    "axios": "^1.16.0",
+    "cheerio": "^1.2.0",
+    "csv-parse": "^6.2.1",
+    "lucide-react": "^1.14.0",
+    "next": "16.2.6",
+    "next-pwa": "^5.6.0",
+    "playwright": "^1.60.0",
+    "puppeteer": "^24.43.1",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.6",
+    "tailwindcss": "^4",
+    "tsx": "^4.21.0",
+    "typescript": "^5"
+  }
+}

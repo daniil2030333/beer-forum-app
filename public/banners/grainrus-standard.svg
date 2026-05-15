@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="686" height="260" viewBox="0 0 686 260" role="img" aria-labelledby="title desc">
+  <title id="title">Грейнрус</title>
+  <desc id="desc">Партнерский баннер Грейнрус для форума ПИВО-2026</desc>
+  <rect width="686" height="260" rx="28" fill="#FFFDF8"/>
+  <rect x="1" y="1" width="684" height="258" rx="27" fill="none" stroke="#7A3F1D" stroke-opacity=".16" stroke-width="2"/>
+  <path d="M0 0h686v92H0z" fill="#FFF4E6"/>
+  <circle cx="588" cy="44" r="86" fill="#F7941D" fill-opacity=".18"/>
+  <circle cx="626" cy="98" r="58" fill="#7A3F1D" fill-opacity=".12"/>
+  <text x="40" y="74" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="6" fill="#7A3F1D">ПАРТНЕР ФОРУМА</text>
+  <text x="40" y="143" font-family="Arial, sans-serif" font-size="54" font-weight="800" fill="#4A2412">Грейнрус</text>
+  <text x="42" y="184" font-family="Arial, sans-serif" font-size="24" font-weight="600" fill="#7A3F1D">Сырье и решения для пивоварения</text>
+  <rect x="42" y="210" width="164" height="30" rx="15" fill="#7A3F1D"/>
+  <text x="64" y="231" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFDF8">Узнать больше</text>
+</svg>
