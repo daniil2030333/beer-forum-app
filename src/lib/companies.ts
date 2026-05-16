@@ -31,12 +31,15 @@ export function normalizeCompany(company: Company): ExpoCompany {
   const city = normalizeText(company.city)
   const country = normalizeText(company.country)
   const description = normalizeText(company.description)
+  const partnerStatus = normalizeText(company.partnerStatus ?? undefined) ?? null
+  const website = normalizeText(company.website ?? undefined) ?? null
   const name = normalizeText(company.name) ?? ''
   const location = [city, country].filter(Boolean).join(', ')
-  const searchableText = [name, city, country, description, stand]
+  const searchableText = [name, city, country, description, stand, partnerStatus]
     .filter(Boolean)
     .join(' ')
     .toLowerCase()
+    .replace(/ё/g, 'е')
 
   return {
     ...company,
@@ -45,6 +48,8 @@ export function normalizeCompany(company: Company): ExpoCompany {
     country,
     stand,
     description,
+    partnerStatus,
+    website,
     hasStand: Boolean(stand),
     location,
     searchableText,

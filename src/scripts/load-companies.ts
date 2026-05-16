@@ -1,5 +1,10 @@
 import fs from 'fs'
 import { parse } from 'csv-parse/sync'
+import {
+  buildCompanyStatusReport,
+  getPartnerStatus,
+} from '@/lib/company-statuses'
+import { buildCompanyWebsitesReport } from '@/lib/company-websites'
 
 console.log('LOAD COMPANIES STARTED')
 
@@ -8,6 +13,7 @@ type ExistingCompany = {
   name: string
   logo?: string | null
   logoSource?: string | null
+  website?: string | null
 }
 
 function normalizeCompanyName(value: string) {
@@ -20,9 +26,9 @@ function normalizeCompanyName(value: string) {
     .trim()
 }
 
-function getExistingLogos() {
+function getExistingCompanyData() {
   if (!fs.existsSync('src/data/companies.json')) {
-    return new Map<string, Pick<ExistingCompany, 'logo' | 'logoSource'>>()
+    return new Map<string, Pick<ExistingCompany, 'logo' | 'logoSource' | 'website'>>()
   }
 
   const existing = JSON.parse(
@@ -35,13 +41,20 @@ function getExistingLogos() {
       {
         logo: company.logo ?? null,
         logoSource: company.logoSource ?? null,
+        website: company.website ?? null,
       },
     ])
   )
 }
 
+function cleanCountry(value: string) {
+  return value
+    .replace(/\n\s*(генеральный|официальный|информационный|партнер|партнёр).*/i, '')
+    .trim()
+}
+
 async function loadCompanies() {
-  const existingLogos = getExistingLogos()
+  const existingCompanies = getExistingCompanyData()
   const url =
     'https://docs.google.com/spreadsheets/d/e/2PACX-1vRTs4cs9mrN_je3G3Q_5mOnO6Nf8hESIXaEEqRZQD37xuNTPXN3csxRktdkRp71cwnS18qtmXnXsg3c/pub?gid=201169808&single=true&output=csv'
 
@@ -82,17 +95,19 @@ async function loadCompanies() {
         .split(',')
         .map((x) => x.trim())
       const name = parts[0] || ''
-      const preservedLogo = existingLogos.get(normalizeCompanyName(name))
+      const preservedCompany = existingCompanies.get(normalizeCompanyName(name))
 
       return {
         id: String(index + 1),
         name,
         city: parts[1] || '',
-        country: parts[2] || '',
+        country: cleanCountry(parts[2] || ''),
         stand: stand || '',
         description: description || '',
-        logo: preservedLogo?.logo ?? null,
-        logoSource: preservedLogo?.logoSource ?? null,
+        logo: preservedCompany?.logo ?? null,
+        logoSource: preservedCompany?.logoSource ?? null,
+        partnerStatus: getPartnerStatus(name),
+        website: preservedCompany?.website ?? null,
       }
     })
     .filter(Boolean)
@@ -109,6 +124,16 @@ async function loadCompanies() {
       null,
       2
     )
+  )
+
+  fs.writeFileSync(
+    'src/data/company-status-report.json',
+    `${JSON.stringify(buildCompanyStatusReport(companies), null, 2)}\n`
+  )
+
+  fs.writeFileSync(
+    'src/data/company-websites-report.json',
+    `${JSON.stringify(buildCompanyWebsitesReport(companies), null, 2)}\n`
   )
 
   console.log(

@@ -14,6 +14,7 @@
     "save:soud": "tsx src/scripts/save-rendered-html.ts",
     "load:companies": "tsx src/scripts/load-companies.ts",
     "load:company-logos": "tsx src/scripts/load-company-logos.ts",
+    "audit:company-logos": "tsx src/scripts/audit-company-logos.ts",
     "load:program": "tsx src/scripts/load-program.ts",
     "build:program": "tsx src/scripts/build-program.ts",
     "build:map": "tsx src/scripts/build-map.ts",

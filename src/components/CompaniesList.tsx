@@ -2,6 +2,7 @@
 
 import { Fragment, useMemo, useState } from 'react'
 import Link from 'next/link'
+import { Search } from 'lucide-react'
 import companies from '@/data/companies.json'
 import BannerCard from '@/components/ads/BannerCard'
 import type { Company } from '@/lib/types/company'
@@ -80,14 +81,20 @@ function CompanyLogo({
 export default function CompaniesList() {
   const [onlyWithStand, setOnlyWithStand] = useState(false)
   const [sortOrder, setSortOrder] = useState<SortOrder>('default')
+  const [query, setQuery] = useState('')
 
   const stats = getCompanyStats(companies as Company[])
 
   const sortedAndFilteredCompanies = useMemo(() => {
     const normalized = normalizeCompanies(companies as Company[])
+    const normalizedQuery = query.trim().toLowerCase().replace(/ё/g, 'е')
 
     const filtered = normalized.filter((company) => {
       if (onlyWithStand && !company.hasStand) {
+        return false
+      }
+
+      if (normalizedQuery && !company.searchableText.includes(normalizedQuery)) {
         return false
       }
 
@@ -95,15 +102,15 @@ export default function CompaniesList() {
     })
 
     return sortCompanies(filtered, sortOrder)
-  }, [onlyWithStand, sortOrder])
+  }, [onlyWithStand, query, sortOrder])
 
   const resultsLabel = useMemo(() => {
-    if (!onlyWithStand) {
+    if (!onlyWithStand && !query.trim()) {
       return `${stats.total} компаний`
     }
 
     return `${sortedAndFilteredCompanies.length} результатов`
-  }, [sortedAndFilteredCompanies.length, onlyWithStand, stats.total])
+  }, [sortedAndFilteredCompanies.length, onlyWithStand, query, stats.total])
   const topBanner = getTopBanner('companies-top')
   const companyBanners = useMemo(() => {
     const bannerMap = new Map<number, NonNullable<ReturnType<typeof getBannerForIndex>>>()
@@ -134,7 +141,22 @@ export default function CompaniesList() {
 
       <div className="sticky top-0 z-30 bg-[#FAF6EF]/95 py-1.5">
         <div className={cn(radius.inputRadius, borders.borderDefault, surfaces.surfacePrimary, 'p-3 shadow-sm')}>
-          <div className="flex items-center gap-2">
+          <label className="relative block">
+            <span className="sr-only">Поиск компаний</span>
+            <Search
+              aria-hidden="true"
+              className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-[#A7795F]"
+            />
+            <input
+              type="search"
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
+              placeholder="Название, город, описание или стенд"
+              className="h-11 w-full rounded-2xl border border-[#7A3F1D]/15 bg-[#FFFDF8] px-4 pl-11 text-base shadow-sm outline-none"
+            />
+          </label>
+
+          <div className="mt-2 flex items-center gap-2">
             <label
               className={cn(
                 'flex h-11 min-w-0 flex-1 items-center gap-2 px-3 text-sm text-[#5A321E]',
@@ -208,8 +230,17 @@ export default function CompaniesList() {
                   </p>
 
                   <div className="mt-auto pt-3">
-                    <div className="inline-flex rounded-full bg-[#FFF4E6] px-3 py-1 text-sm font-medium text-[#4A2412]">
-                      {company.hasStand ? `Стенд ${company.stand}` : 'Инфопартнёр'}
+                    <div className="flex flex-wrap gap-2">
+                      {company.hasStand ? (
+                        <div className="inline-flex rounded-full bg-[#FFF4E6] px-3 py-1 text-sm font-medium text-[#4A2412]">
+                          Стенд {company.stand}
+                        </div>
+                      ) : null}
+                      {company.partnerStatus ? (
+                        <div className="inline-flex rounded-full border border-[#F7941D]/30 bg-[#FFF4E6] px-3 py-1 text-sm font-medium text-[#7A3F1D]">
+                          {company.partnerStatus}
+                        </div>
+                      ) : null}
                     </div>
                   </div>
                 </Link>

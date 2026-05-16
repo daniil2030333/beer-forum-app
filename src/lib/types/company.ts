@@ -7,4 +7,6 @@ export interface Company {
   description?: string
   logo: string | null
   logoSource?: string | null
+  partnerStatus: string | null
+  website?: string | null
 }

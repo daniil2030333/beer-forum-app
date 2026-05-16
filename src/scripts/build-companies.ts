@@ -1,4 +1,9 @@
 import fs from 'fs'
+import {
+  buildCompanyStatusReport,
+  getPartnerStatus,
+} from '@/lib/company-statuses'
+import { buildCompanyWebsitesReport } from '@/lib/company-websites'
 
 type RawCompany = {
   company?: string
@@ -23,11 +28,23 @@ const companies = raw
     city: row.city || '',
     description: row.description || '',
     logo: '',
+    partnerStatus: getPartnerStatus(row.company ?? ''),
+    website: null,
   }))
 
 fs.writeFileSync(
   'src/data/companies.json',
   JSON.stringify(companies, null, 2)
+)
+
+fs.writeFileSync(
+  'src/data/company-status-report.json',
+  `${JSON.stringify(buildCompanyStatusReport(companies), null, 2)}\n`
+)
+
+fs.writeFileSync(
+  'src/data/company-websites-report.json',
+  `${JSON.stringify(buildCompanyWebsitesReport(companies), null, 2)}\n`
 )
 
 console.log(

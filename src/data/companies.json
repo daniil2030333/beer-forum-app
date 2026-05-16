@@ -1,1452 +1,1766 @@
 [
   {
     "id": "1",
+    "name": "AI ДЛЯ БИЗНЕСА ПОД КЛЮЧ",
+    "city": "Сочи",
+    "country": "Россия",
+    "stand": "-",
+    "description": "AI-инфраструктура для автоматизации бизнеса. Продажи. Поддержка. Звонки. Маркетинг. Аналитика.",
+    "logo": null,
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
+  },
+  {
+    "id": "2",
+    "name": "ALKO.PRO Интернет журнал",
+    "city": "Сочи",
+    "country": "Россия",
+    "stand": "-",
+    "description": "Интернет-журнал",
+    "logo": null,
+    "logoSource": null,
+    "partnerStatus": "Информационный партнёр",
+    "website": null
+  },
+  {
+    "id": "3",
     "name": "A-sense Sp.Z.o.o.",
     "city": "Польша",
     "country": "",
     "stand": "34",
     "description": "Поставщик высококачественных гранул хмеля, экстрактов хмеля и растительных экстрактов",
-    "logo": null,
-    "logoSource": null
+    "logo": "/company-logos/a-sense.png",
+    "logoSource": "manual:a-sense.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "2",
+    "id": "4",
     "name": "«BEERFACTORY» Пивоварня-ресторан",
     "city": "Новосибирск",
     "country": "Россия",
     "stand": "-",
     "description": "Пивоварня, ресторан, бар",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "3",
+    "id": "5",
     "name": "BEER WEEKLY Газета",
     "city": "Санкт-Петербург",
     "country": "Россия",
     "stand": "-",
     "description": "Газета",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "4",
+    "id": "6",
     "name": "CHINAMI",
     "city": "Челябинск",
     "country": "Россия",
     "stand": "146",
     "description": "Российский производитель Азиатских снеков",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "5",
+    "id": "7",
     "name": "CRISPY NEWS",
     "city": "Москва",
     "country": "Россия",
     "stand": "-",
     "description": "Актуальные новости пищевой промышленности",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "6",
+    "id": "8",
     "name": "HEIMBRAUER Пивоварня",
     "city": "Ярославль",
     "country": "Россия",
     "stand": "-",
     "description": "Частная пивоварня",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "7",
+    "id": "9",
     "name": "IT Future - Айти будущего",
     "city": "Сочи",
     "country": "Россия",
     "stand": "112",
     "description": "Внедрение Битрикс24. Аналитика бизнеса. Автоматизация процессов. Техническая поддержка",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "8",
+    "id": "10",
     "name": "JKM",
     "city": "Красногорск",
     "country": "Россия",
     "stand": "96",
     "description": "Профессиональная корпорация, специализирующаяся на комплексном проектировании, разработке, производстве, продаже, инжиниринговых услугах и импорте оборудования для пищевой промышленности и производства напитков",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "9",
+    "id": "11",
     "name": "KRASPIVO.RU – Красноярский пивной портал",
     "city": "",
     "country": "",
     "stand": "-",
     "description": "Актуальная коммерческая информация о поставщиках и производителях пива, сидра, а также сопутствующих товарах и услугах в Красноярске и Красноярском крае",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": "Информационный партнёр",
+    "website": null
   },
   {
-    "id": "10",
+    "id": "12",
     "name": "OMNIA TECHNOLOGIES S.p.A",
     "city": "Краснодар",
     "country": "Россия",
     "stand": "16",
     "description": "Ведущая компания в области автоматизации технологий производства и розлива вина, пива, алкогольных и безалкогольных напитков, молочной, пищевой и фармацевтической продукции",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "11",
+    "id": "13",
     "name": "PROFIBEER",
     "city": "Воронеж",
     "country": "Россия",
     "stand": "22",
     "description": "Деловой портал о пиве, людях, которые его варят и продают, и законах, по которым живет отрасль",
     "logo": "/company-logos/profibeer.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_profibeer-200x100.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_profibeer-200x100.png",
+    "partnerStatus": "Информационный партнёр",
+    "website": null
   },
   {
-    "id": "12",
+    "id": "14",
     "name": "PROSOLOD",
     "city": "Санкт-Петербург",
     "country": "Россия",
     "stand": "78",
     "description": "Продажа сырья для пивоварения",
     "logo": "/company-logos/prosolod.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_prosolod.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_prosolod.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "13",
+    "id": "15",
     "name": "RealBrew Журнал",
     "city": "Санкт-Петербург",
     "country": "Россия",
     "stand": "90",
     "description": "Журнал о пиве и пивоварении",
     "logo": "/company-logos/realbrew-zhurnal.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_realbrew2.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_realbrew2.png",
+    "partnerStatus": "Информационный партнёр",
+    "website": null
   },
   {
-    "id": "14",
+    "id": "16",
     "name": "«АВАНГАРД-АГРО» АО",
     "city": "пгт. Змиевка",
     "country": "Россия",
     "stand": "63",
     "description": "Крупнейший в России производитель пивоваренного ячменя, солода, пшеницы и других зерновых культур.",
     "logo": "/company-logos/avangard-agro.png",
-    "logoSource": "manual:avangard-agro.png"
+    "logoSource": "manual:avangard-agro.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "15",
+    "id": "17",
     "name": "«АвтоГазТранс» ООО",
     "city": "Самара",
     "country": "Россия",
     "stand": "13",
     "description": "Проектирование, изготовление и ввод в эксплуатацию оборудования, предназначенного для хранения, транспортировки, заправки и выдачи СО2 и его сервисное обслуживание",
     "logo": "/company-logos/agtrans.png",
-    "logoSource": "manual:agtrans.png"
+    "logoSource": "manual:agtrans.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "16",
+    "id": "18",
     "name": "«А и Т Акопяны» ООО",
     "city": "Дилижан",
     "country": "Армения",
     "stand": "-",
     "description": "Пиво, изготовленное исключительно из натурального сырья и классическим способом",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "17",
+    "id": "19",
     "name": "«АЛЬЯНС» ТД»",
     "city": "ООО",
     "country": "Подольск",
     "stand": "73",
     "description": "Для оснащения заводов, пивоварен, магазинов, баров и ресторанов, поставляем холодильную технику, мебель, трубопроводную, запорную и регулирующую арматуру, как собственного производства, так и продукцию других компаний",
     "logo": "/company-logos/alyans-td.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_td_alliance22.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_td_alliance22.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "18",
+    "id": "20",
     "name": "«АМАРАНТ» ООО",
     "city": "Москва",
     "country": "Россия",
     "stand": "-",
     "description": "Наро-Фоминская пивоварня – сочетание немецких традиций, русской самобытности и современных технологий",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "19",
+    "id": "21",
     "name": "«АНГЕЛ ИСТ РУС» ООО",
     "city": "Данков",
     "country": "Россия",
     "stand": "80",
     "description": "Один из крупнейших в мире производителей дрожжей",
     "logo": "/company-logos/angelyest.png",
-    "logoSource": "manual:angelyest.png"
+    "logoSource": "manual:angelyest.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "20",
+    "id": "22",
     "name": "«АРГОНАВТ ГРУПП» ООО",
     "city": "Москва",
     "country": "Россия",
     "stand": "35",
     "description": "Проектирование пивоваренных заводов и изготовление технологического оборудования из нержавеющих марки сталей",
     "logo": "/company-logos/argonavt.png",
-    "logoSource": "manual:argonavt.png"
+    "logoSource": "manual:argonavt.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "21",
+    "id": "23",
     "name": "«АСТЕРА» ООО",
     "city": "Мурманск",
     "country": "Россия",
     "stand": "-",
     "description": "Ресторанный бизнес, производство пива",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "22",
+    "id": "24",
     "name": "«АФАНАСИЙ» Частная пивоварня» ООО",
     "city": "Тверь",
     "country": "Россия",
     "stand": "-",
     "description": "Производство пива, сидра, минеральной воды, безалкогольных напитков",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "23",
+    "id": "25",
     "name": "«БАВАРИЯ» Пивоваренный дом Группа компаний» ООО",
     "city": "«АГРОФИРМА ФАТ» ООО",
     "country": "Владикавказ",
     "stand": "145",
     "description": "Группа компаний «Пивоваренный дом «Бавария» – это крупнейшее предприятие в РСО-Алания, основными направлениями деятельности которого являются производство пива и безалкогольных напитков (ООО «АГРОФИРМА ФАТ»), сельское хозяйство (ООО «ФАТ-АГРО») и ресторанный бизнес (ООО «РЕСТОРАНЫ БАВАРИЯ»)",
     "logo": "/company-logos/bavariya-pivovarenny-dom-gruppa-kompany.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_bavariya-200x100.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_bavariya-200x100.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "24",
+    "id": "26",
     "name": "«БАЛТИКА» Пивоваренная компания» ООО",
     "city": "Санкт-Петербург",
     "country": "Россия",
     "stand": "36",
     "description": "Производство пива, производство хмеля, производство солода",
     "logo": "/company-logos/baltika-pivovarennaya-kompaniya.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_baltika.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_baltika.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "25",
+    "id": "27",
     "name": "БЕЛСОЛОД ОАО",
     "city": "Иваново",
     "country": "Беларусь",
     "stand": "105",
     "description": "Белорусское предприятие, специализирующееся на производстве ячменного пивоваренного солода: светлого, венского, карамельного, жженого",
     "logo": "/company-logos/belsolod.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_belsolod.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_belsolod.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "26",
+    "id": "28",
     "name": "БИЗНЕС ПИЩЕВЫХ ИНГРЕДИЕНТОВ",
     "city": "Черноголовка",
     "country": "Россия",
     "stand": "-",
     "description": "Единственное издание в России, полностью посвященное различным аспектам производства, продвижения и применения ингредиентов во всех отраслях пищевой промышленности",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": "Информационный партнёр",
+    "website": null
   },
   {
-    "id": "27",
+    "id": "29",
     "name": "БИР РЕСУРС",
     "city": "Санкт-Петербург",
     "country": "Россия",
     "stand": "33",
     "description": "Beer Resource предлагает ингредиенты необходимые для производства различных стилей пива и напитков, а также предоставляет доступ к передовым продуктам используемым в современном пивоварении",
     "logo": "/company-logos/bir-resurs.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_beerresurs.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_beerresurs.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "28",
+    "id": "30",
     "name": "БирШтадт Частная пивоварня",
     "city": "Нововоронеж",
     "country": "Россия",
     "stand": "-",
     "description": "Производство живого, нефильтрованного, непастеризованного пива",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "29",
+    "id": "31",
     "name": "БОРЗ Ножи Мира",
     "city": "Москва",
     "country": "Россия",
     "stand": "141",
     "description": "Борз – ножи мира",
-    "logo": null,
-    "logoSource": null
+    "logo": "/company-logos/borz.png",
+    "logoSource": "manual:borz.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "30",
+    "id": "32",
     "name": "«БОЧКАРИ» Компания",
     "city": "с. Бочкари",
     "country": "Россия",
     "stand": "-",
     "description": "Производство и реализация натуральных напитков: пива, кваса, лимонадов, энергетических напитков, питьевых, минеральных и лечебно-столовых вод",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "31",
+    "id": "33",
     "name": "«БРАТЬЯ ХОПФЕН» ООО",
     "city": "Димитровград",
     "country": "Россия",
     "stand": "-",
     "description": "Производство живого, нефильтрованного, фильтрованного непастеризованного светлого, темного пива, из натуральных ингредиентов",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "32",
+    "id": "34",
     "name": "БРЮВ КЭНИНГ СИСТЕМ",
     "city": "Великий Новгород",
     "country": "Россия",
     "stand": "116",
     "description": "Производитель высокотехнологичных линий розлива напитков в алюминиевую банку и стекло",
     "logo": "/company-logos/brew-canning-system.png",
-    "logoSource": "manual:logo_brewman-.png"
+    "logoSource": "manual:logo_brewman-.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "33",
+    "id": "35",
     "name": "«БУСТЕР РУС» ООО",
     "city": "п. Трехгорка",
     "country": "Россия",
     "stand": "12",
     "description": "Компактные, полностью автоматизированные котлоагрегаты, оборудованные контрольно- измерительной аппаратурой",
     "logo": "/company-logos/buster-rus.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_buster3.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_buster3.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "34",
+    "id": "36",
     "name": "«ВАЛЕННТА ВК» ООО",
     "city": "Москва",
     "country": "Россия",
     "stand": "110",
     "description": "Услуги по подбору, продаже и поставкам различной лабораторной техники для больших и малых производств, относящихся к пищевой промышленности",
     "logo": "/company-logos/valennta-vk.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_valenta.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_valenta.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "35",
+    "id": "37",
     "name": "«ВЕСТЕР» ООО",
     "city": "Москва",
     "country": "Россия",
     "stand": "75",
     "description": "Поставляем оборудование для пивзаводов из Чехии",
     "logo": "/company-logos/vester.png",
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "36",
+    "id": "38",
     "name": "«ВОДОКОМФОРТ» фирма ООО",
     "city": "Москва",
     "country": "Россия",
     "stand": "35",
     "description": "Комплексный инжиниринг и поставка полного спектра оборудования для основного производства и для вспомогательных систем теплоснабжения, водоснабжения, холодоснабжения",
     "logo": "/company-logos/vodokomfort.png",
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "37",
+    "id": "39",
     "name": "«ВЫСОКОГОРНАЯ КЕЛЬСКАЯ ПИВОВАРНЯ» ООО",
     "city": "«ALPINE BREWERY GROUP»",
     "country": "пос. Ленингор",
     "stand": "66",
     "description": "Производство пива",
     "logo": "/company-logos/vysokogornaya-kelskaya-pivovarnya.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_vysokogornayakelskaya-200x100.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_vysokogornayakelskaya-200x100.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "38",
+    "id": "40",
     "name": "«ГЕО-ИНЖИНИРИНГ ЮГ» ООО",
     "city": "Ростов-на-Дону",
     "country": "Россия",
     "stand": "14",
     "description": "Мы поставляем комплектные линии для розлива газированных и негазированных безалкогольных напитков, пива и других пищевых жидкостей в ПЭТ, в стеклянные бутылки и в алюминиевые банки",
-    "logo": null,
-    "logoSource": null
+    "logo": "/company-logos/geoenginiring-jug.png",
+    "logoSource": "manual:geoenginiring-jug.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "39",
+    "id": "41",
     "name": "«ГРЕЙНРУС» ООО",
     "city": "Москва",
-    "country": "Россия\n  Генеральный партнёр Форума",
+    "country": "Россия",
     "stand": "71",
     "description": "Поставщик импортного и российского сырья для пивоваренной отрасли России, СНГ и Европы",
     "logo": "/company-logos/greynrus.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_grainerus-new-.jpg"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_grainerus-new-.jpg",
+    "partnerStatus": "Генеральный партнёр",
+    "website": null
   },
   {
-    "id": "40",
+    "id": "42",
     "name": "«ГРЕЙНФОРД-АГРО» ООО",
     "city": "Москва",
     "country": "Россия",
     "stand": "64",
     "description": "Реализация сырья для пивоваренной промышленности",
     "logo": "/company-logos/greynford-agro.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_grainfordagro-200x100.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_grainfordagro-200x100.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "41",
+    "id": "43",
     "name": "ГРИНГОД",
     "city": "Мытищи",
     "country": "Россия",
     "stand": "15",
     "description": "У нас вы можете приобрести солод, хмель, дрожжи, сахара и моющие средства",
     "logo": "/company-logos/gringod.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_greengod-.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_greengod-.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "42",
+    "id": "44",
     "name": "«ДАРЬЯЛ» ВПБЗ ООО",
     "city": "Владикавказ",
-    "country": "Россия\n  Партнер «Официальная вода Форума»",
+    "country": "Россия",
     "stand": "-",
     "description": "Завод выпускает пивобезалкогольную продукцию высочайшего качества с использованием лучшего европейского и российского сырья",
     "logo": "/company-logos/daryal-vpbz.png",
-    "logoSource": "manual:dariyal-.png"
+    "logoSource": "manual:dariyal-.png",
+    "partnerStatus": "Партнёр Форума",
+    "website": null
   },
   {
-    "id": "43",
+    "id": "45",
     "name": "«ДЕКО МИНЕРАЛС СНГ» ООО",
     "city": "Воронеж",
     "country": "Россия",
     "stand": "32",
     "description": "Производство фильтровальных порошков и отбеливающих земель",
-    "logo": null,
-    "logoSource": null
+    "logo": "/company-logos/deco-minerals.png",
+    "logoSource": "manual:deco-minerals.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "44",
+    "id": "46",
     "name": "«ДЕРБЕНТСКАЯ ПИВОВАРЕННАЯ КОМПАНИЯ» ООО",
     "city": "с. Джалган",
     "country": "Россия",
     "stand": "-",
     "description": "Производство пива",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "45",
+    "id": "47",
     "name": "«ДОН-ПОЛИМЕР» ООО",
     "city": "Воронеж",
     "country": "Россия",
     "stand": "26",
     "description": "Производство термоусадочного колпачка из плёнки ПВХ для пивных кег",
     "logo": "/company-logos/don-polimer.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo-don-polymer-.jpg"
+    "logoSource": "https://www.soud.ru/baers_uch/logo-don-polymer-.jpg",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "46",
+    "id": "48",
     "name": "«ДФильтр» ООО",
     "city": "Москва",
     "country": "Россия",
     "stand": "17",
     "description": "Оборудование обеспечивает высокое качество подготовки или очистки воздуха, газов и жидкостей",
     "logo": "/company-logos/dfiltr.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_dfilter.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_dfilter.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "47",
+    "id": "49",
     "name": "ЕРЕВАНСКОЕ ПИВО ЗАО",
     "city": "Ереван",
     "country": "Армения",
     "stand": "-",
     "description": "Пиво, соки, компоты, минеральная вода, нектары, лимонады, варенье",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "48",
+    "id": "50",
     "name": "«ЗАВКОМ-ИНЖИНИРИНГ» ООО",
     "city": "Тамбов",
     "country": "Россия",
     "stand": "60",
     "description": "Ведущая российская инжиниринговая компания, осуществляющая строительство объектов пищевой промышленности",
     "logo": "/company-logos/zavkom-inzhiniring.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_zavcomingeneering.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_zavcomingeneering.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "49",
+    "id": "51",
     "name": "«ЗЕЛЕНОГОРСКИЕ НАПИТКИ» ООО",
     "city": "Зеленогорск",
     "country": "Россия",
     "stand": "-",
     "description": "Производство пива и безалкогольных напитков",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "50",
+    "id": "52",
     "name": "«ЗИП Сервис»",
     "city": "Москва",
     "country": "Россия",
     "stand": "21",
     "description": "Ведущий поставщик СОЛОДА, ХМЕЛЯ, ДРОЖЖЕЙ и другого сырья для пива, сидра, безалкогольных и крепких напитков. Официальный представитель ZIP TECH - европейского производителя ОБОРУДОВАНИЯ",
     "logo": "/company-logos/zip-servis.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_zipservice2025-200x100.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_zipservice2025-200x100.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "51",
+    "id": "53",
     "name": "«ЗИРАКС» ООО",
     "city": "Волгоград",
     "country": "Россия",
     "stand": "2",
     "description": "Пищевой кальций хлористый безводный гранулированный – эффективные решения по минерализации воды для пивоваренной индустрии",
     "logo": "/company-logos/zirax.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_zirax.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_zirax.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "52",
+    "id": "54",
     "name": "«ИВАНОВСКАЯ ПИВОВАРНЯ» ООО",
     "city": "Иваново",
     "country": "Россия",
     "stand": "-",
     "description": "Производство лагерного и элевого пива (всего более 10 сортов)",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "53",
+    "id": "55",
     "name": "«ИЖСИНТЕЗ-ХИМПРОМ ПК» ООО",
     "city": "Ижевск",
     "country": "Россия",
     "stand": "-",
     "description": "Производство моющих и дезинфицирующих средств: бытовой химии, профессиональных моющих и дезинфицирующих средств",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "54",
+    "id": "56",
     "name": "«ИНДУСТРИЯ НАПИТКОВ» журнал",
     "city": "Санкт-Петербург",
     "country": "Россия",
     "stand": "10",
     "description": "Издание для специалистов в сфере производства алкогольных, безалкогольных напитков и пива",
     "logo": "/company-logos/industriya-napitkov-zhurnal.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_industry_napitki.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_industry_napitki.png",
+    "partnerStatus": "Информационный партнёр",
+    "website": null
   },
   {
-    "id": "55",
+    "id": "57",
     "name": "ИНОКС ОРЕНБУРГ",
     "city": "с. Ивановка",
     "country": "Россия",
     "stand": "38",
     "description": "Создание пивоварен и производство оборудования",
     "logo": "/company-logos/inox-orenburg.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_inox_200x100.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_inox_200x100.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "56",
+    "id": "58",
     "name": "«ЙИГИТОГЛУ РУС» ООО",
     "city": "Москва",
     "country": "Россия",
     "stand": "130",
     "description": "Дистрибуция пищевых ингредиентов",
     "logo": "/company-logos/yigitoglu.png",
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "57",
+    "id": "59",
     "name": "«ЙОГГУ» ООО",
     "city": "Ижевск",
     "country": "Россия",
     "stand": "143",
     "description": "Орехи и ягоды в шоколаде",
-    "logo": null,
-    "logoSource": null
+    "logo": "/company-logos/joggu.png",
+    "logoSource": "manual:joggu.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "58",
+    "id": "60",
     "name": "Как Вы Это Привезли",
     "city": "ИП ЗАДУНАЙСКАЯ Д.А.",
     "country": "Москва",
     "stand": "153",
     "description": "Лучшие деликатесы со всего мира",
     "logo": "/company-logos/kak-vy-eto-privezli.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_kak_vy_eto_privezli-200x100.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_kak_vy_eto_privezli-200x100.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "59",
+    "id": "61",
     "name": "КАМЧАТСКИЙ УЛОВ",
     "city": "Москва",
     "country": "Россия",
     "stand": "155",
     "description": "Продукты питания",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "60",
+    "id": "62",
     "name": "КАНЦЛЕРЪ ПЗ ООО",
     "city": "Воронеж",
     "country": "Россия",
     "stand": "3",
     "description": "Производство пива и безалкогольной продукции под собственными торговыми марками и на контрактной основе",
-    "logo": null,
-    "logoSource": null
+    "logo": "/company-logos/kancler.png",
+    "logoSource": "manual:kancler.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "61",
+    "id": "63",
     "name": "КИЗЕЛЬГУР",
     "city": "Москва",
     "country": "Россия",
     "stand": "101",
     "description": "Поставщик диатомитовой земли (кизельгура), ориентированный на промышленное применение, в пивной и масложировой отраслях",
-    "logo": null,
-    "logoSource": null
+    "logo": "/company-logos/kizelgur.png",
+    "logoSource": "manual:kizelgur.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "62",
+    "id": "64",
     "name": "«КИЗЕЛЬМАНН РУС» ООО",
     "city": "Москва",
     "country": "Россия",
     "stand": "20",
     "description": "Оборудование для пищевой промышленности и сектора напитков во всем мире",
     "logo": "/company-logos/kizelmann-rus.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_kizelman.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_kizelman.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "63",
+    "id": "65",
     "name": "КОЛОМЕНСКАЯ ПИВОВАРНЯ",
     "city": "Москва",
     "country": "Россия",
     "stand": "-",
     "description": "Производство пива и безалкогольных напитков",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "64",
+    "id": "66",
     "name": "КрафтБэнд Пивоварня",
     "city": "Ставрополь",
     "country": "Россия",
     "stand": "148",
     "description": "Ремесленная пивоварня CRAFTBAND",
-    "logo": null,
-    "logoSource": null
+    "logo": "/company-logos/kraftband.png",
+    "logoSource": "manual:kraftband.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "65",
+    "id": "67",
     "name": "«КРИНИЦА» ОАО",
     "city": "Минск",
     "country": "Беларусь",
     "stand": "151",
     "description": "Крупнейший производитель пива и кваса в Республике Беларусь",
-    "logo": null,
-    "logoSource": null
+    "logo": "/company-logos/krynica.png",
+    "logoSource": "manual:krynica.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "66",
+    "id": "68",
     "name": "Кропоткинский завод МиССП",
     "city": "Кропоткин",
     "country": "Россия",
     "stand": "65",
     "description": "Кропоткинский завод МиССП выполняет комплексную поставку технологического оборудования для автоматических линий розлива и упаковки продуктов в ПЭТ, линии комплектуются оборудованием ведущих производителей в области",
     "logo": "/company-logos/kropotkinsky-zavod-missp.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_missp.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_missp.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "67",
+    "id": "69",
     "name": "«Кто есть Кто. ПИЩЕПРОМ + АПК России» Журнал",
     "city": "Санкт-Петербург",
     "country": "Россия",
     "stand": "-",
     "description": "Международный товарно-брендовый журнал, отображающий: информацию о компаниях, работающих в таких отраслях как пищевая отрасль, напитки, перерабатывающая промышленность, ритейл, HoReCa, импорт, экспорт, АПК",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": "Информационный партнёр",
+    "website": null
   },
   {
-    "id": "68",
+    "id": "70",
     "name": "«КХС РУС» ООО (KHS GmbH)",
     "city": "Москва",
     "country": "Россия",
     "stand": "88",
     "description": "Дочерняя российская компания мирового лидера по производству оборудования для розлива напитков и упаковки для пищевой и непищевой промышленности",
     "logo": "/company-logos/khs-rus-khs-gmbh.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_khs.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_khs.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "69",
+    "id": "71",
     "name": "«ЛАВКА-ПАСЕЧНИКА» ООО",
     "city": "Горячий Ключ",
     "country": "Россия",
     "stand": "1",
     "description": "Производство сидра и прочих плодовых вин",
-    "logo": null,
-    "logoSource": null
+    "logo": "/company-logos/lavka-pasechnika.png",
+    "logoSource": "manual:lavka-pasechnika.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "70",
+    "id": "72",
     "name": "«МББ ГРУПП» ООО",
     "city": "Москва",
     "country": "Россия",
     "stand": "-",
     "description": "Уже более 50 лет мы занимаемся хмелеводством, поставляя отборный хмель и солод напрямую от европейских производителей",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "71",
+    "id": "73",
     "name": "«МИЛЛФАУЗ» ООО",
     "city": "Минеральные Воды",
     "country": "Россия",
     "stand": "149",
     "description": "Производство пива и безалкогольных напитков",
     "logo": "/company-logos/millfauz.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_mill-fauz-200x100.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_mill-fauz-200x100.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "72",
+    "id": "74",
     "name": "«МИНУСИНСКИЙ ПИВОВАРЕННЫЙ ЗАВОД» ООО",
     "city": "Минусинск",
     "country": "Россия",
     "stand": "-",
     "description": "Производство пива и кваса, а так же безалкогольных напитков и природной питьевой воды",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "73",
+    "id": "75",
     "name": "«МПК» Пивоваренный завод Майкопский ООО",
     "city": "Майкоп",
     "country": "Россия",
     "stand": "-",
     "description": "Производство пива и безалкогольных напитков",
     "logo": "/company-logos/mpk-pivovarenny-zavod-maykopsky.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_maykop_pivivarnya-200x100.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_maykop_pivivarnya-200x100.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "74",
+    "id": "76",
     "name": "НЕЛДЕН ИНДАСТРИ С.Р.Л.",
     "city": "Италия",
     "country": "",
     "stand": "82",
     "description": "Nelden Industry srl поставляет комплектные линии розлива стекла, ПЭТ-бутылок и банок",
     "logo": "/company-logos/nelden-indastri-s-r-l.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_nelden_new.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_nelden_new.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "75",
+    "id": "77",
     "name": "«НОВОИНТЕХ» ЗАО",
     "city": "Минск",
     "country": "Беларусь",
     "stand": "118",
     "description": "Технологии и продукты для крафтовых сортов пива",
     "logo": "/company-logos/novointeh.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_novointeh.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_novointeh.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "76",
+    "id": "78",
     "name": "НОВЫЕ ПИВОВАРНИ",
     "city": "Санкт-Петербург",
     "country": "Россия",
     "stand": "-",
     "description": "Производство и дистрибуция пива, запуск новых брендов пива на заводах и пивоварнях, консалтинг",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "77",
+    "id": "79",
     "name": "«НОМАС» ООО (входит в ООО «УралСпецТранс»)",
     "city": "Миасс",
     "country": "Россия",
     "stand": "62",
     "description": "С 1993 года является одним из ведущих российских производителей заводов «под ключ»",
     "logo": "/company-logos/nomas-vhodit-v-uralspetstrans.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_nomas.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_nomas.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "78",
+    "id": "80",
     "name": "«НордАкваТрейд» ООО",
     "city": "Санкт-Петербург",
     "country": "Россия",
     "stand": "70",
     "description": "ООО «НордАкваТрейд» занимается поставками комплектных линий розлива и запасных частей",
     "logo": "/company-logos/nordakvatreyd.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_nordakva-200x100.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_nordakva-200x100.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "79",
+    "id": "81",
     "name": "ОКИЛ-САТО",
     "city": "Краснодар",
     "country": "Россия",
     "stand": "91",
     "description": "Полиграфическое производство, специализирующееся на печати самоклеящихся, термоусадочных, вплавляемых, промо и других этикетках",
     "logo": "/company-logos/okil-sato.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_okil-sato-rus-200x100.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_okil-sato-rus-200x100.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "80",
+    "id": "82",
     "name": "«Оператор-ЦРПТ» ООО",
     "city": "Москва Россия",
     "country": "",
     "stand": "-",
     "description": "Оператор государственной информационной системы мониторинга за оборотом товаров, подлежащих обязательной маркировке средствами идентификации",
     "logo": "/company-logos/operator-tsrpt.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_crpt.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_crpt.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "81",
+    "id": "83",
     "name": "«ОРЕЛПИЩЕМАШ» Производственно-коммерческий центр ООО",
     "city": "Орел",
     "country": "Россия",
     "stand": "27",
     "description": "Проектирование и изготовление оборудования для пищевой промышленности",
     "logo": "/company-logos/orelpischemash-proizvodstvenno-kommerchesky-tsentr.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_orelpischemash.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_orelpischemash.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "82",
+    "id": "84",
     "name": "Отдых. на Кубани.ру",
     "city": "Краснодар",
     "country": "Россия",
     "stand": "-",
     "description": "Специализированный интернет-портал и глянцевый журнал об отдыхе в Краснодарском крае и Адыгее",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "83",
+    "id": "85",
     "name": "ПАРМАТЕК ООО",
     "city": "Москва",
     "country": "Россия",
     "stand": "25",
     "description": "Оборудование розлива, упаковки и фильтрации для напитков, пищевой и пивной промышленности, комплектующие и запчасти",
     "logo": "/company-logos/parmatek.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_parmatek.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_parmatek.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "84",
+    "id": "86",
     "name": "ПАРУС ООО",
     "city": "Ресторан Пивоварня Старград",
     "country": "Сочи",
     "stand": "-",
     "description": "Варим пиво в Сочи по классическим чешским рецептам, создавая атмосферу настоящей пивоварни в европейском стиле",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "85",
+    "id": "87",
     "name": "«ПИВЗАВОД – МАРКСОВСКИЙ» ООО",
     "city": "Маркс",
     "country": "Россия",
     "stand": "-",
     "description": "Производство и продажа пива",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "86",
+    "id": "88",
     "name": "«ПИВОВАРНЯ» ООО",
     "city": "Воронежская область",
     "country": "Россия",
     "stand": "-",
     "description": "Производство пива",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "87",
+    "id": "89",
     "name": "«ПИВОВАРНЯ КОЖЕВНИКОВО» ООО",
     "city": "с. Кожевниково",
     "country": "Россия",
     "stand": "-",
     "description": "Производство пива и безалкогольных напитков",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "88",
+    "id": "90",
     "name": "«ПИВОВАРНЯ С» ООО",
     "city": "Воронеж",
     "country": "Россия",
     "stand": "-",
     "description": "Старейшая в Воронеже частная пивоварня осуществляющая производство напитков традиционного, оригинального и крафтового направления",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "89",
+    "id": "91",
     "name": "ПИВО ЖИВО",
     "city": "Пермь",
     "country": "Россия",
     "stand": "-",
     "description": "Помощь в открытии пивных магазинов в России и за рубежом",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "90",
+    "id": "92",
     "name": "«П.И.Н.Т.А. КРАФТ» ООО",
     "city": "Воронеж",
     "country": "Россия",
     "stand": "19",
     "description": "Компания «Пинта Крафт» с 2015 года на рынке пищевого оборудования из нержавеющих сталей",
     "logo": "/company-logos/p-i-n-t-a-kraft.svg",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_pinta-craft-.svg"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_pinta-craft-.svg",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "91",
+    "id": "93",
     "name": "«ПИЩЕВАЯ ПРОМЫШЛЕННОСТЬ» Издательство» ООО",
     "city": "Москва",
-    "country": "Россия\n  Генеральный информационный партнер Форума",
+    "country": "Россия",
     "stand": "131",
     "description": "Издательство представляет серию научно-производственных журналов для специалистов различных отраслей пищевой промышленности",
     "logo": "/company-logos/pischevaya-promyshlennost-izdatelstvo.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_pishevaya_promishlennost.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_pishevaya_promishlennost.png",
+    "partnerStatus": "Генеральный информационный партнёр",
+    "website": null
   },
   {
-    "id": "92",
+    "id": "94",
     "name": "«ПИЩЕПРОМПРОДУКТ» ООО",
     "city": "Москва",
     "country": "Россия",
     "stand": "89",
     "description": "Ферментные препараты компании «Новозаймс» (Дания) для производства пива, концентрата квасного сусла, кваса, ячменных сиропов; большой диапазон фильтр-картона, кизельгур различных марок, стабилизаторы, осветлители",
     "logo": "/company-logos/pischepromprodukt.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_pischepromprodukt.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_pischepromprodukt.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "93",
+    "id": "95",
     "name": "«ПОЛИФИЛЬТР Фирма» ООО",
     "city": "п. Селятино",
     "country": "Россия",
     "stand": "28",
     "description": "Сертифицированное ёмкостное оборудование (танки)",
     "logo": "/company-logos/polifiltr-firma.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_polifiltr.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_polifiltr.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "94",
+    "id": "96",
     "name": "«ПРИБОЙ» ООО",
     "city": "станица Староминская",
     "country": "Россия",
     "stand": "95",
     "description": "Квас, производство солода и концентрата квасного сусла и выпуск готовой продукции",
     "logo": "/company-logos/priboy.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_priboy.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_priboy.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "95",
+    "id": "97",
     "name": "ПРОБРЮСЕРВИС",
     "city": "Красногорск",
     "country": "Россия",
     "stand": "18",
     "description": "Всегда в наличии широкий ассортимент хмеля, дрожжей и солода",
     "logo": "/company-logos/probryuservis.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_probrewservice-200x100.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_probrewservice-200x100.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "96",
+    "id": "98",
     "name": "«ПРОМКОНТИНЕНТ» ООО",
     "city": "Минеральные Воды",
     "country": "Россия",
     "stand": "-",
     "description": "Российский производитель пива со своими брендами",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "97",
+    "id": "99",
     "name": "ПРОСТЕКЛО",
     "city": "Видное",
     "country": "Россия",
     "stand": "86",
     "description": "Простекло является поставщиком стеклянной тары для пива, сидра, вина и консервации",
     "logo": "/company-logos/prosteklo.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_posteklo-200x100.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_posteklo-200x100.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "98",
+    "id": "100",
     "name": "«ПРОФЕССИОНАЛЬНАЯ МЕТРОЛОГИЯ» ООО",
     "city": "Москва",
     "country": "Россия",
     "stand": "6",
     "description": "Метрология, инженерные проекты",
     "logo": "/company-logos/professionalnaya-metrologiya.png",
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "99",
+    "id": "101",
     "name": "«ПРОЦЕССНЫЙ ИНЖИНИРИНГ» ООО",
     "city": "Москва",
     "country": "Россия",
     "stand": "81",
     "description": "Ведущий поставщик комплексных технологических решений для предприятий пищевой промышленности",
-    "logo": null,
-    "logoSource": null
+    "logo": "/company-logos/processnij-inzhiniring.png",
+    "logoSource": "manual:processnij-inzhiniring.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "100",
+    "id": "102",
     "name": "РЕСТОРАНОВЕД",
     "city": "Санкт-Петербург",
     "country": "Россия",
     "stand": "-",
     "description": "Журнал и сайт РЕСТОРАНОВЕД - медиаресурс для рестораторов, шеф-поваров и всех, кто связан с ресторанным бизнесом",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": "Информационный партнёр",
+    "website": null
   },
   {
-    "id": "101",
+    "id": "103",
     "name": "«РОКС» ООО",
     "city": "с. Верхнерусское",
     "country": "Россия",
     "stand": "-",
     "description": "Производство и реализация пива и пивных напитков премиум-класса под торговой маркой Brewsell",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "102",
+    "id": "104",
     "name": "РОССИЙСКИЙ ПРОДОВОЛЬСТВЕННЫЙ РЫНОК журнал",
     "city": "Санкт-Петербург",
     "country": "Россия",
     "stand": "100",
     "description": "Международный информационно-аналитический журнал для специалистов сферы производства продуктов питания, упаковки, оборудования и торговли продовольственными товарами",
-    "logo": null,
-    "logoSource": null
+    "logo": "/company-logos/rossijskij-prodovolstvennij-rinok.png",
+    "logoSource": "manual:rossijskij-prodovolstvennij-rinok.png",
+    "partnerStatus": "Информационный партнёр",
+    "website": null
   },
   {
-    "id": "103",
+    "id": "105",
     "name": "РОСТОВСКИЙ ЗАВОД ИНДУКЦИОННЫХ ПАРОГЕНЕРАТОРОВ",
     "city": "Ростов-на-Дону",
     "country": "Россия",
     "stand": "30",
     "description": "Производство электрических индукционных парогенераторов",
     "logo": "/company-logos/rostzip.png",
-    "logoSource": "manual:rostzip.png"
+    "logoSource": "manual:rostzip.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "104",
+    "id": "106",
     "name": "«РУСХМЕЛЬСОЛОД» ООО",
     "city": "Москва",
     "country": "Россия",
     "stand": "97",
     "description": "Динамично развивающаяся компания в сфере производства и поставок сырья и материалов на пищевые и пивобезалкогольные предприятия России",
     "logo": "/company-logos/rushmelsolod.png",
-    "logoSource": "manual:rushmelsolod.png"
+    "logoSource": "manual:rushmelsolod.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "105",
+    "id": "107",
     "name": "«СЕЛВИТ» ООО",
     "city": "Москва",
     "country": "Россия",
     "stand": "67",
     "description": "Материалы для фильтрации пива, такие как кизельгур и фильтрующий картон",
     "logo": "/company-logos/selvit.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_selvit-200x100.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_selvit-200x100.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "106",
+    "id": "108",
     "name": "«СИБИРСКАЯ ЛЕГЕНДА» Пивоваренный завод",
     "city": "Новосибирск",
     "country": "Россия",
     "stand": "-",
     "description": "Производство разливного и фасованного пива и безалкогольных напитков",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "107",
+    "id": "109",
     "name": "«СИБИЭС» ООО",
     "city": "Москва",
     "country": "Россия",
     "stand": "37",
     "description": "Продукты для пивоварения: натуральные, сбалансированные смеси растительных экстрактов (хмелевые, солодовые, фруктовые, и т. д.) для производства новых сортов пива",
-    "logo": null,
-    "logoSource": null
+    "logo": "/company-logos/cibies.png",
+    "logoSource": "manual:cibies.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "108",
+    "id": "110",
     "name": "«СИГМА-ТРЕЙД» ТОРГОВЫЙ ДОМ ООО",
     "city": "Краснодар",
     "country": "Россия",
     "stand": "80",
     "description": "Компания «Сигма-Трейд», основанная в 2001 году, специализируется на обеспечении винодельческих и других пищевых предприятий необходимыми вспомогательными материалами, оборудованием, а также занимается полным оснащением лабораторий",
     "logo": "/company-logos/sigma-treyd-torgovy-dom.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_sigma_200x100.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_sigma_200x100.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "109",
+    "id": "111",
     "name": "«СЛАВУТИЧ» ООО",
     "city": "Чебоксары",
     "country": "Россия",
     "stand": "24",
     "description": "Теплообменные пластины и уплотнения к теплообменникам российского и зарубежного производства",
-    "logo": null,
-    "logoSource": null
+    "logo": "/company-logos/slavutich.png",
+    "logoSource": "manual:slavutich.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "110",
+    "id": "112",
     "name": "«СМИ РУССИА» ООО",
     "city": "Москва",
     "country": "Россия",
     "stand": "68",
     "description": "Один из самых крупных изготовителей комплектных линий розлива и упаковочных машин",
     "logo": "/company-logos/smi-russia.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_smigroup.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_smigroup.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "111",
+    "id": "113",
     "name": "СОВИТАЛ Завод холодильного оборудования",
     "city": "Нижнекамск",
     "country": "Россия",
     "stand": "7",
     "description": "Разработка и производство профессионального холодильного оборудования",
     "logo": "/company-logos/sovital-zavod-holodilnogo-oborudovaniya.svg",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_sovital-200x100.svg"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_sovital-200x100.svg",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "112",
+    "id": "114",
     "name": "СОЛИСОФТ ГК",
     "city": "Москва",
     "country": "Россия",
     "stand": "-",
     "description": "Solisoft – разработчик программного обеспечения для автоматизации промышленных предприятий пивоваренной, молочной, пищевой и других перерабатывающих отраслей АПК",
     "logo": "/company-logos/solisoft.svg",
-    "logoSource": "https://static.tildacdn.com/tild3931-3232-4161-b634-373966356437/Solisoft.svg"
+    "logoSource": "https://static.tildacdn.com/tild3931-3232-4161-b634-373966356437/Solisoft.svg",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "113",
+    "id": "115",
     "name": "«СОЛОДОВЕННЫЙ ЗАВОД СУФФЛЕ САНКТ-ПЕТЕРБУРГ» АО",
     "city": "Санкт Петербург",
     "country": "Россия",
     "stand": "106",
     "description": "Производство и продажа солода",
     "logo": "/company-logos/solodovenny-zavod-suffle-sankt-peterburg.jpg",
-    "logoSource": "https://www.soud.ru/baers_uch/logo-soufflet.jpg"
+    "logoSource": "https://www.soud.ru/baers_uch/logo-soufflet.jpg",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "114",
+    "id": "116",
     "name": "СОЮЗ РОССИЙСКИХ ПИВОВАРОВ",
     "city": "Москва",
-    "country": "Россия\n  Официальный партнёр Форума",
+    "country": "Россия",
     "stand": "-",
     "description": "Крупнейшая некоммерческая организация, объединяющая российских производителей пивоваренной продукции и их смежников",
     "logo": "/company-logos/soyuz-rossiyskih-pivovarov.png",
-    "logoSource": "manual:souz-rossijskih-pivovarov.png"
+    "logoSource": "manual:souz-rossijskih-pivovarov.png",
+    "partnerStatus": "Официальный партнёр",
+    "website": null
   },
   {
-    "id": "115",
+    "id": "117",
     "name": "«СТАВРОПОЛЬСКИЙ ПИВОВАРЕННЫЙ ЗАВОД» ОАО",
     "city": "Ставрополь",
     "country": "Россия",
     "stand": "-",
     "description": "Производство слабоалкогольной и безалкогольной продукции",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "116",
+    "id": "118",
     "name": "«СТРАТЕГИЯ–XXI» ООО",
     "city": "Санкт-Петербург",
     "country": "Россия",
     "stand": "85",
     "description": "Спектр сырья охватывает всю линейку от базовых продуктов для классического пивоварения (солод, хмель, дрожжи) до специальных продуктов для промышленного (экстракты жженых солодов, модификаторы пива, ферменты) и крафтового (вкусо-ароматический хмель, спец солод и специи) пивоварения",
     "logo": "/company-logos/strategiya-xxi.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_strategy21.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_strategy21.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "117",
+    "id": "119",
     "name": "«СФЕРА» Издательский дом",
     "city": "Санкт-Петербург",
     "country": "Россия",
     "stand": "-",
     "description": "Один из ведущих игроков российского рынка изданий B2B для пищевой промышленности и организатор отраслевых деловых мероприятий",
     "logo": "/company-logos/sfera-izdatelsky-dom.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_sfera.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_sfera.png",
+    "partnerStatus": "Информационный партнёр",
+    "website": null
   },
   {
-    "id": "118",
+    "id": "120",
     "name": "«СЫКТЫВКАРСКИЙ» Пивоваренный завод» АО",
     "city": "Сыктывкар",
-    "country": "Россия\n  Партнер регистрации Форума",
+    "country": "Россия",
     "stand": "-",
     "description": "Сыктывкарским пивоварам до сегодняшнего дня удалось сохранить принцип чистого пивоварения: чтобы сварить пиво, нужен только солод, хмель, дрожжи и вода",
     "logo": "/company-logos/syktyvkarsky-pivovarenny-zavod.svg",
-    "logoSource": "manual:siktivkarpivo.svg"
+    "logoSource": "manual:siktivkarpivo.svg",
+    "partnerStatus": "Партнёр регистрации",
+    "website": null
   },
   {
-    "id": "119",
+    "id": "121",
     "name": "«ТЕХНОФИЛЬТР» НПП ООО",
     "city": "Владимир",
     "country": "Россия",
     "stand": "40",
     "description": "Производство и поставка широкого ассортимента фильтрующих элементов и оборудования для фильтрации",
     "logo": "/company-logos/tehnofiltr-npp.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_technofilter.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_technofilter.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "120",
+    "id": "122",
     "name": "«ТИХОРЕЦКИЙ ПИВОВАРЕННЫЙ ЗАВОД» ООО",
     "city": "Тихорецк",
     "country": "Россия",
     "stand": "11",
     "description": "Производство пива и безалкогольных напитков",
     "logo": "/company-logos/tihoretsky-pivovarenny-zavod.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_tihoreckiy.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_tihoreckiy.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "121",
+    "id": "123",
     "name": "«ТОВЕСОРБ» ООО",
     "city": "Уфа",
     "country": "Россия",
     "stand": "39",
     "description": "Российский производитель порошковых силикагелей серии BriS, которые применяются для стабилизации и избирательной адсорбции из пива белков, снижающих его коллоидную стабильность",
     "logo": "/company-logos/tovesorb.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_toversorbn.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_toversorbn.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "122",
+    "id": "124",
     "name": "«ТОКК Завод упаковочных изделий» ООО",
     "city": "п. Быково",
     "country": "Россия",
     "stand": "28",
     "description": "Полный цикл изготовления кроненпробки, алюминиевых и металлопластиковых колпачков под газированные и алкогольные напитки, крышек типа «твист» любого цвета",
     "logo": "/company-logos/tokk-zavod-upakovochnyh-izdely.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_tokk.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_tokk.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "123",
+    "id": "125",
     "name": "«ТОМСКОЕ ПИВО» ОАО",
     "city": "Томск",
-    "country": "Россия\n  Партнер вечернего приема Форума",
+    "country": "Россия",
     "stand": "-",
     "description": "Производство и реализация пива и безалкогольных напитков",
     "logo": "/company-logos/tomskoe-pivo.png",
-    "logoSource": "manual:tomskoe-pivo1.png"
+    "logoSource": "manual:tomskoe-pivo1.png",
+    "partnerStatus": "Партнёр вечернего приёма",
+    "website": null
   },
   {
-    "id": "124",
+    "id": "126",
     "name": "«ТОП-ТЕХНИКА» ООО",
     "city": "Барнаул",
     "country": "Россия",
     "stand": "-",
     "description": "Компания ООО «ТОП-ТЕХНИКА» с 1999 года производит оборудование по выдуву ПЭТ бутылок, банок и другой тары марки «МВ-ПЭТ» для пивной и безалкогольной промышленности",
     "logo": "/company-logos/top-tehnika.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_toptech-200x100.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_toptech-200x100.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "125",
+    "id": "127",
     "name": "«ТОРГОВО-ПРОМЫШЛЕННАЯ КОМПАНИЯ-КРАСНОДАР» ООО",
     "city": "Сочи",
     "country": "Россия",
     "stand": "-",
     "description": "Производство пива, пивных напитков и сидров",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "126",
+    "id": "128",
     "name": "«ТРАНСКЕМИКЛ-экспресс» АО",
     "city": "Воскресенск",
     "country": "Россия",
     "stand": "31",
     "description": "Крупный поставщик и производитель отраслевой химии с 1989 г.",
     "logo": "/company-logos/transkemikl-express.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_transchmical-200x100.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_transchmical-200x100.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "127",
+    "id": "129",
     "name": "«ТУЛЬСКИЙ СОЛОД» ООО",
     "city": "Москва",
     "country": "Россия",
     "stand": "29",
     "description": "Оптовая торговля зерном",
     "logo": "/company-logos/tulsky-solod.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_tul-solod-200x100.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_tul-solod-200x100.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "128",
+    "id": "130",
     "name": "ФЕРМЕРСКИЕ ДЕЛИКАТЕСЫ",
     "city": "с. Кирка",
     "country": "Республика Дагестан",
     "stand": "134",
     "description": "Натуральные фермерские деликатесы",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "129",
+    "id": "131",
     "name": "«ФИЛЬТРМЕДИА» ЗАО",
     "city": "Москва",
     "country": "Россия",
     "stand": "23",
     "description": "Поставщик современного фильтрующего оборудования и фильтрующих материалов для пищевой промышленности",
     "logo": "/company-logos/filtrmedia.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_filtermedia.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_filtermedia.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "130",
+    "id": "132",
     "name": "«ФИЛЬТРТЕХНИКА» ООО",
     "city": "Химки",
     "country": "Россия",
     "stand": "23",
     "description": "Поставка оборудования, расходных материалов и вспомогательных средств для фильтрации жидких и газовых сред",
-    "logo": null,
-    "logoSource": null
+    "logo": "/company-logos/filtertechnik.png",
+    "logoSource": "manual:filtertechnik.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "131",
+    "id": "133",
     "name": "«ФОРЕЙН БРЕНДС» ООО",
     "city": "Санкт-Петербург",
     "country": "Россия",
     "stand": "-",
     "description": "Импортёр пива, пивных напитков и безалкогольных напитков",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "132",
+    "id": "134",
     "name": "«ФРИГОГЛАСС ЕВРАЗИЯ» ООО",
     "city": "Орёл",
     "country": "Россия",
     "stand": "84",
     "description": "Международный лидер в производстве решений для охлаждения и хранения напитков, медикаментов и других продуктов",
-    "logo": null,
-    "logoSource": null
+    "logo": "/company-logos/frigoglass.png",
+    "logoSource": "manual:frigoglass.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "133",
+    "id": "135",
     "name": "«ХАДЫЖЕНСКИЙ Пивоваренный завод» ООО",
     "city": "Хадыженск",
     "country": "Россия",
     "stand": "-",
     "description": "Производство пива",
     "logo": "/company-logos/hadyzhensky-pivovarenny-zavod.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_hadyzhensk2.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_hadyzhensk2.png",
+    "partnerStatus": "Партнёр Форума",
+    "website": null
   },
   {
-    "id": "134",
+    "id": "136",
     "name": "«ХМЕЛЬСЕРВИС» ООО",
     "city": "Москва",
     "country": "Россия",
     "stand": "77",
     "description": "Компания «ХМЕЛЬСЕРВИС» обладает исключительными полномочиями в аккредитации дилеров на территории Российской Федерации, в рекламном продвижении продукции компании Morris Hanbury, в осуществлении деятельности по поставке и реализации хмелевой продукции на территории РФ",
-    "logo": null,
-    "logoSource": null
+    "logo": "/company-logos/hmelservice.png",
+    "logoSource": "manual:hmelservice.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "135",
+    "id": "137",
     "name": "«ХОЙФТ ЕВРАЗИЯ» ООО",
     "city": "Москва",
     "country": "Россия",
     "stand": "79",
     "description": "Производитель высокотехнологичного инспекционного оборудования для инновационных автоматических решений в индустрии производства напитков, пищевых продуктов и продукции здравоохранения",
     "logo": "/company-logos/hoyft-evraziya.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_hoyft.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_hoyft.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "136",
+    "id": "138",
     "name": "ХОПШТАЙНЕР",
     "city": "Майнбург",
     "country": "Германия",
     "stand": "61",
     "description": "Производство и продажа хмелепродуктов",
     "logo": "/company-logos/hopshtayner.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_hopsteiner.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_hopsteiner.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "137",
+    "id": "139",
     "name": "«Центр координации поддержки экспортно ориентированных субъектов малого \n  и среднего предпринимательства Белгородской области» АНО",
     "city": "Белгород",
     "country": "Россия",
     "stand": "98",
     "description": "Центр координации поддержки экспортно ориентированных субъектов малого и среднего предпринимательства Белгородской области",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "138",
+    "id": "140",
     "name": "ДРАГИН В.Н. ИП",
     "city": "с. Ездочное",
     "country": "Россия",
     "stand": "98",
     "description": "Оптовая и розничная продажа закусок к пиву",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "139",
+    "id": "141",
     "name": "«СТАРАЯ КРЕПОСТЬ» ПИВОВАРЕННАЯ КОМПАНИЯ» ООО",
     "city": "Короча",
     "country": "Россия",
     "stand": "98",
     "description": "Производство пива, минеральной воды, безалкогольных напитков, кваса",
     "logo": "/company-logos/staraya-krepost-pivovarennaya-kompaniya.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_starayakrepost.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_starayakrepost.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "140",
+    "id": "142",
     "name": "«ШЕНБУШ» ООО",
     "city": "Калининград",
     "country": "Россия",
     "stand": "133",
     "description": "Производство домашних лимонадов, газированных и негазированных напитков, безалкогольного пива",
     "logo": "/company-logos/shenbush.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_schonbusch_200x100.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_schonbusch_200x100.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "141",
+    "id": "143",
     "name": "ЭКВИНТ Группа компаний",
     "city": "Нижний Новгород",
     "country": "Россия",
     "stand": "20",
     "description": "Поставка оборудования контроля качества для пива и напитков, комплексная автоматизация и роботизация промышленных предприятий Российской Федерации и стран СНГ",
     "logo": "/company-logos/ekvint-gruppa-kompany.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_equint.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_equint.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "142",
+    "id": "144",
     "name": "«ЭкоКуб» ООО",
     "city": "Краснодар",
     "country": "Россия",
     "stand": "-",
     "description": "Производство пиво",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "143",
+    "id": "145",
     "name": "ЭЛТЕМИКС ЛАБ ООО",
     "city": "Воронеж",
     "country": "Россия",
     "stand": "8",
     "description": "Поставщик лабораторного оборудования, мебели, химреактивов и расходных материалов",
     "logo": "/company-logos/eltemix-lab.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo_eltemiks2.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo_eltemiks2.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "144",
+    "id": "146",
     "name": "ЭнВиСи КАРБОН РУС",
     "city": "Санкт-Петербург",
     "country": "Россия",
     "stand": "4",
     "description": "Один из крупнейших поставщиков и производителей активированных углей на российском рынке",
     "logo": "/company-logos/envisi-karbon-rus.png",
-    "logoSource": "https://www.soud.ru/baers_uch/logo-nwc_carbon-200x100.png"
+    "logoSource": "https://www.soud.ru/baers_uch/logo-nwc_carbon-200x100.png",
+    "partnerStatus": null,
+    "website": null
   },
   {
-    "id": "145",
+    "id": "147",
     "name": "ЮЖНЫЙ ОСЁТР",
     "city": "х. Бураковский",
     "country": "Россия",
     "stand": "147",
     "description": "Полный производственный цикл: от оплодотворения икры и выращивания малька до выращивания взрослой рыбы, переработки и производства готовой продукции, включая собственное икорное производство",
     "logo": null,
-    "logoSource": null
+    "logoSource": null,
+    "partnerStatus": null,
+    "website": null
   }
 ]

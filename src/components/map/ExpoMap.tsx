@@ -10,9 +10,6 @@ import {
   useMemo,
   useRef,
   useState,
-  type PointerEvent,
-  type Touch,
-  type TouchEvent,
 } from 'react'
 
 import mapMeta from '@/data/map-meta.json'
@@ -29,11 +26,41 @@ const mapHeight = mapMeta.height || 3340
 const maxZoom = 1.05
 const defaultZoom = 0.18
 const focusZoomMultiplier = 1.8
+const queryDebounceMs = 180
+const dragThreshold = 6
 
 type Point = {
   x: number
   y: number
 }
+
+type Transform = {
+  pan: Point
+  zoom: number
+}
+
+type ViewportMetrics = {
+  width: number
+  height: number
+}
+
+type Gesture =
+  | {
+      mode: 'pan'
+      pointerId: number
+      startPoint: Point
+      startPan: Point
+      moved: boolean
+    }
+  | {
+      mode: 'pinch'
+      pointerIds: [number, number]
+      startDistance: number
+      startMidpoint: Point
+      startPan: Point
+      startZoom: number
+      moved: boolean
+    }
 
 function normalizeSearch(value: string) {
   return value.trim().toLowerCase()
@@ -58,25 +85,44 @@ function clampZoom(value: number, minZoom = 0.12) {
   return Math.min(Math.max(value, minZoom), maxZoom)
 }
 
+function applyLayerTransform(element: HTMLElement | null, transform: Transform) {
+  if (!element) {
+    return
+  }
+
+  element.style.transform = `translate3d(${transform.pan.x}px, ${transform.pan.y}px, 0) scale(${transform.zoom})`
+}
+
+function getHitSize(value?: number) {
+  return Math.max(value ?? 28, 150)
+}
+
 export default function ExpoMap() {
   const searchParams = useSearchParams()
   const initialStand = searchParams.get('stand')
   const viewportRef = useRef<HTMLDivElement>(null)
+  const mapLayerRef = useRef<HTMLDivElement>(null)
+  const viewportMetricsRef = useRef<ViewportMetrics>({ width: 390, height: 600 })
+  const viewportRectRef = useRef<DOMRect | null>(null)
+  const transformRef = useRef<Transform>({
+    pan: { x: 0, y: 0 },
+    zoom: defaultZoom,
+  })
+  const minZoomRef = useRef(defaultZoom)
   const pointersRef = useRef(new Map<number, Point>())
-  const touchActiveRef = useRef(false)
-  const lastTapRef = useRef(0)
-  const gestureRef = useRef<{
-    mode: 'pinch'
-    startPan: Point
-    startZoom: number
-    startDistance?: number
-    startMidpoint?: Point
-  } | null>(null)
+  const gestureRef = useRef<Gesture | null>(null)
+  const rafRef = useRef<number | null>(null)
+  const movedSincePointerDownRef = useRef(false)
+  const tapStandRef = useRef<string | null>(null)
+  const initStartedAtRef = useRef<number | null>(null)
 
   const [query, setQuery] = useState('')
+  const [debouncedQuery, setDebouncedQuery] = useState('')
   const [selectedStand, setSelectedStand] = useState<string | null>(initialStand)
-  const [zoom, setZoom] = useState(defaultZoom)
-  const [pan, setPan] = useState<Point>({ x: 0, y: 0 })
+  const [view, setView] = useState<Transform>({
+    pan: { x: 0, y: 0 },
+    zoom: defaultZoom,
+  })
   const [mapImage, setMapImage] = useState('/maps/forum-map-clean.svg')
 
   const stands = useMemo(
@@ -87,9 +133,10 @@ export default function ExpoMap() {
     () => stands.find((stand) => stand.stand === selectedStand) ?? null,
     [stands, selectedStand]
   )
+  const standsById = useMemo(() => new Map(stands.map((stand) => [stand.stand, stand])), [stands])
 
   const searchResults = useMemo(() => {
-    const normalized = normalizeSearch(query)
+    const normalized = normalizeSearch(debouncedQuery)
     if (!normalized) {
       return []
     }
@@ -106,12 +153,10 @@ export default function ExpoMap() {
         )
       })
       .slice(0, 8)
-  }, [query, stands])
+  }, [debouncedQuery, stands])
 
   const clampPan = useCallback((nextPan: Point, nextZoom: number) => {
-    const viewport = viewportRef.current
-    const viewportWidth = viewport?.clientWidth || 390
-    const viewportHeight = viewport?.clientHeight || 600
+    const { width: viewportWidth, height: viewportHeight } = viewportMetricsRef.current
     const scaledWidth = mapWidth * nextZoom
     const scaledHeight = mapHeight * nextZoom
     const x = scaledWidth <= viewportWidth
@@ -124,11 +169,33 @@ export default function ExpoMap() {
     return { x, y }
   }, [])
 
+  const setTransform = useCallback((nextTransform: Transform, commit = false) => {
+    transformRef.current = nextTransform
+
+    if (commit) {
+      if (rafRef.current !== null) {
+        window.cancelAnimationFrame(rafRef.current)
+        rafRef.current = null
+      }
+      applyLayerTransform(mapLayerRef.current, nextTransform)
+      setView(nextTransform)
+      return
+    }
+
+    if (rafRef.current !== null) {
+      return
+    }
+
+    rafRef.current = window.requestAnimationFrame(() => {
+      rafRef.current = null
+      applyLayerTransform(mapLayerRef.current, transformRef.current)
+    })
+  }, [])
+
   const getInitialView = useCallback(() => {
-    const viewport = viewportRef.current
-    const viewportWidth = viewport?.clientWidth || 390
-    const viewportHeight = viewport?.clientHeight || 600
+    const { width: viewportWidth, height: viewportHeight } = viewportMetricsRef.current
     const nextZoom = clampZoom(viewportHeight / mapHeight, 0)
+    minZoomRef.current = nextZoom
 
     return {
       zoom: nextZoom,
@@ -140,241 +207,305 @@ export default function ExpoMap() {
   }, [clampPan])
 
   const resetMap = useCallback(() => {
-    const initialView = getInitialView()
-    setZoom(initialView.zoom)
-    setPan(initialView.pan)
+    setTransform(getInitialView(), true)
     setSelectedStand(null)
-  }, [getInitialView])
+  }, [getInitialView, setTransform])
 
-  const centerStand = useCallback((stand: InteractiveMapStand, nextZoom = zoom) => {
+  const centerStand = useCallback((stand: InteractiveMapStand, nextZoom = transformRef.current.zoom) => {
+    const { width, height } = viewportMetricsRef.current
+    const clampedZoom = clampZoom(nextZoom, minZoomRef.current)
+    setTransform({
+      zoom: clampedZoom,
+      pan: clampPan({
+        x: width / 2 - stand.x * clampedZoom,
+        y: height / 2 - stand.y * clampedZoom,
+      }, clampedZoom),
+    }, true)
+  }, [clampPan, setTransform])
+
+  const chooseStand = useCallback((stand: InteractiveMapStand, shouldFocus = false) => {
+    setSelectedStand(stand.stand)
+
+    if (shouldFocus) {
+      centerStand(
+        stand,
+        Math.max(transformRef.current.zoom, minZoomRef.current * focusZoomMultiplier)
+      )
+    }
+  }, [centerStand])
+
+  const zoomAroundPoint = useCallback((point: Point, nextZoom: number) => {
+    const current = transformRef.current
+    const clampedZoom = clampZoom(nextZoom, minZoomRef.current)
+    const scale = clampedZoom / current.zoom
+
+    setTransform({
+      zoom: clampedZoom,
+      pan: clampPan({
+        x: point.x - (point.x - current.pan.x) * scale,
+        y: point.y - (point.y - current.pan.y) * scale,
+      }, clampedZoom),
+    }, true)
+  }, [clampPan, setTransform])
+
+  const getLocalPoint = useCallback((event: PointerEvent) => {
+    const rect = viewportRectRef.current
+    return {
+      x: event.clientX - (rect?.left ?? 0),
+      y: event.clientY - (rect?.top ?? 0),
+    }
+  }, [])
+
+  useEffect(() => {
+    const timeout = window.setTimeout(() => {
+      setDebouncedQuery(query)
+    }, queryDebounceMs)
+
+    return () => window.clearTimeout(timeout)
+  }, [query])
+
+  useLayoutEffect(() => {
+    initStartedAtRef.current = performance.now()
+
     const viewport = viewportRef.current
     if (!viewport) {
       return
     }
 
-    const minAllowedZoom = getInitialView().zoom
-    const clampedZoom = clampZoom(nextZoom, minAllowedZoom)
-    setZoom(clampedZoom)
-    setPan(clampPan({
-      x: viewport.clientWidth / 2 - stand.x * clampedZoom,
-      y: viewport.clientHeight / 2 - stand.y * clampedZoom,
-    }, clampedZoom))
-  }, [clampPan, getInitialView, zoom])
-
-  const chooseStand = useCallback((stand: InteractiveMapStand, shouldFocus = false) => {
-    setSelectedStand(stand.stand)
-    const initialView = getInitialView()
-    centerStand(
-      stand,
-      shouldFocus ? Math.max(zoom, initialView.zoom * focusZoomMultiplier) : zoom
-    )
-  }, [centerStand, getInitialView, zoom])
-
-  const zoomAroundPoint = useCallback((point: Point, nextZoom: number) => {
-    const minAllowedZoom = getInitialView().zoom
-    const clampedZoom = clampZoom(nextZoom, minAllowedZoom)
-    const scale = clampedZoom / zoom
-
-    setPan((current) => ({
-      ...clampPan({
-        x: point.x - (point.x - current.x) * scale,
-        y: point.y - (point.y - current.y) * scale,
-      }, clampedZoom),
-    }))
-    setZoom(clampedZoom)
-  }, [clampPan, getInitialView, zoom])
-
-  function getLocalPoint(event: PointerEvent<HTMLDivElement>) {
-    const rect = event.currentTarget.getBoundingClientRect()
-    return {
-      x: event.clientX - rect.left,
-      y: event.clientY - rect.top,
-    }
-  }
-
-  function getTouchPoint(touch: Touch, element: HTMLDivElement) {
-    const rect = element.getBoundingClientRect()
-
-    return {
-      x: touch.clientX - rect.left,
-      y: touch.clientY - rect.top,
-    }
-  }
-
-  function handlePointerDown(event: PointerEvent<HTMLDivElement>) {
-    if (touchActiveRef.current) {
-      return
+    const updateMetrics = () => {
+      viewportRectRef.current = viewport.getBoundingClientRect()
+      viewportMetricsRef.current = {
+        width: viewport.clientWidth || 390,
+        height: viewport.clientHeight || 600,
+      }
+      setTransform(getInitialView(), true)
     }
 
-    const point = getLocalPoint(event)
-    try {
-      event.currentTarget.setPointerCapture(event.pointerId)
-    } catch {
-      // Older mobile Safari/WebViews can throw here; touch handlers below cover them.
-    }
-    pointersRef.current.set(event.pointerId, point)
+    updateMetrics()
 
-    const now = Date.now()
-    if (now - lastTapRef.current < 280 && pointersRef.current.size === 1) {
-      const initialView = getInitialView()
-      const tapZoom = initialView.zoom * focusZoomMultiplier
-      zoomAroundPoint(point, zoom < tapZoom ? tapZoom : initialView.zoom)
-    }
-    lastTapRef.current = now
+    const resizeObserver = new ResizeObserver(updateMetrics)
+    resizeObserver.observe(viewport)
 
-    const pointers = [...pointersRef.current.values()]
-    if (pointers.length >= 2) {
-      gestureRef.current = {
-        mode: 'pinch',
-        startPan: pan,
-        startZoom: zoom,
-        startDistance: getDistance(pointers[0], pointers[1]),
-        startMidpoint: getMidpoint(pointers[0], pointers[1]),
+    return () => {
+      resizeObserver.disconnect()
+      if (rafRef.current !== null) {
+        window.cancelAnimationFrame(rafRef.current)
       }
     }
-  }
+  }, [getInitialView, setTransform])
 
-  function handlePointerMove(event: PointerEvent<HTMLDivElement>) {
-    if (touchActiveRef.current) {
+  useEffect(() => {
+    if (process.env.NODE_ENV !== 'development') {
       return
     }
 
-    if (!pointersRef.current.has(event.pointerId)) {
+    const startedAt = initStartedAtRef.current
+    if (startedAt !== null) {
+      console.info('[map:init]', Math.round(performance.now() - startedAt))
+    }
+    console.info('[map:stands]', stands.length)
+  }, [stands.length])
+
+  useEffect(() => {
+    const viewport = viewportRef.current
+    if (!viewport) {
       return
     }
 
-    pointersRef.current.set(event.pointerId, getLocalPoint(event))
-    const gesture = gestureRef.current
-    if (!gesture) {
-      return
+    const startPinch = () => {
+      const pointers = [...pointersRef.current.entries()]
+      if (pointers.length < 2) {
+        return
+      }
+
+      const first = pointers[0]
+      const second = pointers[1]
+      const startDistance = getDistance(first[1], second[1])
+      if (startDistance <= 0) {
+        return
+      }
+
+      gestureRef.current = {
+        mode: 'pinch',
+        pointerIds: [first[0], second[0]],
+        startDistance,
+        startMidpoint: getMidpoint(first[1], second[1]),
+        startPan: transformRef.current.pan,
+        startZoom: transformRef.current.zoom,
+        moved: false,
+      }
     }
 
-    const pointers = [...pointersRef.current.values()]
-    if (gesture.mode === 'pinch' && pointers.length >= 2 && gesture.startDistance && gesture.startMidpoint) {
-      const midpoint = getMidpoint(pointers[0], pointers[1])
-      const distance = getDistance(pointers[0], pointers[1])
+    const handlePointerDown = (event: PointerEvent) => {
+      if (event.pointerType === 'mouse' && event.button !== 0) {
+        return
+      }
+      if (event.target instanceof Element && event.target.closest('[data-map-control]')) {
+        return
+      }
+
+      viewportRectRef.current = viewport.getBoundingClientRect()
+      movedSincePointerDownRef.current = false
+      tapStandRef.current = event.target instanceof Element
+        ? event.target.closest<HTMLButtonElement>('[data-stand]')?.dataset.stand ?? null
+        : null
+
+      try {
+        viewport.setPointerCapture(event.pointerId)
+      } catch {
+        // Pointer capture is best-effort on older WebViews.
+      }
+
+      const point = getLocalPoint(event)
+      pointersRef.current.set(event.pointerId, point)
+
+      if (pointersRef.current.size >= 2) {
+        startPinch()
+        return
+      }
+
+      gestureRef.current = {
+        mode: 'pan',
+        pointerId: event.pointerId,
+        startPoint: point,
+        startPan: transformRef.current.pan,
+        moved: false,
+      }
+    }
+
+    const handlePointerMove = (event: PointerEvent) => {
+      if (!pointersRef.current.has(event.pointerId)) {
+        return
+      }
+
+      const point = getLocalPoint(event)
+      pointersRef.current.set(event.pointerId, point)
+      const gesture = gestureRef.current
+      if (!gesture) {
+        return
+      }
+
+      if (gesture.mode === 'pan') {
+        if (gesture.pointerId !== event.pointerId) {
+          return
+        }
+
+        const dx = point.x - gesture.startPoint.x
+        const dy = point.y - gesture.startPoint.y
+        const moved = Math.hypot(dx, dy) > dragThreshold
+        gesture.moved ||= moved
+        movedSincePointerDownRef.current ||= moved
+
+        setTransform({
+          zoom: transformRef.current.zoom,
+          pan: clampPan({
+            x: gesture.startPan.x + dx,
+            y: gesture.startPan.y + dy,
+          }, transformRef.current.zoom),
+        })
+        return
+      }
+
+      const first = pointersRef.current.get(gesture.pointerIds[0])
+      const second = pointersRef.current.get(gesture.pointerIds[1])
+      if (!first || !second) {
+        return
+      }
+
+      const midpoint = getMidpoint(first, second)
+      const distance = getDistance(first, second)
       const nextZoom = clampZoom(
         gesture.startZoom * (distance / gesture.startDistance),
-        getInitialView().zoom
+        minZoomRef.current
       )
       const scale = nextZoom / gesture.startZoom
+      const moved = Math.abs(distance - gesture.startDistance) > dragThreshold ||
+        getDistance(midpoint, gesture.startMidpoint) > dragThreshold
 
-      setZoom(nextZoom)
-      setPan(clampPan({
-        x: midpoint.x - (gesture.startMidpoint.x - gesture.startPan.x) * scale,
-        y: midpoint.y - (gesture.startMidpoint.y - gesture.startPan.y) * scale,
-      }, nextZoom))
-      return
+      gesture.moved ||= moved
+      movedSincePointerDownRef.current ||= moved
+
+      setTransform({
+        zoom: nextZoom,
+        pan: clampPan({
+          x: midpoint.x - (gesture.startMidpoint.x - gesture.startPan.x) * scale,
+          y: midpoint.y - (gesture.startMidpoint.y - gesture.startPan.y) * scale,
+        }, nextZoom),
+      })
     }
 
-  }
+    const handlePointerEnd = (event: PointerEvent) => {
+      const pointerCount = pointersRef.current.size
+      const gesture = gestureRef.current
+      const tappedStand = tapStandRef.current
 
-  function handlePointerEnd(event: PointerEvent<HTMLDivElement>) {
-    if (touchActiveRef.current) {
-      return
+      pointersRef.current.delete(event.pointerId)
+
+      try {
+        viewport.releasePointerCapture(event.pointerId)
+      } catch {
+        // Matching the best-effort capture above.
+      }
+
+      if (pointerCount === 1 && gesture?.mode === 'pan' && !gesture.moved && tappedStand) {
+        const stand = standsById.get(tappedStand)
+        if (stand) {
+          chooseStand(stand)
+        }
+      }
+
+      tapStandRef.current = null
+
+      if (pointersRef.current.size === 1) {
+        const [remainingId, remainingPoint] = [...pointersRef.current.entries()][0]
+        gestureRef.current = {
+          mode: 'pan',
+          pointerId: remainingId,
+          startPoint: remainingPoint,
+          startPan: transformRef.current.pan,
+          moved: true,
+        }
+        movedSincePointerDownRef.current = true
+        setTransform(transformRef.current, true)
+        return
+      }
+
+      gestureRef.current = null
+      setTransform(transformRef.current, true)
     }
 
-    pointersRef.current.delete(event.pointerId)
-
-    gestureRef.current = null
-  }
-
-  function handleTouchStart(event: TouchEvent<HTMLDivElement>) {
-    if (event.touches.length === 0) {
-      return
-    }
-
-    touchActiveRef.current = true
-    pointersRef.current.clear()
-
-    const touches = Array.from(event.touches)
-    const points = touches.map((touch) => getTouchPoint(touch, event.currentTarget))
-
-    if (points.length >= 2) {
+    const handleWheel = (event: WheelEvent) => {
       event.preventDefault()
-      gestureRef.current = {
-        mode: 'pinch',
-        startPan: pan,
-        startZoom: zoom,
-        startDistance: getDistance(points[0], points[1]),
-        startMidpoint: getMidpoint(points[0], points[1]),
-      }
-      return
     }
 
-    const point = points[0]
-    const now = Date.now()
+    viewport.addEventListener('pointerdown', handlePointerDown)
+    viewport.addEventListener('pointermove', handlePointerMove)
+    viewport.addEventListener('pointerup', handlePointerEnd)
+    viewport.addEventListener('pointercancel', handlePointerEnd)
+    viewport.addEventListener('wheel', handleWheel, { passive: false })
 
-    if (now - lastTapRef.current < 280) {
-      const initialView = getInitialView()
-      const tapZoom = initialView.zoom * focusZoomMultiplier
-      zoomAroundPoint(point, zoom < tapZoom ? tapZoom : initialView.zoom)
+    return () => {
+      viewport.removeEventListener('pointerdown', handlePointerDown)
+      viewport.removeEventListener('pointermove', handlePointerMove)
+      viewport.removeEventListener('pointerup', handlePointerEnd)
+      viewport.removeEventListener('pointercancel', handlePointerEnd)
+      viewport.removeEventListener('wheel', handleWheel)
     }
-
-    lastTapRef.current = now
-    gestureRef.current = null
-  }
-
-  function handleTouchMove(event: TouchEvent<HTMLDivElement>) {
-    const gesture = gestureRef.current
-    if (!gesture || event.touches.length === 0) {
-      return
-    }
-
-    event.preventDefault()
-
-    const points = Array.from(event.touches).map((touch) =>
-      getTouchPoint(touch, event.currentTarget)
-    )
-
-    if (gesture.mode === 'pinch' && points.length >= 2 && gesture.startDistance && gesture.startMidpoint) {
-      const midpoint = getMidpoint(points[0], points[1])
-      const distance = getDistance(points[0], points[1])
-      const nextZoom = clampZoom(
-        gesture.startZoom * (distance / gesture.startDistance),
-        getInitialView().zoom
-      )
-      const scale = nextZoom / gesture.startZoom
-
-      setZoom(nextZoom)
-      setPan(clampPan({
-        x: midpoint.x - (gesture.startMidpoint.x - gesture.startPan.x) * scale,
-        y: midpoint.y - (gesture.startMidpoint.y - gesture.startPan.y) * scale,
-      }, nextZoom))
-      return
-    }
-
-  }
-
-  function handleTouchEnd(event: TouchEvent<HTMLDivElement>) {
-    if (event.touches.length > 0) {
-      return
-    }
-
-    touchActiveRef.current = false
-    gestureRef.current = null
-  }
-
-  useLayoutEffect(() => {
-    const frame = window.requestAnimationFrame(() => {
-      const initialView = getInitialView()
-      setZoom(initialView.zoom)
-      setPan(initialView.pan)
-    })
-
-    return () => window.cancelAnimationFrame(frame)
-  }, [getInitialView])
+  }, [chooseStand, clampPan, getLocalPoint, setTransform, standsById])
 
   useEffect(() => {
     const linkedStand = stands.find((stand) => stand.stand === initialStand)
-    if (linkedStand) {
-      window.setTimeout(() => {
-        setSelectedStand(linkedStand.stand)
-        const initialView = getInitialView()
-        centerStand(linkedStand, initialView.zoom * focusZoomMultiplier)
-      }, 120)
+    if (!linkedStand) {
+      return
     }
-  }, [centerStand, getInitialView, initialStand, stands])
+
+    const timeout = window.setTimeout(() => {
+      setSelectedStand(linkedStand.stand)
+      centerStand(linkedStand, minZoomRef.current * focusZoomMultiplier)
+    }, 120)
+
+    return () => window.clearTimeout(timeout)
+  }, [centerStand, initialStand, stands])
 
   return (
     <div className="flex h-full min-h-0 flex-col">
@@ -402,7 +533,7 @@ export default function ExpoMap() {
                 onClick={() => chooseStand(stand, true)}
                 className={cn(
                   radius.badgeRadius,
-                  'shrink-0 border border-[#F7941D]/30 bg-[#FFF4E6] px-3 py-2 text-left text-sm font-medium text-[#5A321E] transition-colors'
+                  'shrink-0 border border-[#F7941D]/30 bg-[#FFF4E6] px-3 py-2 text-left text-sm font-medium text-[#5A321E]'
                 )}
               >
                 <span className="block font-semibold">Стенд {stand.stand}</span>
@@ -418,22 +549,15 @@ export default function ExpoMap() {
       <section
         ref={viewportRef}
         data-map-viewport
-        className="relative min-h-0 flex-1 overflow-hidden bg-white touch-none"
-        onPointerDown={handlePointerDown}
-        onPointerMove={handlePointerMove}
-        onPointerCancel={handlePointerEnd}
-        onPointerUp={handlePointerEnd}
-        onTouchStart={handleTouchStart}
-        onTouchMove={handleTouchMove}
-        onTouchCancel={handleTouchEnd}
-        onTouchEnd={handleTouchEnd}
+        className="relative min-h-0 flex-1 touch-none overflow-hidden bg-[#FAF6F0]"
       >
         <div
+          ref={mapLayerRef}
           className="absolute left-0 top-0 will-change-transform"
           style={{
             width: mapWidth,
             height: mapHeight,
-            transform: `translate3d(${pan.x}px, ${pan.y}px, 0) scale(${zoom})`,
+            transform: `translate3d(${view.pan.x}px, ${view.pan.y}px, 0) scale(${view.zoom})`,
             transformOrigin: '0 0',
           }}
         >
@@ -445,63 +569,68 @@ export default function ExpoMap() {
             draggable={false}
             onError={() => setMapImage('/maps/forum-map.svg')}
           />
+
+          {stands.map((stand) => {
+            const active = stand.stand === selectedStand
+            const standWidth = stand.width ?? 28
+            const standHeight = stand.height ?? 28
+            const hitWidth = getHitSize(standWidth)
+            const hitHeight = getHitSize(standHeight)
+
+            return (
+              <button
+                key={stand.stand}
+                type="button"
+                onClick={(event) => {
+                  event.stopPropagation()
+                  if (movedSincePointerDownRef.current) {
+                    return
+                  }
+                  chooseStand(stand)
+                }}
+                title={getStandTitle(stand)}
+                data-stand={stand.stand}
+                className={cn(
+                  'absolute z-10 bg-transparent p-0',
+                  active && 'z-20 border-2 border-[#F7941D] bg-[#F7941D]/10'
+                )}
+                style={{
+                  left: stand.x + standWidth / 2 - hitWidth / 2,
+                  top: stand.y - standHeight / 2 - hitHeight / 2,
+                  width: hitWidth,
+                  height: hitHeight,
+                }}
+                aria-label={`Стенд ${stand.stand}: ${getStandTitle(stand)}`}
+              />
+            )
+          })}
         </div>
 
-        {stands.map((stand) => {
-          const active = stand.stand === selectedStand
-          const standWidth = Math.max((stand.width ?? 28) * zoom + 18, 32)
-          const standHeight = Math.max((stand.height ?? 28) * zoom + 14, 32)
-
-          return (
-            <button
-              key={stand.stand}
-              type="button"
-              onClick={(event) => {
-                event.stopPropagation()
-                chooseStand(stand)
-              }}
-              title={getStandTitle(stand)}
-              className={cn(
-                'absolute z-10 -translate-x-1/2 -translate-y-1/2 rounded-xl bg-transparent transition-colors',
-                active && 'z-20 border border-[#F7941D]/80 bg-[#F7941D]/10 ring-2 ring-[#F7941D]/20'
-              )}
-              style={{
-                left: pan.x + stand.x * zoom + ((stand.width ?? 28) * zoom) / 2,
-                top: pan.y + stand.y * zoom - ((stand.height ?? 28) * zoom) / 2,
-                width: standWidth,
-                height: standHeight,
-              }}
-              aria-label={`Стенд ${stand.stand}: ${getStandTitle(stand)}`}
-            />
-          )
-        })}
-
         <div
+          data-map-control
           className="absolute right-3 top-3 flex flex-col gap-2"
           onPointerDown={(event) => event.stopPropagation()}
         >
           <button
             type="button"
-            onClick={() => zoomAroundPoint({ x: 180, y: 240 }, zoom + 0.12)}
-            className={cn('flex h-11 w-11 items-center justify-center bg-[#FFFDF8]/95 text-[#7A3F1D] shadow-sm transition-colors', radius.buttonRadius, borders.borderDefault)}
+            onClick={() => zoomAroundPoint({ x: 180, y: 240 }, transformRef.current.zoom + 0.12)}
+            className={cn('flex h-11 w-11 items-center justify-center bg-[#FFFDF8]/95 text-[#7A3F1D] shadow-sm', radius.buttonRadius, borders.borderDefault)}
             aria-label="Увеличить карту"
           >
             <Plus className="h-5 w-5" />
           </button>
           <button
             type="button"
-            onClick={() => zoomAroundPoint({ x: 180, y: 240 }, zoom - 0.12)}
-            className={cn('flex h-11 w-11 items-center justify-center bg-[#FFFDF8]/95 text-[#7A3F1D] shadow-sm transition-colors', radius.buttonRadius, borders.borderDefault)}
+            onClick={() => zoomAroundPoint({ x: 180, y: 240 }, transformRef.current.zoom - 0.12)}
+            className={cn('flex h-11 w-11 items-center justify-center bg-[#FFFDF8]/95 text-[#7A3F1D] shadow-sm', radius.buttonRadius, borders.borderDefault)}
             aria-label="Уменьшить карту"
           >
             <Minus className="h-5 w-5" />
           </button>
           <button
             type="button"
-            onClick={() => {
-              resetMap()
-            }}
-            className={cn('flex h-11 w-11 items-center justify-center bg-[#FFFDF8]/95 text-[#7A3F1D] shadow-sm transition-colors', radius.buttonRadius, borders.borderDefault)}
+            onClick={resetMap}
+            className={cn('flex h-11 w-11 items-center justify-center bg-[#FFFDF8]/95 text-[#7A3F1D] shadow-sm', radius.buttonRadius, borders.borderDefault)}
             aria-label="Сбросить масштаб"
             title="Сбросить масштаб"
           >
@@ -533,7 +662,7 @@ export default function ExpoMap() {
                 <button
                   type="button"
                   onClick={() => setSelectedStand(null)}
-                  className={cn('flex h-10 w-10 items-center justify-center bg-[#FFF4E6] text-[#7A3F1D] transition-colors', radius.buttonRadius)}
+                  className={cn('flex h-10 w-10 items-center justify-center bg-[#FFF4E6] text-[#7A3F1D]', radius.buttonRadius)}
                   aria-label="Закрыть карточку стенда"
                 >
                   <X className="h-5 w-5" />
@@ -556,7 +685,7 @@ export default function ExpoMap() {
                     </div>
                     <Link
                       href={`/companies/${company.id}`}
-                      className={cn('shrink-0 bg-[#4A2412] px-3 py-2 text-sm font-semibold text-white transition-colors hover:bg-[#7A3F1D]', radius.buttonRadius)}
+                      className={cn('shrink-0 bg-[#4A2412] px-3 py-2 text-sm font-semibold text-white', radius.buttonRadius)}
                     >
                       Открыть
                     </Link>
