@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 
 import { cn, radius } from '@/lib/design-system'
 import { onBannerClick, type Banner } from '@/lib/banners'
@@ -19,6 +20,8 @@ type Props = {
 export default function BannerCard({ banner, className }: Props) {
   const [imageFailed, setImageFailed] = useState(false)
   const image = banner.mobileImage || banner.image
+  const isExternal = banner.url?.startsWith('http') ?? false
+  const clickableClassName = 'block transition-opacity hover:opacity-90'
   const content = (
     <div
       className={cn(
@@ -51,13 +54,26 @@ export default function BannerCard({ banner, className }: Props) {
     return content
   }
 
+  if (!isExternal) {
+    return (
+      <Link
+        href={banner.url}
+        className={clickableClassName}
+        onClick={() => onBannerClick(banner)}
+        aria-label={banner.title}
+      >
+        {content}
+      </Link>
+    )
+  }
+
   return (
     <a
       href={banner.url}
       target="_blank"
       rel="noopener noreferrer"
-      className="block transition-opacity hover:opacity-90"
-      onClick={() => onBannerClick(banner.id)}
+      className={clickableClassName}
+      onClick={() => onBannerClick(banner)}
       aria-label={banner.title}
     >
       {content}

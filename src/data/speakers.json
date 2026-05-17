@@ -3,174 +3,242 @@
     "name": "Даниил Бриман",
     "position": "председатель Совета Союза российских пивоваров, генеральный директор ООО \"Суздальский пивовар\"",
     "image": "/speaker-photos/daniil-briman.jpg",
-    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Даниил-Бриман.jpg"
+    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Даниил-Бриман.jpg",
+    "description": "Председатель Совета Союза российских пивоваров\nгенеральный директор ООО \"Суздальский пивовар\"",
+    "city": "Москва"
   },
   {
     "name": "Дмитрий Тарасевич",
     "position": "член Общественного совета при Росалкогольтабакконтроле, управляющий партнер группы компаний «Таркос»",
     "image": "/speaker-photos/dmitry-tarasevich.jpg",
-    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Дмитрий-Тарасевич.jpg"
+    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Дмитрий-Тарасевич.jpg",
+    "description": "Член Общественного совета при Росалкогольтабакконтроле\nУправляющий партнер группы компаний «Таркос»",
+    "city": "Воронеж"
   },
   {
     "name": "Елена Тюкина",
     "position": "директор по производству ООО «Красный пивовар»",
     "image": "/speaker-photos/elena-tyukina.jpg",
-    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Елена-Тюкина.jpg"
+    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Елена-Тюкина.jpg",
+    "description": "Директор по производству ООО «Красный пивовар».",
+    "city": "Москва"
   },
   {
     "name": "Игорь Хавский",
     "position": "первый заместитель председателя Совета Союза российских пивоваров, соучредитель пивоварни Gletcher",
     "image": "/speaker-photos/igor-havsky.jpg",
-    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Игорь-Хавский.jpg"
+    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Игорь-Хавский.jpg",
+    "description": "Руководитель Комиссии ОПОРЫ РОССИИ по производству и обороту пивоваренной продукции и напитков брожения\nсоучредитель пивоварни «Глетчер».",
+    "city": "Москва"
   },
   {
     "name": "Владимир Бобков",
     "position": "генеральный директор ООО «Грейнфорд-Агро»",
     "image": "/speaker-photos/vladimir-bobkov.jpg",
-    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Владимир-Бобков.jpg"
+    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Владимир-Бобков.jpg",
+    "description": "Генеральный директор ООО «Грейнфорд-Агро»",
+    "city": "Москва"
   },
   {
     "name": "Дмитрий Морозов",
     "position": "управляющий ООО «Грейнрус»",
     "image": "/speaker-photos/dmitry-morozov.jpg",
-    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Дмитрий-Морозов.jpg"
+    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Дмитрий-Морозов.jpg",
+    "description": "Управляющий ООО «Грейнрус»",
+    "city": "Москва"
   },
   {
     "name": "Антон Мор",
     "position": "генеральный директор ООО «Сибирское стекло»",
     "image": "/speaker-photos/anton-mor.jpg",
-    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Антон-Мор.jpg"
+    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Антон-Мор.jpg",
+    "description": "Генеральный директор ООО «Сибирское стекло»",
+    "city": "Новосибирск"
   },
   {
     "name": "Сергей Матвеев",
     "position": "технолог с 25-летним стажем",
     "image": "/speaker-photos/sergey-matveev.jpg",
-    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Сергей-Матвеев.jpg"
+    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Сергей-Матвеев.jpg",
+    "description": "Пивовар-технолог с 25-летним стажем.\nКомпания ООО \"Грейнрус\", г. Москва",
+    "city": "Москва"
   },
   {
     "name": "Евгений Родин",
     "position": "кандидат биологических наук, бизнес-консультант, независимый директор, опыт работы в пивоварении более 15 лет, в том числе директором пивоваренного завода 7 лет, автор более 70 научных работ и учебника \"Технология бродильных производств\"",
     "image": "/speaker-photos/evgeny-rodin.jpg",
-    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Евгений-Родин.jpg"
+    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Евгений-Родин.jpg",
+    "description": "Кандидат биологических наук\nстарший научный сотрудник ВНИИПБиВП – филиала ФГБНУ «ФНЦ пищевых систем им В.М. Горбатова» РАН.\nБизнес-консультант",
+    "city": "Пенза"
   },
   {
     "name": "Таймураз Гогинов",
     "position": "торговый представитель Южной Осетии в России Подписание Меморандума Союза Российских Пивоваров и «ВЫСОКОГОРНАЯ КЕЛЬСКАЯ ПИВОВАРНЯ», Республика Южная Осетия, пос",
     "image": "/speaker-photos/taymuraz-goginov.jpg",
-    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Таймураз-Гогинов.jpg"
+    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Таймураз-Гогинов.jpg",
+    "description": "Торговый представитель Южной Осетии в России",
+    "city": "р. Южная Осетия"
   },
   {
     "name": "Руслан Шарипов",
     "position": "генеральный директор ООО «Новые Пивоварни»",
     "image": "/speaker-photos/ruslan-sharipov.jpg",
-    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Руслан-Шарипов.jpg"
+    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Руслан-Шарипов.jpg",
+    "description": "Генеральный директор ООО «Новые Пивоварни».\nВ группу компаний «Новые Пивоварни» входят бренды: Горьковская пивоварня, KONIX, День свободен)\n25 лет опыта в пивной индустрии: в корпорации и собственном бизнесе",
+    "city": "Санкт-Петербург"
   },
   {
     "name": "Александр Белкин",
     "position": "директор по маркетингу ООО «Новые Пивоварни»",
     "image": "/speaker-photos/alexandr-belkin.jpg",
-    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Александр-Белкин.jpg"
+    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Александр-Белкин.jpg",
+    "description": "Директор по маркетингу ООО «Новые Пивоварни».\nВ группу компаний «Новые Пивоварни» входят бренды: Горьковская пивоварня, KONIX, День свободен)\n20-летний опыт в FMCG и ритейле, эксперт в стратегическом и операционном маркетинге, развитии брендов и запуске новых продуктов\nОпыт работы в международном бизнесе",
+    "city": "Санкт-Петербург"
   },
   {
     "name": "Марат Насибуллин",
     "position": "заместитель директора ООО «Новые Пивоварни»",
     "image": "/speaker-photos/marat-nasibullin.jpg",
-    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Марат-Насибуллин.jpg"
+    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Марат-Насибуллин.jpg",
+    "description": "Заместитель директора ООО «Новые Пивоварни».\nВ группу компаний «Новые Пивоварни» входят бренды: Горьковская пивоварня, KONIX, День свободен)\n20 лет опыта в пивной индустрии",
+    "city": "Санкт-Петербург"
   },
   {
     "name": "Алла Даниловцева",
     "position": "заместитель генерального директора по научной работе АО \"Росспиртпром\" г",
     "image": "/speaker-photos/alla-danilovtseva.jpg",
-    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Алла-Даниловцева.jpg"
+    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Алла-Даниловцева.jpg",
+    "description": "Председатель технического комитета ТК 175\nзаместитель генерального директора по научной работе АО «Росспиртпрома»\nкандидат технических наук",
+    "city": "Москва"
   },
   {
     "name": "Эльдар Файзуллин",
     "position": "исполнительный директор Датамаркет, Центр развития перспективных технологий – оператор государственной системы маркировки «Честный знак»",
     "image": "/speaker-photos/eldar-fayzullin.jpg",
-    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Эльдар-Файзуллин.jpg"
+    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Эльдар-Файзуллин.jpg",
+    "description": "Исполнительный директор Датамаркет\nЦентр развития перспективных технологий – оператор государственной системы маркировки «Честный знак».",
+    "city": "Москва"
   },
   {
     "name": "Арина Виноградова",
     "position": "бизнес-аналитик, Сбер2В",
     "image": "/speaker-photos/arina-vinogradova.jpg",
-    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Арина-Виноградова.jpg"
+    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Арина-Виноградова.jpg",
+    "description": "Бизнес-аналитик\nСбер2В",
+    "city": "Москва"
   },
   {
     "name": "Андрей Воронков",
     "position": "Руководитель направления по развитию аналитических продуктов, Сбер2В",
     "image": "/speaker-photos/andrey-voronkov.jpg",
-    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Андрей-Воронков.jpg"
+    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Андрей-Воронков.jpg",
+    "description": "Руководитель направления по развитию аналитических продуктов\nСберАналитика",
+    "city": "Москва"
   },
   {
     "name": "Ян Стуна",
     "position": "Генеральный директор ООО \"МББ ГРУПП\", хмелевод",
     "image": "/speaker-photos/yan-stuna.jpg",
-    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Ян-Стуна.jpg"
+    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Ян-Стуна.jpg",
+    "description": "Генеральный директор ООО \"МББ ГРУПП\"\nХмелевод.",
+    "city": "Москва"
   },
   {
     "name": "Константин Кобелев",
     "position": "председатель дегустационной комиссии, Заместитель директора по инновационной деятельности, доктор технических наук ВНИИПБиВП – филиала ФГБНУ \"Федерального научного центра пищевых систем им",
     "image": "/speaker-photos/konstantin-kobelev.jpg",
-    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Константин-Кобелев.jpg"
+    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Константин-Кобелев.jpg",
+    "description": "Заместитель директора по инновационной деятельности ВНИИПБиВП – филиала ФГБНУ «ФНЦ пищевых систем им. В.М. Горбатова» РАН\nруководитель Испытательного центра\nдоктор технических наук",
+    "city": "Москва"
   },
   {
     "name": "Ирина Лазарева",
     "position": "заведующая отделом технологии пивоварения, безалкогольных напитков и минеральных вод ВНИИПБиВП —  филиала ФГБНУ «Федеральный научный центр пищевых систем им",
     "image": "/speaker-photos/irina-lazareva.jpg",
-    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Ирина-Лазарева.jpg"
+    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Ирина-Лазарева.jpg",
+    "description": "Заведующая отделом технологии пивоварения, безалкогольных напитков и минеральных вод ВНИИПБиВП\nкандидат технических наук",
+    "city": "Москва"
   },
   {
     "name": "Марина Синельникова",
     "position": "научный сотрудник отдела технологии пивоварения, эксперт по органолептической оценке пивоваренной и безалкогольной продукции ВНИИ пивоваренной, безалкогольной и винодельческой промышленности",
     "image": "/speaker-photos/marina-sinelnikova.jpg",
-    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Марина-Синельникова.jpg"
+    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Марина-Синельникова.jpg",
+    "description": "Научный сотрудник отдела технологии пивоварения ВНИИПБиВП\nэксперт по органолептической оценке пивоваренной и безалкогольной продукции ВНИИ пивоваренной\nбезалкогольной и винодельческой промышленности",
+    "city": "Москва"
   },
   {
     "name": "Дмитрий Булатов",
     "position": "Президент Национального союза экспортеров продовольствия, к",
     "image": "/speaker-photos/dmitry-bulatov.jpg",
-    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Дмитрий-Булатов.jpg"
+    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Дмитрий-Булатов.jpg",
+    "description": "Президент Национального союза экспортеров продовольствия\nк.э.н.",
+    "city": "Москва"
   },
   {
     "name": "Ильдар Каримов",
     "position": "исследовательский институт пивоваренной, безалкогольной и винодельческой промышленности - Филиал ФГБНУ \"Федеральный научный центр пищевых систем им",
     "image": "/speaker-photos/ildar-karimov.jpg",
-    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Ильдар-Каримов.jpg"
+    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Ильдар-Каримов.jpg",
+    "description": "Главный технолог ООО Товесорб",
+    "city": "Уфа"
   },
   {
     "name": "Антон Дёмин",
     "position": "маркетолог с 16-летним стажем",
     "image": "/speaker-photos/anton-demin.jpg",
-    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Антон-Демин.jpg"
+    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Антон-Демин.jpg",
+    "description": "Эксперт-маркетолог с 16-летним стажем\nОснователь крупнейшего в России отраслевого агентства интернет-маркетинга для отелей, спорта, фитнеса и медицины Risoma.ru\nБолее 400 реализованных проектов по организации или перезапуску цифрового маркетинга. Автор YouTube-канала про бизнес и маркетинг “Дёмин подкаст”",
+    "city": "Москва"
   },
   {
     "name": "Александр Михайлов",
-    "position": "",
+    "position": "Основатель проекта \"Маркетинг начинается здесь\"",
     "image": "/speaker-photos/alexandr-mihaylov.jpg",
-    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Александр-Михайлов.jpg"
+    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Александр-Михайлов.jpg",
+    "description": "Основатель проекта \"Маркетинг начинается здесь\"\n[Вконтакте](https://vk.com/compskov)",
+    "city": "Псков"
   },
   {
     "name": "Валерий Котенков",
     "position": "генеральный директор ООО « Валеннта ВК»",
     "image": "/speaker-photos/valery-kotenkov.jpg",
-    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Валерий-Котенков.jpg"
+    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Валерий-Котенков.jpg",
+    "description": "Генеральный директор ООО «Валеннта ВК».",
+    "city": "Москва"
   },
   {
     "name": "Сергей Борисов",
     "position": "руководитель сервисного центра ООО «Валеннта ВК»",
     "image": "/speaker-photos/sergey-borisov.jpg",
-    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Сергей-Борисов.jpg"
+    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Сергей-Борисов.jpg",
+    "description": "Руководитель сервисного центра ООО «Валеннта ВК».",
+    "city": "Москва"
   },
   {
     "name": "Михаил Селиверстов",
     "position": "генеральный директор «Эквирон\"",
     "image": "/speaker-photos/mihail-seliverstov.jpg",
-    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Михаил-Селиверстов.jpg"
+    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Михаил-Селиверстов.jpg",
+    "description": "Генеральный директор «Эквирон»",
+    "city": "Москва"
   },
   {
     "name": "Дмитрий Богданов",
     "position": "Председатель Экспертного Совета Ассоциации Отельеров АМОС, основатель консалтинговой компании \"Аппарель\", стаж в бизнесе более 29 лет",
     "image": "/speaker-photos/dmitry-bogdanov.jpg",
-    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Дмитрий-Богданов.jpg"
+    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Дмитрий-Богданов.jpg",
+    "description": "Председатель Экспертного Совета Ассоциации Отельеров АМОС\nОснователь консалтинговой компании \"Аппарель\"\nСтаж в бизнесе более 29 лет",
+    "city": "Сочи"
+  },
+  {
+    "id": "Людмила Ширяева",
+    "name": "Людмила Ширяева",
+    "position": "Модератор Сессии от Государственной системы цифровой маркировки \"Честный Знак\"",
+    "company": "",
+    "description": "Модератор Сессии от Государственной системы цифровой маркировки \"Честный Знак\"",
+    "image": "/speaker-photos/lyudmila-shiryaeva.jpg",
+    "imageSource": "https://www.soud.ru/bd/SPIKER/BEER/foto/Людмила-Ширяева.jpg",
+    "city": "Москва"
   }
 ]

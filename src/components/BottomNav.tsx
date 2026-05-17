@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation'
 import { Building2, CalendarDays, MapPinned, Mic2, UserRound } from 'lucide-react'
 
 const tabs = [
-  { label: 'Программа', href: '/', Icon: CalendarDays },
+  { label: 'Программа', href: '/program', Icon: CalendarDays },
   { label: 'Спикеры', href: '/speakers', Icon: Mic2 },
   { label: 'Экспо', href: '/companies', Icon: Building2 },
   { label: 'Карта', href: '/map', Icon: MapPinned },
@@ -13,8 +13,8 @@ const tabs = [
 ]
 
 function isActive(pathname: string, href: string) {
-  if (href === '/') {
-    return pathname === '/'
+  if (href === '/program') {
+    return pathname === '/' || pathname === href || pathname.startsWith(`${href}/`)
   }
 
   return pathname === href || pathname.startsWith(`${href}/`)

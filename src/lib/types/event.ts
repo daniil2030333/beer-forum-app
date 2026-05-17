@@ -8,6 +8,8 @@ export type ProgramEventType =
   | 'круглый стол'
   | 'требуется приглашение'
 
+export type UserRole = 'visitor' | 'participant'
+
 export interface Event {
   id: string
   day?: string

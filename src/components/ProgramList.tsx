@@ -1,6 +1,6 @@
 'use client'
 
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Fragment } from 'react'
 import Link from 'next/link'
 import program from '@/data/program.json'
@@ -13,14 +13,15 @@ import {
   groupEventsByDay,
   normalizeProgramEvents,
 } from '@/lib/program'
+import { filterProgramForRole } from '@/lib/program-visibility'
 import { findSpeakerByName, type Speaker } from '@/lib/speakers'
+import { useUserRole } from '@/lib/use-user-role'
 import {
   borders,
   cardClassName,
   cn,
   radius,
   surfaces,
-  textColors,
 } from '@/lib/design-system'
 import type { Event } from '@/lib/types/event'
 import type { ProgramEventType } from '@/lib/types/event'
@@ -86,13 +87,33 @@ function SpeakerAvatarStack({
 }
 
 export default function ProgramList() {
-  const [activeDay, setActiveDay] = useState('')
-  const [activeLocation, setActiveLocation] = useState('')
+  const [filters, setFilters] = useState({
+    role: 'visitor',
+    activeDay: '',
+    activeLocation: '',
+  })
+  const { role } = useUserRole()
+  const currentRole = role || 'visitor'
+  const activeDay = filters.role === currentRole ? filters.activeDay : ''
+  const activeLocation = filters.role === currentRole ? filters.activeLocation : ''
+
+  const visibleProgram = useMemo(
+    () => filterProgramForRole(program as Event[], currentRole),
+    [currentRole]
+  )
 
   const events = useMemo(
-    () => normalizeProgramEvents(program as Event[]),
-    []
+    () => normalizeProgramEvents(visibleProgram),
+    [visibleProgram]
   )
+
+  const hiddenCount = (program as Event[]).length - visibleProgram.length
+
+  useEffect(() => {
+    if (process.env.NODE_ENV === 'development') {
+      console.info('[program:filtered]', hiddenCount)
+    }
+  }, [hiddenCount])
 
   const filteredEvents = useMemo(() => {
     return events.filter((event) => {
@@ -165,7 +186,13 @@ export default function ProgramList() {
               <span className="sr-only">День программы</span>
               <select
                 value={activeDay}
-                onChange={(event) => setActiveDay(event.target.value)}
+                onChange={(event) =>
+                  setFilters((current) => ({
+                    ...current,
+                    role: currentRole,
+                    activeDay: event.target.value,
+                  }))
+                }
                 className={nativeControlClassName}
               >
                 <option value="">Все дни</option>
@@ -181,7 +208,13 @@ export default function ProgramList() {
               <span className="sr-only">Место проведения</span>
               <select
                 value={activeLocation}
-                onChange={(event) => setActiveLocation(event.target.value)}
+                onChange={(event) =>
+                  setFilters((current) => ({
+                    ...current,
+                    role: currentRole,
+                    activeLocation: event.target.value,
+                  }))
+                }
                 className={nativeControlClassName}
               >
                 <option value="">Все места</option>
@@ -272,14 +305,17 @@ export default function ProgramList() {
                             </Link>
 
                             <div className="flex items-center justify-between gap-3">
-                              <div
-                                className={cn(
-                                  'min-w-0 text-sm',
-                                  textColors.textMuted
-                                )}
-                              >
-                                <span className="truncate">
-                                  {event.location || event.hall || 'Локация не указана'}
+                              <div className="min-w-0">
+                                <span
+                                  className={cn(
+                                    radius.badgeRadius,
+                                    surfaces.surfaceSecondary,
+                                    'inline-flex max-w-full px-3 py-1 text-sm font-medium text-[#5A321E]'
+                                  )}
+                                >
+                                  <span className="truncate">
+                                    {event.location || event.hall || 'Локация не указана'}
+                                  </span>
                                 </span>
                               </div>
                               <SpeakerAvatarStack speakerNames={event.speakerNames || []} />

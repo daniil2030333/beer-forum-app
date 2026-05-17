@@ -5,12 +5,18 @@ import Link from 'next/link'
 import { X } from 'lucide-react'
 import program from '@/data/program.json'
 import BannerCard from '@/components/ads/BannerCard'
+import BrandMark from '@/components/BrandMark'
+import FaqSection from '@/components/FaqSection'
+import FeedbackSection from '@/components/FeedbackSection'
+import RoleModePanel from '@/components/RoleModePanel'
 import {
   normalizeProgramEvents,
   groupEventsByDay,
 } from '@/lib/program'
+import { filterProgramForRole } from '@/lib/program-visibility'
 import { getForcedBanner } from '@/lib/banners'
 import { getFavoriteEventIds, removeFavoriteEvent } from '@/lib/favorites'
+import { useUserRole } from '@/lib/use-user-role'
 import {
   borders,
   cardClassName,
@@ -25,6 +31,8 @@ import type { Event } from '@/lib/types/event'
 export default function MePage() {
   const [favoriteIds, setFavoriteIds] = useState<string[]>([])
   const registrationBanner = getForcedBanner('me-top')
+  const { role } = useUserRole()
+  const currentRole = role || 'visitor'
 
   useEffect(() => {
     const id = window.setTimeout(() => {
@@ -35,8 +43,8 @@ export default function MePage() {
   }, [])
 
   const events = useMemo(
-    () => normalizeProgramEvents(program as Event[]),
-    []
+    () => normalizeProgramEvents(filterProgramForRole(program as Event[], currentRole)),
+    [currentRole]
   )
 
   const favoriteEvents = useMemo(
@@ -58,22 +66,22 @@ export default function MePage() {
     return (
       <main className="min-h-screen bg-[#FAF6EF] p-4 pb-24">
         <div className="mx-auto max-w-5xl space-y-4">
-          <section className={cn(cardClassName, 'p-5')}>
-            <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-              <div>
-                <p className={sectionHeader.eyebrow}>
-                  Мое расписание
-                </p>
-                <h1 className="mt-2 text-4xl font-bold tracking-tight text-[#4A2412]">
-                  Избранные события
-                </h1>
-              </div>
-
-              <div className={cn(radius.cardRadius, surfaces.surfaceSecondary, 'p-4 text-sm text-[#5A321E] sm:w-[32rem]')}>
-                Сохраняйте события, которые вас интересуют, и создавайте свое персональное расписание.
-              </div>
+          <section className="flex items-center justify-between gap-3 pt-[env(safe-area-inset-top)]">
+            <div className="min-w-0 space-y-1">
+              <p className={sectionHeader.eyebrow}>
+                Мое расписание
+              </p>
+              <h1 className="text-2xl font-semibold tracking-normal text-[#4A2412]">
+                Избранные события
+              </h1>
+              <p className="text-sm leading-5 text-[#8A654F]">
+                Ваш персональный раздел Форума
+              </p>
             </div>
+            <BrandMark className="h-14 w-14" />
           </section>
+
+          <RoleModePanel />
 
           {registrationBanner && <BannerCard banner={registrationBanner} />}
 
@@ -93,7 +101,7 @@ export default function MePage() {
 
             <div className="flex flex-col gap-3 sm:flex-row">
               <Link
-                href="/"
+                href="/program"
                 className={cn('inline-flex h-11 flex-1 items-center justify-center bg-[#4A2412] px-4 text-sm font-semibold text-white transition-colors hover:bg-[#7A3F1D]', radius.buttonRadius)}
               >
                 Открыть расписание
@@ -106,6 +114,9 @@ export default function MePage() {
               </Link>
             </div>
           </div>
+
+          <FaqSection />
+          <FeedbackSection />
         </div>
       </main>
     )
@@ -114,22 +125,25 @@ export default function MePage() {
   return (
     <main className="min-h-screen bg-[#FAF6EF] p-4 pb-24">
       <div className="mx-auto max-w-5xl space-y-4">
-        <section className={cn(cardClassName, 'p-5')}>
-          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-            <div>
-              <p className={sectionHeader.eyebrow}>
-                Мое расписание
-              </p>
-              <h1 className="mt-2 text-4xl font-bold tracking-tight text-[#4A2412]">
-                Избранные события
-              </h1>
-            </div>
-
-            <div className={cn(radius.cardRadius, surfaces.surfaceSecondary, 'p-4 text-sm text-[#5A321E] sm:w-[32rem]')}>
+        <section className="flex items-center justify-between gap-3 pt-[env(safe-area-inset-top)]">
+          <div className="min-w-0 space-y-1">
+            <p className={sectionHeader.eyebrow}>
+              Мое расписание
+            </p>
+            <h1 className="text-2xl font-semibold tracking-normal text-[#4A2412]">
+              Избранные события
+            </h1>
+            <p className="text-sm leading-5 text-[#8A654F]">
+              Ваш персональный раздел Форума
+            </p>
+            <p className="text-sm font-medium text-[#7A3F1D]">
               {favoriteEvents.length} событи{favoriteEvents.length % 10 === 1 && !String(favoriteEvents.length).endsWith('11') ? 'е' : favoriteEvents.length % 10 === 2 || favoriteEvents.length % 10 === 3 || favoriteEvents.length % 10 === 4 ? 'я' : 'й'} в вашем расписании.
-            </div>
+            </p>
           </div>
+          <BrandMark className="h-14 w-14" />
         </section>
+
+        <RoleModePanel />
 
         {registrationBanner && <BannerCard banner={registrationBanner} />}
 
@@ -216,6 +230,9 @@ export default function MePage() {
             </section>
           ))}
         </div>
+
+        <FaqSection />
+        <FeedbackSection />
       </div>
     </main>
   )

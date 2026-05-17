@@ -1,0 +1,58 @@
+{
+  "totalBanners": 8,
+  "withUrl": 8,
+  "withoutUrl": [],
+  "externalLinks": [
+    {
+      "id": "grainrus-main",
+      "title": "Грейнрус",
+      "url": "https://grainrus.com/?ysclid=mp8fwlueaj792032924",
+      "placement": ["program-top", "companies-top", "program-feed", "companies-feed"]
+    },
+    {
+      "id": "soud-adv",
+      "title": "СОУД — Сочинские выставки",
+      "url": "https://soud.ru",
+      "placement": ["program-feed", "companies-feed"]
+    },
+    {
+      "id": "soud-max",
+      "title": "MAX",
+      "url": "https://max.ru/id2320241915_biz",
+      "placement": ["program-feed", "companies-feed"]
+    },
+    {
+      "id": "hadizhenskij",
+      "title": "Хадыженский пивоваренный завод",
+      "url": "https://xn--80aigi5dvb.xn--p1ai/",
+      "placement": ["program-feed", "companies-feed"]
+    },
+    {
+      "id": "sift",
+      "title": "СИФТ",
+      "url": "https://tour-forum.com",
+      "placement": ["program-feed", "companies-feed"]
+    },
+    {
+      "id": "siktivkarpivo",
+      "title": "Сыктывкарский пивоваренный завод",
+      "url": "https://www.pivokomi.ru/?ysclid=mp8fznkw1s536221387",
+      "placement": ["me-top", "program-feed", "companies-feed"]
+    }
+  ],
+  "internalLinks": [
+    {
+      "id": "srp",
+      "title": "Союз российских пивоваров",
+      "url": "/companies/116",
+      "placement": ["program-feed", "companies-feed"]
+    },
+    {
+      "id": "tomskoe-pivo",
+      "title": "Томское пиво",
+      "url": "/companies/125",
+      "placement": ["program-feed", "companies-feed"]
+    }
+  ],
+  "missingCompanyFallbacks": []
+}

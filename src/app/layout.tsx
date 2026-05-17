@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata, Viewport } from 'next'
 import BottomNav from '@/components/BottomNav'
+import UserRoleGate from '@/components/UserRoleGate'
 
 export const metadata: Metadata = {
   title: 'ПИВО-2026',
@@ -38,8 +39,10 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body>
-        <div className="mobile-app-shell">{children}</div>
-        <BottomNav />
+        <UserRoleGate>
+          <div className="mobile-app-shell">{children}</div>
+          <BottomNav />
+        </UserRoleGate>
       </body>
     </html>
   )

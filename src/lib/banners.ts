@@ -158,6 +158,16 @@ export function getBannerLabel(banner: Banner) {
   return banner.label ?? (banner.partnerLevel ? sponsorLabels[banner.partnerLevel] : 'Партнёр')
 }
 
-export function onBannerClick(bannerId: string) {
-  console.info('[banner-click]', bannerId)
+export function onBannerClick(banner: Pick<Banner, 'id' | 'title' | 'url' | 'placement'>) {
+  if (!banner.url) {
+    return
+  }
+
+  console.info('[banner-click]', {
+    bannerId: banner.id,
+    title: banner.title,
+    url: banner.url,
+    placement: banner.placement,
+    timestamp: new Date().toISOString(),
+  })
 }

@@ -16,12 +16,25 @@ type SuggestedMatch = {
   reason: string
 }
 
+type NewlyMatched = SuggestedMatch & {
+  previousLogo: string | null
+  logo: string
+}
+
+type Conflict = SuggestedMatch & {
+  currentLogo: string | null
+  conflictType: 'existing-logo' | 'duplicate-logo-candidate'
+}
+
 type AuditReport = {
   totalFiles: number
   usedFiles: number
   unusedFiles: string[]
   companiesWithoutLogo: string[]
   suggestedMatches: SuggestedMatch[]
+  newlyMatched: NewlyMatched[]
+  stillWithoutLogo: string[]
+  conflicts: Conflict[]
 }
 
 const logoDirectory = path.resolve(process.cwd(), 'public/company-logos')
@@ -54,6 +67,10 @@ const ignoredWords = new Set([
   'brewery',
   'logo',
 ])
+
+const equivalentTokenGroups = [
+  ['pz', 'пз', 'пивзавод', 'пивоваренный', 'пивоваренная', 'пивоварня'],
+]
 
 const translitPairs: Array<[RegExp, string]> = [
   [/shch/g, 'щ'],
@@ -117,8 +134,15 @@ function normalize(value: string) {
     .trim()
 }
 
+function normalizeCompanyName(value: string) {
+  return normalize(value)
+    .replace(/\b(ооо|ао|зао|ип|ltd|llc|оао|ooo|zao|ao)\b/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+}
+
 function tokenize(value: string) {
-  const normalized = normalize(value)
+  const normalized = normalizeCompanyName(value)
   const transliterated = normalize(transliterateLatin(normalized))
   const tokens = new Set<string>()
 
@@ -131,6 +155,16 @@ function tokenize(value: string) {
   }
 
   return [...tokens]
+}
+
+function tokensEquivalent(first: string, second: string) {
+  if (first === second) {
+    return true
+  }
+
+  return equivalentTokenGroups.some(
+    (group) => group.includes(first) && group.includes(second)
+  )
 }
 
 function diceCoefficient(first: string, second: string) {
@@ -167,12 +201,29 @@ function scoreMatch(fileName: string, companyName: string) {
   const companyTokens = tokenize(companyName)
   const fileJoined = fileTokens.join('')
   const companyJoined = companyTokens.join('')
+  const normalizedFile = normalizeCompanyName(fileBase)
+  const normalizedCompany = normalizeCompanyName(companyName)
 
   if (!fileTokens.length || !companyTokens.length) {
     return { score: 0, reason: 'no comparable tokens' }
   }
 
-  const exactMatches = fileTokens.filter((token) => companyTokens.includes(token))
+  if (normalizedFile === normalizedCompany) {
+    return { score: 1, reason: 'normalized exact match' }
+  }
+
+  if (
+    normalizedFile.length > 3 &&
+    normalizedCompany.length > 3 &&
+    (normalizedFile.includes(normalizedCompany) ||
+      normalizedCompany.includes(normalizedFile))
+  ) {
+    return { score: 0.94, reason: 'normalized partial match' }
+  }
+
+  const exactMatches = fileTokens.filter((token) =>
+    companyTokens.some((companyToken) => tokensEquivalent(token, companyToken))
+  )
   const exactScore = exactMatches.length / Math.max(fileTokens.length, companyTokens.length)
   const coverageScore = exactMatches.length / Math.min(fileTokens.length, companyTokens.length)
   const fuzzyScore = diceCoefficient(fileJoined, companyJoined)
@@ -187,8 +238,30 @@ function scoreMatch(fileName: string, companyName: string) {
   }
 }
 
+function isReliableMatch(match: { score: number; reason: string }) {
+  if (match.reason.startsWith('tokens:')) {
+    const matchedTokens = match.reason
+      .replace(/^tokens:\s*/, '')
+      .split(',')
+      .map((token) => token.trim())
+      .filter(Boolean)
+      .filter((token) => !['pz', 'пз'].includes(token))
+
+    return match.score >= 0.45 && matchedTokens.some((token) => token.length > 3)
+  }
+
+  if (match.score >= reliableScore) {
+    return true
+  }
+
+  return false
+}
+
 async function main() {
   const companies = (companiesData as CompanyWithLogo[]).map((company) => ({ ...company }))
+  const originalLogoByCompanyId = new Map(
+    companies.map((company) => [company.id, company.logo ?? null])
+  )
   const files = (await fs.readdir(logoDirectory))
     .filter((fileName) => !fileName.startsWith('.') && /\.(png|jpe?g|svg|webp|gif)$/i.test(fileName))
     .sort((first, second) => first.localeCompare(second))
@@ -205,6 +278,39 @@ async function main() {
     .filter((company) => !company.logo)
     .map((company) => company.name)
   const suggestedMatches: SuggestedMatch[] = []
+  const newlyMatched: NewlyMatched[] = []
+  const conflicts: Conflict[] = []
+
+  const fileBaseGroups = new Map<string, string[]>()
+  files.forEach((fileName) => {
+    const normalizedBase = normalizeCompanyName(stripExtension(fileName))
+    if (!normalizedBase) {
+      return
+    }
+
+    fileBaseGroups.set(normalizedBase, [
+      ...(fileBaseGroups.get(normalizedBase) ?? []),
+      fileName,
+    ])
+  })
+
+  fileBaseGroups.forEach((groupFiles) => {
+    if (groupFiles.length <= 1) {
+      return
+    }
+
+    groupFiles.slice(1).forEach((logoFile) => {
+      conflicts.push({
+        companyId: '',
+        companyName: '',
+        logoFile,
+        score: 1,
+        reason: `duplicate-like logo files: ${groupFiles.join(', ')}`,
+        currentLogo: null,
+        conflictType: 'duplicate-logo-candidate',
+      })
+    })
+  })
 
   for (const logoFile of unusedFiles) {
     const candidates = companies
@@ -234,10 +340,48 @@ async function main() {
       reason: bestMatch.reason,
     })
 
-    if (bestMatch.score >= reliableScore) {
+    if (isReliableMatch(bestMatch)) {
+      const previousLogo = originalLogoByCompanyId.get(bestMatch.company.id) ?? null
       bestMatch.company.logo = `${publicLogoPrefix}${bestMatch.logoFile}`
       bestMatch.company.logoSource = `audit:${bestMatch.logoFile}`
       usedLogoFiles.add(bestMatch.logoFile)
+      newlyMatched.push({
+        companyId: bestMatch.company.id,
+        companyName: bestMatch.company.name,
+        logoFile: bestMatch.logoFile,
+        score: bestMatch.score,
+        reason: bestMatch.reason,
+        previousLogo,
+        logo: `${publicLogoPrefix}${bestMatch.logoFile}`,
+      })
+      continue
+    }
+
+    const companiesWithLogo = companies
+      .filter((company) => company.logo)
+      .map((company) => {
+        const match = scoreMatch(logoFile, company.name)
+        return {
+          company,
+          logoFile,
+          score: match.score,
+          reason: match.reason,
+        }
+      })
+      .filter((match) => isReliableMatch(match))
+      .sort((first, second) => second.score - first.score)
+
+    const existingLogoConflict = companiesWithLogo[0]
+    if (existingLogoConflict) {
+      conflicts.push({
+        companyId: existingLogoConflict.company.id,
+        companyName: existingLogoConflict.company.name,
+        logoFile,
+        score: existingLogoConflict.score,
+        reason: existingLogoConflict.reason,
+        currentLogo: existingLogoConflict.company.logo ?? null,
+        conflictType: 'existing-logo',
+      })
     }
   }
 
@@ -249,6 +393,11 @@ async function main() {
       .filter((company) => !company.logo)
       .map((company) => company.name),
     suggestedMatches: suggestedMatches.sort((first, second) => second.score - first.score),
+    newlyMatched,
+    stillWithoutLogo: companies
+      .filter((company) => !company.logo)
+      .map((company) => company.name),
+    conflicts: conflicts.sort((first, second) => second.score - first.score),
   }
 
   await fs.writeFile(companiesPath, `${JSON.stringify(companies, null, 2)}\n`)
