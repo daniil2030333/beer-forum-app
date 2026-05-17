@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
-import { LocateFixed, MapPin, Minus, Plus, Search, X } from 'lucide-react'
+import { LocateFixed, Minus, Plus, Search, X } from 'lucide-react'
 import {
   useCallback,
   useEffect,
@@ -621,18 +621,28 @@ export default function ExpoMap() {
             }
 
             const standWidth = stand.width ?? 28
-            const standHeight = stand.height ?? 28
+            const pinSize = 132
 
             return (
-              <MapPin
+              <div
                 aria-hidden="true"
-                className="pointer-events-none absolute z-30 h-[72px] w-[72px] text-[orangered] drop-shadow-sm"
-                strokeWidth={3}
+                className="pointer-events-none absolute z-30 flex items-center justify-center drop-shadow-sm"
                 style={{
-                  left: stand.x + standWidth * 0.65,
-                  top: stand.y + standHeight * 0.15,
+                  left: stand.x + standWidth / 2,
+                  top: stand.y,
+                  width: pinSize,
+                  height: pinSize,
+                  color: 'orangered',
+                  WebkitTextFillColor: 'orangered',
+                  fontFamily: 'Arial, Helvetica, sans-serif',
+                  fontSize: pinSize * 0.9,
+                  fontWeight: 800,
+                  lineHeight: 1,
+                  transform: 'translate(-50%, -50%)',
                 }}
-              />
+              >
+                ✔︎
+              </div>
             )
           })() : null}
         </div>
