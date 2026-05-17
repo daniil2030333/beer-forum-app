@@ -64,7 +64,7 @@ export default function MePage() {
 
   if (favoriteEvents.length === 0) {
     return (
-      <main className="min-h-screen bg-[#FAF6EF] p-4 pb-24">
+      <main className="min-h-screen bg-[#FAF6EF] p-4 pb-32">
         <div className="mx-auto max-w-5xl space-y-4">
           <section className="flex items-center justify-between gap-3 pt-[env(safe-area-inset-top)]">
             <div className="min-w-0 space-y-1">
@@ -80,8 +80,6 @@ export default function MePage() {
             </div>
             <BrandMark className="h-14 w-14" />
           </section>
-
-          <RoleModePanel />
 
           {registrationBanner && <BannerCard banner={registrationBanner} />}
 
@@ -117,13 +115,14 @@ export default function MePage() {
 
           <FaqSection />
           <FeedbackSection />
+          <RoleModePanel />
         </div>
       </main>
     )
   }
 
   return (
-    <main className="min-h-screen bg-[#FAF6EF] p-4 pb-24">
+    <main className="min-h-screen bg-[#FAF6EF] p-4 pb-32">
       <div className="mx-auto max-w-5xl space-y-4">
         <section className="flex items-center justify-between gap-3 pt-[env(safe-area-inset-top)]">
           <div className="min-w-0 space-y-1">
@@ -142,8 +141,6 @@ export default function MePage() {
           </div>
           <BrandMark className="h-14 w-14" />
         </section>
-
-        <RoleModePanel />
 
         {registrationBanner && <BannerCard banner={registrationBanner} />}
 
@@ -233,6 +230,7 @@ export default function MePage() {
 
         <FaqSection />
         <FeedbackSection />
+        <RoleModePanel />
       </div>
     </main>
   )

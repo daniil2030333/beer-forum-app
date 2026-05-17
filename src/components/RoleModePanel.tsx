@@ -11,14 +11,14 @@ export default function RoleModePanel() {
   const nextRole: UserRole = currentRole === 'visitor' ? 'participant' : 'visitor'
 
   return (
-    <section className={cn('rounded-3xl border border-[#7A3F1D]/15 bg-[#FFFDF8] p-5 shadow-sm')}>
-      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+    <section className="mt-8 rounded-3xl border border-[#7A3F1D]/10 bg-[#FFFDF8]/65 p-4">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#7A3F1D]">
+          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#8A654F]">
             Режим приложения
           </p>
-          <p className="mt-3 text-sm text-[#8A654F]">Текущая роль:</p>
-          <p className="mt-1 text-2xl font-bold text-[#4A2412]">
+          <p className="mt-2 text-sm text-[#8A654F]">Текущая роль:</p>
+          <p className="mt-1 text-base font-semibold text-[#4A2412]">
             {userRoleLabels[currentRole]}
           </p>
         </div>
@@ -29,7 +29,7 @@ export default function RoleModePanel() {
           className={cn(
             radius.buttonRadius,
             surfaces.surfaceSecondary,
-            'h-12 px-5 text-sm font-semibold text-[#4A2412] transition-colors hover:bg-[#FFE7C2]'
+            'h-10 border border-[#7A3F1D]/15 px-4 text-sm font-semibold text-[#5A321E] transition-colors hover:bg-[#FFE7C2]'
           )}
         >
           Сменить роль
