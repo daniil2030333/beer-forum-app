@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
-import { LocateFixed, Minus, Plus, Search, X } from 'lucide-react'
+import { LocateFixed, MapPin, Minus, Plus, Search, X } from 'lucide-react'
 import {
   useCallback,
   useEffect,
@@ -118,7 +118,8 @@ export default function ExpoMap() {
 
   const [query, setQuery] = useState('')
   const [debouncedQuery, setDebouncedQuery] = useState('')
-  const [selectedStand, setSelectedStand] = useState<string | null>(initialStand)
+  const [highlightedStand, setHighlightedStand] = useState<string | null>(initialStand)
+  const [selectedStand, setSelectedStand] = useState<string | null>(null)
   const [view, setView] = useState<Transform>({
     pan: { x: 0, y: 0 },
     zoom: defaultZoom,
@@ -133,6 +134,7 @@ export default function ExpoMap() {
     () => stands.find((stand) => stand.stand === selectedStand) ?? null,
     [stands, selectedStand]
   )
+  const activeStand = selectedStand ?? highlightedStand
   const standsById = useMemo(() => new Map(stands.map((stand) => [stand.stand, stand])), [stands])
 
   const searchResults = useMemo(() => {
@@ -208,6 +210,7 @@ export default function ExpoMap() {
 
   const resetMap = useCallback(() => {
     setTransform(getInitialView(), true)
+    setHighlightedStand(null)
     setSelectedStand(null)
   }, [getInitialView, setTransform])
 
@@ -223,8 +226,13 @@ export default function ExpoMap() {
     }, true)
   }, [clampPan, setTransform])
 
-  const chooseStand = useCallback((stand: InteractiveMapStand, shouldFocus = false) => {
-    setSelectedStand(stand.stand)
+  const chooseStand = useCallback((
+    stand: InteractiveMapStand,
+    shouldFocus = false,
+    shouldOpenModal = false
+  ) => {
+    setHighlightedStand(stand.stand)
+    setSelectedStand(shouldOpenModal ? stand.stand : null)
 
     if (shouldFocus) {
       centerStand(
@@ -450,7 +458,7 @@ export default function ExpoMap() {
       if (pointerCount === 1 && gesture?.mode === 'pan' && !gesture.moved && tappedStand) {
         const stand = standsById.get(tappedStand)
         if (stand) {
-          chooseStand(stand)
+          chooseStand(stand, false, true)
         }
       }
 
@@ -500,7 +508,8 @@ export default function ExpoMap() {
     }
 
     const timeout = window.setTimeout(() => {
-      setSelectedStand(linkedStand.stand)
+      setHighlightedStand(linkedStand.stand)
+      setSelectedStand(null)
       centerStand(linkedStand, minZoomRef.current * focusZoomMultiplier)
     }, 120)
 
@@ -571,7 +580,7 @@ export default function ExpoMap() {
           />
 
           {stands.map((stand) => {
-            const active = stand.stand === selectedStand
+            const active = stand.stand === activeStand
             const standWidth = stand.width ?? 28
             const standHeight = stand.height ?? 28
             const hitWidth = getHitSize(standWidth)
@@ -586,13 +595,13 @@ export default function ExpoMap() {
                   if (movedSincePointerDownRef.current) {
                     return
                   }
-                  chooseStand(stand)
+                  chooseStand(stand, false, true)
                 }}
                 title={getStandTitle(stand)}
                 data-stand={stand.stand}
                 className={cn(
                   'absolute z-10 bg-transparent p-0',
-                  active && 'z-20 border-2 border-[#F7941D] bg-[#F7941D]/10'
+                  active && 'z-20'
                 )}
                 style={{
                   left: stand.x + standWidth / 2 - hitWidth / 2,
@@ -604,6 +613,28 @@ export default function ExpoMap() {
               />
             )
           })}
+
+          {activeStand ? (() => {
+            const stand = standsById.get(activeStand)
+            if (!stand) {
+              return null
+            }
+
+            const standWidth = stand.width ?? 28
+            const standHeight = stand.height ?? 28
+
+            return (
+              <MapPin
+                aria-hidden="true"
+                className="pointer-events-none absolute z-30 h-[72px] w-[72px] text-[orangered] drop-shadow-sm"
+                strokeWidth={3}
+                style={{
+                  left: stand.x + standWidth * 0.65,
+                  top: stand.y + standHeight * 0.15,
+                }}
+              />
+            )
+          })() : null}
         </div>
 
         <div

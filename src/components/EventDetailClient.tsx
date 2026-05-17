@@ -150,13 +150,13 @@ export default function EventDetailClient({
           </section>
         )}
 
-        <section className={cn(cardClassName, 'p-4')}>
-          <h2 className="text-xl font-semibold leading-tight text-[#4A2412]">
-            Спикеры
-          </h2>
-          <div className="mt-3 space-y-3">
-            {eventSpeakers.length > 0 ? (
-              eventSpeakers.map((speaker) => (
+        {eventSpeakers.length > 0 && (
+          <section className={cn(cardClassName, 'p-4')}>
+            <h2 className="text-xl font-semibold leading-tight text-[#4A2412]">
+              Спикеры
+            </h2>
+            <div className="mt-3 space-y-3">
+              {eventSpeakers.map((speaker) => (
                 <Link
                   key={speaker.name}
                   href={getSpeakerHref(speaker)}
@@ -182,12 +182,10 @@ export default function EventDetailClient({
                     </p>
                   </div>
                 </Link>
-              ))
-            ) : (
-              <p className="text-sm text-[#8A654F]">Спикеры не указаны.</p>
-            )}
-          </div>
-        </section>
+              ))}
+            </div>
+          </section>
+        )}
 
         <section className={cn(cardClassName, 'p-4')}>
           <h2 className="text-xl font-semibold leading-tight text-[#4A2412]">

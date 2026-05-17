@@ -27,7 +27,7 @@ import type { Event } from '@/lib/types/event'
 import type { ProgramEventType } from '@/lib/types/event'
 
 const nativeControlClassName =
-  'h-11 w-full rounded-2xl border border-[#7A3F1D]/15 bg-[#FFFDF8] px-4 text-base shadow-sm'
+  'h-11 w-full rounded-2xl border border-[#7A3F1D]/15 bg-[#FFFDF8] px-4 text-base font-medium text-[#8A654F] shadow-sm'
 
 function eventTypeBadgeClassName(eventType: ProgramEventType) {
   return cn(
@@ -95,7 +95,7 @@ export default function ProgramList() {
   const { role } = useUserRole()
   const currentRole = role || 'visitor'
   const activeDay = filters.role === currentRole ? filters.activeDay : ''
-  const activeLocation = filters.role === currentRole ? filters.activeLocation : ''
+  const requestedLocation = filters.role === currentRole ? filters.activeLocation : ''
 
   const visibleProgram = useMemo(
     () => filterProgramForRole(program as Event[], currentRole),
@@ -114,6 +114,20 @@ export default function ProgramList() {
       console.info('[program:filtered]', hiddenCount)
     }
   }, [hiddenCount])
+
+  const locationList = useMemo(() => {
+    return Array.from(
+      new Set(
+        events
+          .map((event) => event.location || event.hall || '')
+          .filter(Boolean)
+      )
+    )
+  }, [events])
+
+  const activeLocation = requestedLocation && locationList.includes(requestedLocation)
+    ? requestedLocation
+    : ''
 
   const filteredEvents = useMemo(() => {
     return events.filter((event) => {
@@ -136,16 +150,6 @@ export default function ProgramList() {
   )
 
   const dayList = useMemo(() => Object.keys(groupEventsByDay(events)), [events])
-
-  const locationList = useMemo(() => {
-    return Array.from(
-      new Set(
-        events
-          .map((event) => event.location || event.hall || '')
-          .filter(Boolean)
-      )
-    )
-  }, [events])
 
   const visibleGroups = useMemo(
     () => Object.entries(groupedEvents),
@@ -179,7 +183,7 @@ export default function ProgramList() {
 
   return (
     <div className="space-y-4">
-      <section>
+      <section data-program-filter className="sticky top-[env(safe-area-inset-top)] z-40">
         <div className={cn(radius.inputRadius, borders.borderDefault, surfaces.surfacePrimary, 'p-3 shadow-sm')}>
           <div className="grid grid-cols-2 gap-2">
             <label>
@@ -248,6 +252,7 @@ export default function ProgramList() {
 
                 <div className="space-y-4">
                   {dayEvents.map((event, eventIndex) => {
+                    const speakerNames = event.speakerNames || []
                     const globalIndex =
                       visibleGroups
                         .slice(0, visibleGroups.findIndex(([groupDay]) => groupDay === day))
@@ -309,8 +314,7 @@ export default function ProgramList() {
                                 <span
                                   className={cn(
                                     radius.badgeRadius,
-                                    surfaces.surfaceSecondary,
-                                    'inline-flex max-w-full px-3 py-1 text-sm font-medium text-[#5A321E]'
+                                    'inline-flex max-w-full bg-[#FFF4E6] px-3 py-1 text-sm font-medium text-[#5A321E]'
                                   )}
                                 >
                                   <span className="truncate">
@@ -318,7 +322,9 @@ export default function ProgramList() {
                                   </span>
                                 </span>
                               </div>
-                              <SpeakerAvatarStack speakerNames={event.speakerNames || []} />
+                              {speakerNames.length > 0 && (
+                                <SpeakerAvatarStack speakerNames={speakerNames} />
+                              )}
                             </div>
 
                             <div className="flex flex-wrap items-center justify-between gap-3">

@@ -8,7 +8,6 @@ import BannerCard from '@/components/ads/BannerCard'
 import BrandMark from '@/components/BrandMark'
 import FaqSection from '@/components/FaqSection'
 import FeedbackSection from '@/components/FeedbackSection'
-import RoleModePanel from '@/components/RoleModePanel'
 import {
   normalizeProgramEvents,
   groupEventsByDay,
@@ -115,7 +114,6 @@ export default function MePage() {
 
           <FaqSection />
           <FeedbackSection />
-          <RoleModePanel />
         </div>
       </main>
     )
@@ -159,26 +157,27 @@ export default function MePage() {
                     key={event.id}
                     className={cn(
                       cardClassName,
-                      'overflow-hidden p-4',
+                      'relative overflow-hidden p-4 pr-14',
                       event.isLive && 'border-[#F7941D] bg-[#FFF4E6]'
                     )}
                   >
+                    <button
+                      type="button"
+                      onClick={() => handleRemove(String(event.id))}
+                      className="absolute right-3 top-3 flex h-8 w-8 items-center justify-center rounded-full border border-red-200 bg-red-50 transition-colors hover:bg-red-100"
+                      aria-label="Удалить из избранного"
+                      title="Удалить из избранного"
+                    >
+                      <X
+                        size={16}
+                        className="stroke-red-600"
+                      />
+                    </button>
                     <div className="grid gap-4 lg:grid-cols-[5.5rem_minmax(0,1fr)]">
                       <div className="flex flex-col items-start gap-3">
                         <div className="mt-1 text-sm font-semibold text-[#8A654F]">
                           {event.timeLabel}
                         </div>
-                        <button
-                          type="button"
-                          onClick={() => handleRemove(String(event.id))}
-                          className="flex h-9 w-9 items-center justify-center rounded-full border border-red-200 bg-red-50 transition-colors hover:bg-red-100"
-                          title="Удалить из расписания"
-                        >
-                          <X
-                            size={18}
-                            className="stroke-red-600"
-                          />
-                        </button>
                       </div>
 
                       <div className="space-y-4">
@@ -230,7 +229,6 @@ export default function MePage() {
 
         <FaqSection />
         <FeedbackSection />
-        <RoleModePanel />
       </div>
     </main>
   )
