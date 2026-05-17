@@ -1,9 +1,8 @@
 {
-  "totalFiles": 159,
-  "usedFiles": 129,
+  "totalFiles": 161,
+  "usedFiles": 135,
   "unusedFiles": [
     "boel-technologies.png",
-    "derbentskaya-pivovarenaya-kompaniya.png",
     "doka-servis.png",
     "ekan.png",
     "emec.png",
@@ -13,14 +12,12 @@
     "hopmalt.png",
     "iriston.png",
     "kimika.png",
-    "markovskij-pz.png",
     "nebug.png",
     "novit.png",
     "obedinennaya-pivovarennaya-kompaniya.png",
     "p-i-n-t-a.svg",
     "pali-s-r-o.png",
     "pivnaya-kompaniya.png",
-    "pivovarnya-c.png",
     "profibeer-portal-pivnogo-rynka.png",
     "rausch.png",
     "russkaya-solodovennaya-gruppa.png",
@@ -30,65 +27,37 @@
     "sf-technologies.png",
     "stal-master.png",
     "syktyvkarsky-pivovarenny-zavod.png",
-    "tehnoprom.png",
-    "zelenogradskij-pz.png"
+    "tehnoprom.png"
   ],
   "companiesWithoutLogo": [
     "AI ДЛЯ БИЗНЕСА ПОД КЛЮЧ",
-    "«ДЕРБЕНТСКАЯ ПИВОВАРЕННАЯ КОМПАНИЯ» ООО",
-    "«ЗЕЛЕНОГОРСКИЕ НАПИТКИ» ООО",
     "«ИВАНОВСКАЯ ПИВОВАРНЯ» ООО",
     "КАМЧАТСКИЙ УЛОВ",
     "Отдых. на Кубани.ру",
-    "«ПИВЗАВОД – МАРКСОВСКИЙ» ООО",
     "«ПИВОВАРНЯ» ООО",
-    "«ПИВОВАРНЯ С» ООО",
     "ПИВО ЖИВО",
     "«РОКС» ООО",
     "«СИБИРСКАЯ ЛЕГЕНДА» Пивоваренный завод",
     "ФЕРМЕРСКИЕ ДЕЛИКАТЕСЫ",
     "«ФОРЕЙН БРЕНДС» ООО",
-    "«Центр координации поддержки экспортно ориентированных субъектов малого \n  и среднего предпринимательства Белгородской области» АНО",
     "ДРАГИН В.Н. ИП",
-    "«ЭкоКуб» ООО",
-    "ЮЖНЫЙ ОСЁТР"
+    "«ЭкоКуб» ООО"
   ],
-  "suggestedMatches": [
-    {
-      "companyId": "87",
-      "companyName": "«ПИВЗАВОД – МАРКСОВСКИЙ» ООО",
-      "logoFile": "markovskij-pz.png",
-      "score": 0.92,
-      "reason": "tokens: pz, пз"
-    },
-    {
-      "companyId": "87",
-      "companyName": "«ПИВЗАВОД – МАРКСОВСКИЙ» ООО",
-      "logoFile": "zelenogradskij-pz.png",
-      "score": 0.92,
-      "reason": "tokens: pz, пз"
-    }
-  ],
+  "suggestedMatches": [],
   "newlyMatched": [],
   "stillWithoutLogo": [
     "AI ДЛЯ БИЗНЕСА ПОД КЛЮЧ",
-    "«ДЕРБЕНТСКАЯ ПИВОВАРЕННАЯ КОМПАНИЯ» ООО",
-    "«ЗЕЛЕНОГОРСКИЕ НАПИТКИ» ООО",
     "«ИВАНОВСКАЯ ПИВОВАРНЯ» ООО",
     "КАМЧАТСКИЙ УЛОВ",
     "Отдых. на Кубани.ру",
-    "«ПИВЗАВОД – МАРКСОВСКИЙ» ООО",
     "«ПИВОВАРНЯ» ООО",
-    "«ПИВОВАРНЯ С» ООО",
     "ПИВО ЖИВО",
     "«РОКС» ООО",
     "«СИБИРСКАЯ ЛЕГЕНДА» Пивоваренный завод",
     "ФЕРМЕРСКИЕ ДЕЛИКАТЕСЫ",
     "«ФОРЕЙН БРЕНДС» ООО",
-    "«Центр координации поддержки экспортно ориентированных субъектов малого \n  и среднего предпринимательства Белгородской области» АНО",
     "ДРАГИН В.Н. ИП",
-    "«ЭкоКуб» ООО",
-    "ЮЖНЫЙ ОСЁТР"
+    "«ЭкоКуб» ООО"
   ],
   "conflicts": [
     {

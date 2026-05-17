@@ -546,8 +546,8 @@
     "country": "Россия",
     "stand": "-",
     "description": "Производство пива",
-    "logo": null,
-    "logoSource": null,
+    "logo": "/company-logos/derbentskaya-pivovarenaya-kompaniya.png",
+    "logoSource": "manual:derbentskaya-pivovarenaya-kompaniya.png",
     "partnerStatus": null,
     "website": null
   },
@@ -606,8 +606,8 @@
     "country": "Россия",
     "stand": "-",
     "description": "Производство пива и безалкогольных напитков",
-    "logo": null,
-    "logoSource": null,
+    "logo": "/company-logos/zelenogradskie-napitki.png",
+    "logoSource": "manual:zelenogradskie-napitki.png",
     "partnerStatus": null,
     "website": null
   },
@@ -1038,8 +1038,8 @@
     "country": "Россия",
     "stand": "-",
     "description": "Производство и продажа пива",
-    "logo": null,
-    "logoSource": null,
+    "logo": "/company-logos/markovskij-pz.png",
+    "logoSource": "manual:markovskij-pz.png",
     "partnerStatus": null,
     "website": null
   },
@@ -1074,8 +1074,8 @@
     "country": "Россия",
     "stand": "-",
     "description": "Старейшая в Воронеже частная пивоварня осуществляющая производство напитков традиционного, оригинального и крафтового направления",
-    "logo": null,
-    "logoSource": null,
+    "logo": "/company-logos/pivovarnya-c.png",
+    "logoSource": "manual:pivovarnya-c.png",
     "partnerStatus": null,
     "website": null
   },
@@ -1662,8 +1662,8 @@
     "country": "Россия",
     "stand": "98",
     "description": "Центр координации поддержки экспортно ориентированных субъектов малого и среднего предпринимательства Белгородской области",
-    "logo": null,
-    "logoSource": null,
+    "logo": "/company-logos/ckpeo.png",
+    "logoSource": "manual:ckpeo.png",
     "partnerStatus": null,
     "website": null
   },
@@ -1758,8 +1758,8 @@
     "country": "Россия",
     "stand": "147",
     "description": "Полный производственный цикл: от оплодотворения икры и выращивания малька до выращивания взрослой рыбы, переработки и производства готовой продукции, включая собственное икорное производство",
-    "logo": null,
-    "logoSource": null,
+    "logo": "/company-logos/juzhnij-osetr.png",
+    "logoSource": "manual:juzhnij-osetr.png",
     "partnerStatus": null,
     "website": null
   }
