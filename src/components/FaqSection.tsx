@@ -3,6 +3,7 @@
 import { useMemo, useState } from 'react'
 import { ChevronDown, Search } from 'lucide-react'
 import faqItems from '@/data/faq.json'
+import { beerFaqItems, type BeerFaqSection } from '@/data/faq-beer'
 import {
   borders,
   cardClassName,
@@ -14,30 +15,91 @@ import {
 type FaqItem = {
   id: string
   question: string
-  answer: string
+  answer?: string
   link?: string
   linkLabel?: string
+  sections?: BeerFaqSection[]
 }
 
 function normalizeSearch(value: string) {
   return value.trim().toLowerCase().replace(/ё/g, 'е')
 }
 
+function getSearchText(item: FaqItem) {
+  const sectionText = (item.sections || [])
+    .map((section) =>
+      [
+        section.title,
+        section.body,
+        ...(section.items || []),
+      ]
+        .filter(Boolean)
+        .join(' ')
+    )
+    .join(' ')
+
+  return `${item.question} ${item.answer || ''} ${sectionText}`
+}
+
+function BeerFaqContent({
+  sections,
+}: {
+  sections: BeerFaqSection[]
+}) {
+  return (
+    <div className="space-y-3">
+      {sections.map((section) => (
+        <div
+          key={section.title}
+          className={cn(
+            radius.inputRadius,
+            'border border-[#7A3F1D]/10 bg-[#FFFDF8] p-3'
+          )}
+        >
+          <h3 className="text-sm font-semibold leading-snug text-[#4A2412]">
+            {section.title}
+          </h3>
+          {section.body && (
+            <p className="mt-1.5 text-sm leading-[1.65] text-[#8A654F]">
+              {section.body}
+            </p>
+          )}
+          {section.items && (
+            <ul className="mt-2 space-y-1.5 text-sm leading-[1.6] text-[#8A654F]">
+              {section.items.map((item) => (
+                <li key={item} className="flex gap-2">
+                  <span className="mt-[0.6em] h-1.5 w-1.5 shrink-0 rounded-full bg-[#F7941D]" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      ))}
+    </div>
+  )
+}
+
 export default function FaqSection() {
   const [query, setQuery] = useState('')
   const [openId, setOpenId] = useState<string | null>(null)
+
+  const allItems = useMemo<FaqItem[]>(
+    () => [...(faqItems as FaqItem[]), ...beerFaqItems],
+    []
+  )
 
   const filteredItems = useMemo(() => {
     const normalizedQuery = normalizeSearch(query)
 
     if (!normalizedQuery) {
-      return faqItems as FaqItem[]
+      return allItems
     }
 
-    return (faqItems as FaqItem[]).filter((item) =>
-      normalizeSearch(`${item.question} ${item.answer}`).includes(normalizedQuery)
+    return allItems.filter((item) =>
+      normalizeSearch(getSearchText(item)).includes(normalizedQuery)
     )
-  }, [query])
+  }, [allItems, query])
 
   return (
     <section className={cn(cardClassName, 'space-y-3 p-4')}>
@@ -97,24 +159,34 @@ export default function FaqSection() {
                   />
                 </button>
 
-                {isOpen && (
-                  <div className="space-y-3 px-4 pb-4 text-sm leading-6 text-[#8A654F]">
-                    <p className="whitespace-pre-line">{item.answer}</p>
-                    {item.link && item.linkLabel && (
-                      <a
-                        href={item.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={cn(
-                          radius.buttonRadius,
-                          'inline-flex h-10 items-center justify-center bg-[#4A2412] px-4 text-sm font-semibold text-white transition-colors hover:bg-[#7A3F1D]'
-                        )}
-                      >
-                        {item.linkLabel}
-                      </a>
-                    )}
+                <div
+                  className={cn(
+                    'grid transition-all duration-200',
+                    isOpen ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'
+                  )}
+                >
+                  <div className="min-h-0 overflow-hidden">
+                    <div className="space-y-3 px-4 pb-4 text-sm leading-6 text-[#8A654F]">
+                      {item.answer && (
+                        <p className="whitespace-pre-line leading-[1.65]">{item.answer}</p>
+                      )}
+                      {item.sections && <BeerFaqContent sections={item.sections} />}
+                      {item.link && item.linkLabel && (
+                        <a
+                          href={item.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={cn(
+                            radius.buttonRadius,
+                            'inline-flex h-10 items-center justify-center bg-[#4A2412] px-4 text-sm font-semibold text-white transition-colors hover:bg-[#7A3F1D]'
+                          )}
+                        >
+                          {item.linkLabel}
+                        </a>
+                      )}
+                    </div>
                   </div>
-                )}
+                </div>
               </div>
             )
           })}
